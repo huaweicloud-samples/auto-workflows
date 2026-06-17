@@ -249,7 +249,8 @@ jobs:
     env["GH_TOKEN"] = token
     existing = client_repo_exists(token, org, request.repo_name)
     if existing and repo_has_branches(token, org, request.repo_name):
-        raise ValueError(f"Repository already exists and is not empty: https://github.com/{org}/{request.repo_name}")
+        print(f"Repository already exists and has branches, skip initialization: https://github.com/{org}/{request.repo_name}")
+        return f"https://github.com/{org}/{request.repo_name}"
     if not existing:
         run(
             [
@@ -288,6 +289,12 @@ def repo_has_branches(token: str, org: str, repo_name: str) -> bool:
 
 def add_team_permissions(client: GitHubClient, org: str, repo_name: str, team_slugs: list[str]) -> None:
     for team in team_slugs:
+        team_data = client.request("GET", f"/orgs/{org}/teams/{urllib.parse.quote(team)}", ok404=True)
+        if not team_data:
+            raise ValueError(
+                f"Team `{team}` was not found or ORG_ADMIN_TOKEN cannot see it. "
+                "Use the GitHub team slug, and ensure the token has Members organization read permission."
+            )
         client.request(
             "PUT",
             f"/orgs/{org}/teams/{urllib.parse.quote(team)}/repos/{org}/{repo_name}",
