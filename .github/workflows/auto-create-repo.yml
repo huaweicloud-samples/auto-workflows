@@ -1,0 +1,28 @@
+name: Auto create public sample repository
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  create-repo:
+    if: github.event.label.name == 'approved'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.ORG_ADMIN_TOKEN }}
+      ISSUE_TOKEN: ${{ github.token }}
+      ORG_NAME: ${{ github.repository_owner }}
+      INDEX_REPO: awesome-huaweicloud
+      APPROVALS_REQUIRED: "3"
+      DEFAULT_CI_CONTEXT: ci
+    steps:
+      - name: Checkout automation
+        uses: actions/checkout@v4
+
+      - name: Create repository from approved issue
+        run: |
+          python scripts/create_repo_from_issue.py

@@ -1,0 +1,80 @@
+name: New repository request
+description: Request a new public repository under huaweicloud-samples.
+title: "[New Repo] "
+labels: ["repo-request"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in the repository metadata. After maintainers approve this issue by adding the `approved` label, automation will create the repository.
+
+  - type: input
+    id: repo_name
+    attributes:
+      label: Repository name
+      description: "Lowercase repository name, 2-100 characters. Allowed characters: a-z, 0-9, dot, underscore, hyphen."
+      placeholder: example-sample
+    validations:
+      required: true
+
+  - type: input
+    id: team
+    attributes:
+      label: Team
+      description: GitHub team slug(s) that should receive Write permission. Separate multiple teams by comma or newline.
+      placeholder: sample-maintainers
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Short repository description used in GitHub and the awesome index.
+      placeholder: Sample project for deploying ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: codeowners
+    attributes:
+      label: CODEOWNERS
+      description: Optional. GitHub users or teams that must approve PRs. If empty, the Team field is used.
+      placeholder: |
+        @huaweicloud-samples/sample-maintainers
+        @octocat
+
+  - type: input
+    id: topics
+    attributes:
+      label: Topics
+      description: Optional comma-separated GitHub topics. `incubating` is always added automatically.
+      placeholder: huaweicloud,sample,terraform
+
+  - type: input
+    id: ci_context
+    attributes:
+      label: Required CI status check
+      description: Branch protection will require this status check before merging.
+      value: ci
+    validations:
+      required: true
+
+  - type: input
+    id: awesome_category
+    attributes:
+      label: Awesome index category
+      description: Section name used in awesome-huaweicloud.
+      value: Incubating Samples
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm this repository should be public and follow huaweicloud-samples contribution rules.
+          required: true
