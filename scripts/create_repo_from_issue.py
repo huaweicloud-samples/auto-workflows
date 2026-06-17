@@ -245,24 +245,45 @@ jobs:
     run(["git", "add", "README.md", ".github/CODEOWNERS", ".github/workflows/ci.yml"], cwd=repo_dir)
     run(["git", "commit", "-m", "chore: initialize sample repository"], cwd=repo_dir)
 
-    create_cmd = [
-        "gh",
-        "repo",
-        "create",
-        f"{org}/{request.repo_name}",
-        "--public",
-        "--description",
-        request.description,
-        "--source",
-        str(repo_dir),
-        "--push",
-        "--remote",
-        "origin",
-    ]
     env = os.environ.copy()
     env["GH_TOKEN"] = token
-    run(create_cmd, cwd=repo_dir, env=env)
+    existing = client_repo_exists(token, org, request.repo_name)
+    if existing and repo_has_branches(token, org, request.repo_name):
+        raise ValueError(f"Repository already exists and is not empty: https://github.com/{org}/{request.repo_name}")
+    if not existing:
+        run(
+            [
+                "gh",
+                "repo",
+                "create",
+                f"{org}/{request.repo_name}",
+                "--public",
+                "--description",
+                request.description,
+            ],
+            cwd=repo_dir,
+            env=env,
+        )
+
+    run(["git", "remote", "add", "origin", authenticated_repo_url(token, org, request.repo_name)], cwd=repo_dir)
+    run(["git", "push", "-u", "origin", "main"], cwd=repo_dir)
     return f"https://github.com/{org}/{request.repo_name}"
+
+
+def client_repo_exists(token: str, org: str, repo_name: str) -> bool:
+    client = GitHubClient(token)
+    return client.request("GET", f"/repos/{org}/{repo_name}", ok404=True) is not None
+
+
+def repo_has_branches(token: str, org: str, repo_name: str) -> bool:
+    client = GitHubClient(token)
+    try:
+        branches = client.request("GET", f"/repos/{org}/{repo_name}/branches")
+    except RuntimeError as exc:
+        if "HTTP 409" in str(exc) or "Git Repository is empty" in str(exc):
+            return False
+        raise
+    return bool(branches)
 
 
 def add_team_permissions(client: GitHubClient, org: str, repo_name: str, team_slugs: list[str]) -> None:
@@ -375,7 +396,6 @@ def main() -> int:
 
     try:
         request = parse_request(event, org)
-        ensure_repo_available(api, org, request.repo_name)
         repo_url = create_base_repository(request, org, token)
         add_team_permissions(api, org, request.repo_name, request.team_slugs)
         set_topics(api, org, request.repo_name, request.topics)
