@@ -1,0 +1,85 @@
+name: Repository governance audit
+
+on:
+  schedule:
+    - cron: "0 1 1 1,4,7,10 *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: report-only only uploads reports; issue creates or updates issues in non-compliant repositories
+        required: true
+        type: choice
+        default: report-only
+        options:
+          - report-only
+          - issue
+      include-archived:
+        description: Include archived repositories
+        required: false
+        type: boolean
+        default: false
+      include-forks:
+        description: Include fork repositories
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.ORG_ADMIN_TOKEN }}
+      ORG_NAME: ${{ github.repository_owner }}
+    steps:
+      - name: Checkout automation
+        uses: actions/checkout@v4
+
+      - name: Run governance audit
+        id: audit
+        continue-on-error: true
+        run: |
+          MODE="${{ github.event.inputs.mode || 'report-only' }}"
+          EXTRA_ARGS=""
+          if [ "$MODE" = "issue" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --fail-on-violations"
+          fi
+          if [ "${{ github.event.inputs.include-archived || false }}" = "true" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --include-archived"
+          fi
+          if [ "${{ github.event.inputs.include-forks || false }}" = "true" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --include-forks"
+          fi
+
+          python scripts/audit_governance.py \
+            --org "$ORG_NAME" \
+            --mode "$MODE" \
+            --report governance-audit-report.md \
+            --json-report governance-audit-report.json \
+            $EXTRA_ARGS
+
+      - name: Write summary
+        if: always()
+        run: |
+          if [ -f governance-audit-report.md ]; then
+            cat governance-audit-report.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Governance audit did not generate a report. Check logs." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload audit reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: governance-audit-report
+          path: |
+            governance-audit-report.md
+            governance-audit-report.json
+
+      - name: Mark issue-mode violations
+        if: steps.audit.outcome == 'failure'
+        run: |
+          echo "::error::Governance audit failed, or issue mode found non-compliant repositories."
+          exit 1

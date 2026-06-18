@@ -29,3 +29,14 @@ For fine-grained tokens, use `Repository access: All repositories` and grant:
 - Workflows: Read and write
 
 The token must also be allowed by the organization token policy.
+
+## Governance Audit
+
+`Repository governance audit` runs quarterly and can also be started manually.
+
+Modes:
+
+- `report-only`: generate Markdown and JSON audit reports only.
+- `issue`: create or update `仓库治理规范巡检未通过` issues in non-compliant repositories; close the issue automatically once the repository becomes compliant.
+
+The audit checks repository naming, lifecycle topics, required files, README sections, license policy, contribution rules, code of conduct, deploy/app/scripts conventions, issue/PR templates, and required workflows.
