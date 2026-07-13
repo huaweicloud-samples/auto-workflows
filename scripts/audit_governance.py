@@ -9,9 +9,11 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from collections.abc import Callable
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -22,6 +24,9 @@ ISSUE_TITLE = "仓库治理规范巡检未通过"
 ISSUE_MARKER = "<!-- auto-workflows-governance-audit -->"
 LIFECYCLE_TOPICS = {"incubating", "stable", "archived"}
 REPO_NAME_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)+$")
+RETRYABLE_HTTP_STATUS = {429, 500, 502, 503, 504}
+RETRYABLE_METHODS = {"GET", "HEAD"}
+DEFAULT_MAX_ATTEMPTS = 4
 
 
 @dataclass
@@ -42,8 +47,34 @@ class RepoAuditResult:
 
 
 class GitHubClient:
-    def __init__(self, token: str) -> None:
+    def __init__(
+        self,
+        token: str,
+        max_attempts: int = DEFAULT_MAX_ATTEMPTS,
+        sleep: Callable[[float], None] = time.sleep,
+    ) -> None:
+        if max_attempts < 1:
+            raise ValueError("max_attempts must be at least 1")
         self.token = token
+        self.max_attempts = max_attempts
+        self.sleep = sleep
+
+    @staticmethod
+    def retry_delay(exc: urllib.error.HTTPError, attempt: int) -> float:
+        retry_after = exc.headers.get("Retry-After") if exc.headers else None
+        if retry_after:
+            try:
+                return max(0.0, float(retry_after))
+            except ValueError:
+                pass
+        return float(2 ** (attempt - 1))
+
+    def log_retry(self, method: str, url: str, reason: str, attempt: int, delay: float) -> None:
+        print(
+            f"GitHub API {method} {url} failed with {reason}; "
+            f"retrying in {delay:g}s ({attempt}/{self.max_attempts}).",
+            file=sys.stderr,
+        )
 
     def request(self, method: str, path: str, data: dict[str, Any] | None = None, ok404: bool = False) -> Any:
         url = path if path.startswith("https://") else f"https://api.github.com{path}"
@@ -58,18 +89,38 @@ class GitHubClient:
             body = json.dumps(data).encode("utf-8")
             headers["Content-Type"] = "application/json"
 
-        req = urllib.request.Request(url, data=body, headers=headers, method=method)
-        try:
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                raw = resp.read().decode("utf-8")
-                if not raw:
+        for attempt in range(1, self.max_attempts + 1):
+            req = urllib.request.Request(url, data=body, headers=headers, method=method)
+            try:
+                with urllib.request.urlopen(req, timeout=30) as resp:
+                    raw = resp.read().decode("utf-8")
+                    if not raw:
+                        return None
+                    return json.loads(raw)
+            except urllib.error.HTTPError as exc:
+                raw = exc.read().decode("utf-8", errors="replace")
+                if ok404 and exc.code == 404:
                     return None
-                return json.loads(raw)
-        except urllib.error.HTTPError as exc:
-            raw = exc.read().decode("utf-8", errors="replace")
-            if ok404 and exc.code == 404:
-                return None
-            raise RuntimeError(f"GitHub API {method} {url} failed: HTTP {exc.code} {raw}") from exc
+                if (
+                    method.upper() in RETRYABLE_METHODS
+                    and exc.code in RETRYABLE_HTTP_STATUS
+                    and attempt < self.max_attempts
+                ):
+                    delay = self.retry_delay(exc, attempt)
+                    self.log_retry(method, url, f"HTTP {exc.code}", attempt, delay)
+                    self.sleep(delay)
+                    continue
+                detail = raw[:1000] + ("... [truncated]" if len(raw) > 1000 else "")
+                raise RuntimeError(f"GitHub API {method} {url} failed: HTTP {exc.code} {detail}") from exc
+            except (urllib.error.URLError, TimeoutError) as exc:
+                if method.upper() in RETRYABLE_METHODS and attempt < self.max_attempts:
+                    delay = float(2 ** (attempt - 1))
+                    self.log_retry(method, url, str(exc), attempt, delay)
+                    self.sleep(delay)
+                    continue
+                raise RuntimeError(f"GitHub API {method} {url} failed: {exc}") from exc
+
+        raise AssertionError("GitHub API retry loop exited unexpectedly")
 
     def paginate(self, path: str) -> list[Any]:
         separator = "&" if "?" in path else "?"
@@ -325,8 +376,37 @@ def audit_repo(client: GitHubClient, repo: dict[str, Any]) -> RepoAuditResult:
     )
 
 
+def audit_repositories(
+    client: GitHubClient,
+    repos: list[dict[str, Any]],
+    include_archived: bool = False,
+    include_forks: bool = False,
+) -> list[RepoAuditResult]:
+    results: list[RepoAuditResult] = []
+    for repo in repos:
+        if repo.get("archived") and not include_archived:
+            continue
+        if repo.get("fork") and not include_forks:
+            continue
+        try:
+            result = audit_repo(client, repo)
+        except RuntimeError as exc:
+            print(f"Governance audit could not scan {repo['full_name']}: {exc}", file=sys.stderr)
+            result = RepoAuditResult(
+                name=repo["name"],
+                full_name=repo["full_name"],
+                html_url=repo["html_url"],
+                status="error",
+                topics=[],
+                findings=[Finding(severity="CRITICAL", area="巡检执行", message=str(exc))],
+            )
+        results.append(result)
+    return results
+
+
 def render_report(results: list[RepoAuditResult], org: str, mode: str) -> str:
     failed = [item for item in results if item.status == "failed"]
+    errors = [item for item in results if item.status == "error"]
     passed = [item for item in results if item.status == "passed"]
     lines = [
         "# 仓库治理规范巡检报告",
@@ -336,8 +416,17 @@ def render_report(results: list[RepoAuditResult], org: str, mode: str) -> str:
         f"- 扫描仓库数：{len(results)}",
         f"- 通过：{len(passed)}",
         f"- 不通过：{len(failed)}",
+        f"- 巡检异常：{len(errors)}",
         "",
     ]
+    if errors:
+        lines.extend(["## 巡检异常仓库", ""])
+        for result in errors:
+            lines.append(f"### [{result.full_name}]({result.html_url})")
+            lines.append("")
+            for item in result.findings:
+                lines.append(f"- [{item.area}] {item.message}")
+            lines.append("")
     if failed:
         lines.extend(["## 不符合规范仓库", ""])
         for result in failed:
@@ -351,7 +440,7 @@ def render_report(results: list[RepoAuditResult], org: str, mode: str) -> str:
                 for item in items:
                     lines.append(f"- [{item.area}] {item.message}")
                 lines.append("")
-    else:
+    if not failed and not errors:
         lines.extend(["## 结果", "", "全部仓库符合当前治理规范。", ""])
     return "\n".join(lines)
 
@@ -400,18 +489,12 @@ def main() -> int:
 
     client = GitHubClient(token)
     repos = client.paginate(f"/orgs/{urllib.parse.quote(args.org)}/repos?type=all&sort=full_name")
-    results: list[RepoAuditResult] = []
-    for repo in repos:
-        if repo.get("archived") and not args.include_archived:
-            continue
-        if repo.get("fork") and not args.include_forks:
-            continue
-        result = audit_repo(client, repo)
-        results.append(result)
+    results = audit_repositories(client, repos, args.include_archived, args.include_forks)
+    for result in results:
         if args.mode == "issue":
             if result.status == "failed":
                 upsert_issue(client, result)
-            else:
+            elif result.status == "passed":
                 close_existing_issue(client, result)
 
     report = render_report(results, args.org, args.mode)
@@ -432,7 +515,8 @@ def main() -> int:
     )
     print(report)
     failed_count = sum(1 for item in results if item.status == "failed")
-    return 1 if args.fail_on_violations and failed_count else 0
+    error_count = sum(1 for item in results if item.status == "error")
+    return 1 if error_count or (args.fail_on_violations and failed_count) else 0
 
 
 if __name__ == "__main__":
