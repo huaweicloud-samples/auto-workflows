@@ -4,7 +4,7 @@ Automation workflows for creating public repositories under `huaweicloud-samples
 
 ## Repository Creation
 
-Open a `New repository request` issue and fill in the required fields. A maintainer reviews the request and adds the `approved` label to trigger repository creation.
+Open a `New repository request` issue and fill in the required fields. An active organization owner reviews the request and adds the `approved` label to trigger repository creation. Labels added by other users are removed automatically and do not create a repository.
 
 The workflow will:
 
@@ -19,4 +19,4 @@ The workflow will:
 
 ## Required Secret
 
-Configure `ORG_ADMIN_TOKEN` in repository Actions secrets. The token needs organization access and permission to create repositories, write contents/workflows, set branch protection, manage topics, grant team permissions, and update `awesome-huaweicloud`.
+Configure `ORG_ADMIN_TOKEN` in repository Actions secrets. The token needs organization access and permission to create repositories, write contents/workflows, set branch protection, manage topics, grant team permissions, read organization membership, and update `awesome-huaweicloud`.

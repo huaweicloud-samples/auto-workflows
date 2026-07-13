@@ -302,6 +302,21 @@ def add_team_permissions(client: GitHubClient, org: str, repo_name: str, team_sl
         )
 
 
+def is_organization_owner(client: GitHubClient, org: str, login: str) -> bool:
+    if not login:
+        return False
+    membership = client.request(
+        "GET",
+        f"/orgs/{urllib.parse.quote(org)}/memberships/{urllib.parse.quote(login)}",
+        ok404=True,
+    )
+    return bool(
+        isinstance(membership, dict)
+        and membership.get("state") == "active"
+        and membership.get("role") == "admin"
+    )
+
+
 def set_topics(client: GitHubClient, org: str, repo_name: str, topics: list[str]) -> None:
     clean_topics = []
     for topic in topics:
@@ -386,6 +401,17 @@ def comment_and_close(issue_client: GitHubClient, event: dict[str, Any], body: s
         issue_client.request("PATCH", f"/repos/{owner}/{repo}/issues/{issue_number}", {"state": "closed"})
 
 
+def remove_issue_label(issue_client: GitHubClient, event: dict[str, Any], label: str) -> None:
+    repo = event["repository"]["name"]
+    owner = event["repository"]["owner"]["login"]
+    issue_number = event["issue"]["number"]
+    issue_client.request(
+        "DELETE",
+        f"/repos/{owner}/{repo}/issues/{issue_number}/labels/{urllib.parse.quote(label)}",
+        ok404=True,
+    )
+
+
 def main() -> int:
     org = os.environ.get("ORG_NAME", "").strip()
     token = os.environ.get("GH_TOKEN", "").strip()
@@ -402,6 +428,19 @@ def main() -> int:
     issue_api = GitHubClient(issue_token)
 
     try:
+        actor = (event.get("sender") or {}).get("login", "")
+        if not is_organization_owner(api, org, actor):
+            remove_issue_label(issue_api, event, "approved")
+            comment_and_close(
+                issue_api,
+                event,
+                "Only active organization owners can apply the `approved` label to authorize repository creation. "
+                "The label has been removed and no repository was created.",
+                close=False,
+            )
+            print(f"Rejected unauthorized approval label from {actor or 'unknown actor'}.")
+            return 0
+
         request = parse_request(event, org)
         repo_url = create_base_repository(request, org, token)
         add_team_permissions(api, org, request.repo_name, request.team_slugs)

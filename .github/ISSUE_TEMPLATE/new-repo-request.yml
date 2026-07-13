@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Fill in the repository metadata. After maintainers approve this issue by adding the `approved` label, automation will create the repository.
+        Fill in the repository metadata. An active organization owner must approve this issue by adding the `approved` label before automation creates the repository.
 
   - type: input
     id: repo_name
