@@ -1,0 +1,68 @@
+name: Diagnose GitHub API 502
+
+on:
+  workflow_dispatch:
+    inputs:
+      repositories:
+        description: Comma-separated repositories to probe (maximum 10)
+        required: true
+        type: string
+        default: .github,ai-agent-architecture,airbyte-image,auto-workflows
+      iterations:
+        description: Requests per endpoint and repository (1-20)
+        required: true
+        type: number
+        default: 10
+      delay_ms:
+        description: Delay between requests in milliseconds (0-2000)
+        required: true
+        type: number
+        default: 250
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      ORG_NAME: ${{ github.repository_owner }}
+      ORG_ADMIN_TOKEN: ${{ secrets.ORG_ADMIN_TOKEN }}
+      WORKFLOW_TOKEN: ${{ github.token }}
+      DIAGNOSTIC_REPOSITORIES: ${{ inputs.repositories }}
+      DIAGNOSTIC_ITERATIONS: ${{ inputs.iterations }}
+      DIAGNOSTIC_DELAY_MS: ${{ inputs.delay_ms }}
+    steps:
+      - name: Checkout automation
+        uses: actions/checkout@v4
+
+      - name: Probe GitHub APIs without retries
+        run: |
+          python scripts/diagnose_github_api.py \
+            --org "$ORG_NAME" \
+            --repositories "$DIAGNOSTIC_REPOSITORIES" \
+            --iterations "$DIAGNOSTIC_ITERATIONS" \
+            --delay-ms "$DIAGNOSTIC_DELAY_MS" \
+            --markdown-report github-api-diagnostic.md \
+            --json-report github-api-diagnostic.json
+
+      - name: Write diagnostic summary
+        if: always()
+        run: |
+          if [ -f github-api-diagnostic.md ]; then
+            cat github-api-diagnostic.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "The diagnostic did not generate a report. Check the probe logs." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload diagnostic evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-api-diagnostic-${{ github.run_id }}
+          path: |
+            github-api-diagnostic.md
+            github-api-diagnostic.json
+          if-no-files-found: warn
+          retention-days: 7
