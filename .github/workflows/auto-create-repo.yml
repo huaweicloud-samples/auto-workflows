@@ -9,8 +9,29 @@ permissions:
   issues: write
 
 jobs:
-  create-repo:
+  authorize_approval:
+    name: Authorize organization owner approval
     if: github.event.label.name == 'approved'
+    runs-on: ubuntu-latest
+    outputs:
+      authorized: ${{ steps.authorization.outputs.authorized }}
+    env:
+      GH_TOKEN: ${{ secrets.ORG_ADMIN_TOKEN }}
+      ISSUE_TOKEN: ${{ github.token }}
+      ORG_NAME: ${{ github.repository_owner }}
+    steps:
+      - name: Checkout automation
+        uses: actions/checkout@v4
+
+      - name: Verify organization owner approval
+        id: authorization
+        run: |
+          authorized="$(python -m scripts.authorize_repo_approval)"
+          echo "authorized=$authorized" >> "$GITHUB_OUTPUT"
+
+  create-repo:
+    needs: authorize_approval
+    if: needs.authorize_approval.outputs.authorized == 'true'
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.ORG_ADMIN_TOKEN }}

@@ -19,12 +19,14 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: team
     attributes:
       label: Team
-      description: GitHub team slug(s) that should receive Write permission. Separate multiple teams by comma or newline.
-      placeholder: sample-maintainers
+      description: Enter the exact team display name, team slug, @organization/slug, or GitHub team URL. Separate multiple teams by comma or newline.
+      placeholder: |
+        Public Cloud Continuous Operation Dept
+        @huaweicloud-samples/sample-maintainers
     validations:
       required: true
 

@@ -6,6 +6,8 @@ Automation workflows for creating public repositories under `huaweicloud-samples
 
 Open a `New repository request` issue and fill in the required fields. An active organization owner reviews the request and adds the `approved` label to trigger repository creation. Labels added by other users are removed automatically and do not create a repository.
 
+The Team field accepts an exact team display name, slug, `@organization/slug` mention, or GitHub team URL. All requested teams are resolved and validated before a repository is created.
+
 The workflow will:
 
 - Validate issue fields and repository name uniqueness.

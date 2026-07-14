@@ -20,6 +20,9 @@ from typing import Any
 
 
 REPO_NAME_RE = re.compile(r"^[a-z0-9][a-z0-9._-]{0,98}[a-z0-9]$")
+TEAM_SLUG_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
+TEAM_MARKDOWN_LINK_RE = re.compile(r"^\[[^\]]+\]\((https?://[^)]+)\)$", re.IGNORECASE)
+NO_RESPONSE_RE = re.compile(r"^_?No\s*response_?$", re.IGNORECASE)
 AUTO_SECTION_START = "<!-- AUTO-WORKFLOWS:START -->"
 AUTO_SECTION_END = "<!-- AUTO-WORKFLOWS:END -->"
 
@@ -93,7 +96,7 @@ def parse_issue_body(body: str) -> dict[str, str]:
 
 
 def split_items(raw: str) -> list[str]:
-    if not raw:
+    if not raw or NO_RESPONSE_RE.match(raw.strip()):
         return []
     values = re.split(r"[\n,，\s]+", raw)
     cleaned: list[str] = []
@@ -101,17 +104,121 @@ def split_items(raw: str) -> list[str]:
         value = value.strip()
         if not value:
             continue
-        if re.match(r"^_?No\s*response_?$", value, re.IGNORECASE):
+        if NO_RESPONSE_RE.match(value):
             continue
         cleaned.append(value)
     return cleaned
 
 
-def normalize_team_slug(value: str) -> str:
-    value = value.strip().replace("@", "")
-    if "/" in value:
-        value = value.split("/", 1)[1]
-    return value
+def split_team_items(raw: str) -> list[str]:
+    if not raw or NO_RESPONSE_RE.match(raw.strip()):
+        return []
+    values = re.split(r"[\n,，]+", raw)
+    cleaned: list[str] = []
+    for value in values:
+        value = value.strip()
+        if not value:
+            continue
+        if NO_RESPONSE_RE.match(value):
+            continue
+        cleaned.append(value)
+    return cleaned
+
+
+def team_slug_from_reference(value: str, org: str) -> str | None:
+    reference = value.strip()
+    markdown_link = TEAM_MARKDOWN_LINK_RE.match(reference)
+    if markdown_link:
+        reference = markdown_link.group(1)
+
+    if reference.lower().startswith(("https://", "http://")):
+        parsed = urllib.parse.urlparse(reference)
+        segments = [urllib.parse.unquote(item) for item in parsed.path.split("/") if item]
+        if parsed.netloc.lower() not in {"github.com", "www.github.com"} or len(segments) != 4:
+            raise ValueError(f"Invalid GitHub team URL: {value}")
+        if segments[0].lower() != "orgs" or segments[2].lower() != "teams":
+            raise ValueError(f"Invalid GitHub team URL: {value}")
+        if segments[1].casefold() != org.casefold():
+            raise ValueError(f"Team URL must belong to the `{org}` organization: {value}")
+        return segments[3]
+
+    if reference.startswith("@"):
+        reference = reference[1:]
+    if "/" in reference:
+        referenced_org, slug = reference.split("/", 1)
+        if referenced_org.casefold() != org.casefold():
+            raise ValueError(f"Team reference must belong to the `{org}` organization: {value}")
+        if not TEAM_SLUG_RE.match(slug):
+            raise ValueError(f"Invalid GitHub team slug: {slug}")
+        return slug
+    if TEAM_SLUG_RE.match(reference):
+        return reference
+    return None
+
+
+def list_organization_teams(client: GitHubClient, org: str) -> list[dict[str, Any]]:
+    teams: list[dict[str, Any]] = []
+    encoded_org = urllib.parse.quote(org, safe="")
+    for page in range(1, 101):
+        data = client.request("GET", f"/orgs/{encoded_org}/teams?per_page=100&page={page}")
+        if not isinstance(data, list):
+            raise RuntimeError(f"GitHub returned an invalid team list for organization `{org}`.")
+        teams.extend(item for item in data if isinstance(item, dict))
+        if len(data) < 100:
+            return teams
+    raise RuntimeError(f"Organization `{org}` has more teams than the workflow can resolve safely.")
+
+
+def resolve_team_slugs(client: GitHubClient, org: str, references: list[str]) -> list[str]:
+    teams = list_organization_teams(client, org)
+    teams_by_slug: dict[str, dict[str, Any]] = {}
+    teams_by_name: dict[str, list[dict[str, Any]]] = {}
+    for team in teams:
+        slug = team.get("slug")
+        name = team.get("name")
+        if isinstance(slug, str) and slug:
+            teams_by_slug[slug.casefold()] = team
+        if isinstance(name, str) and name:
+            key = " ".join(name.split()).casefold()
+            teams_by_name.setdefault(key, []).append(team)
+
+    resolved: list[str] = []
+    seen: set[str] = set()
+    for reference in references:
+        slug_candidate = team_slug_from_reference(reference, org)
+        matches: list[dict[str, Any]] = []
+        if slug_candidate:
+            slug_match = teams_by_slug.get(slug_candidate.casefold())
+            if slug_match:
+                matches = [slug_match]
+        if not matches:
+            name_key = " ".join(reference.split()).casefold()
+            matches = teams_by_name.get(name_key, [])
+
+        if not matches:
+            raise ValueError(
+                f"Team `{reference}` was not found in `{org}`. "
+                "Enter the exact team display name, team slug, @organization/slug, or GitHub team URL."
+            )
+        if len(matches) > 1:
+            slugs = ", ".join(sorted(str(item.get("slug")) for item in matches))
+            raise ValueError(f"Team name `{reference}` is ambiguous. Use one of these slugs: {slugs}")
+
+        slug = matches[0].get("slug")
+        if not isinstance(slug, str) or not slug:
+            raise RuntimeError(f"GitHub returned a team without a slug for `{reference}`.")
+        key = slug.casefold()
+        if key not in seen:
+            seen.add(key)
+            resolved.append(slug)
+    return resolved
+
+
+def resolve_request_teams(client: GitHubClient, request: RepoRequest, org: str) -> RepoRequest:
+    request.team_slugs = resolve_team_slugs(client, org, request.team_slugs)
+    if not request.codeowners:
+        request.codeowners = [f"@{org}/{team}" for team in request.team_slugs]
+    return request
 
 
 def normalize_codeowner(value: str, org: str) -> str:
@@ -131,11 +238,9 @@ def parse_request(event: dict[str, Any], org: str) -> RepoRequest:
 
     repo_name = (fields.get("Repository name") or "").strip().lower()
     description = (fields.get("Description") or "").strip()
-    team_slugs = [normalize_team_slug(item) for item in split_items(fields.get("Team", ""))]
+    team_slugs = split_team_items(fields.get("Team", ""))
     codeowners_raw = split_items(fields.get("CODEOWNERS", ""))
     codeowners = [normalize_codeowner(item, org) for item in codeowners_raw]
-    if not codeowners:
-        codeowners = [f"@{org}/{team}" for team in team_slugs]
 
     topics = [item.lower() for item in split_items(fields.get("Topics", ""))]
     for topic in ["huaweicloud", "sample", "incubating"]:
@@ -153,7 +258,7 @@ def parse_request(event: dict[str, Any], org: str) -> RepoRequest:
     if not description:
         errors.append("Description is required.")
     if not team_slugs:
-        errors.append("At least one team slug is required.")
+        errors.append("At least one team name, slug, mention, or URL is required.")
     if not ci_context:
         errors.append("Required CI status check is required.")
     if errors:
@@ -412,6 +517,28 @@ def remove_issue_label(issue_client: GitHubClient, event: dict[str, Any], label:
     )
 
 
+def authorize_approval(
+    api: GitHubClient,
+    issue_api: GitHubClient,
+    event: dict[str, Any],
+    org: str,
+) -> bool:
+    actor = (event.get("sender") or {}).get("login", "")
+    if is_organization_owner(api, org, actor):
+        return True
+
+    remove_issue_label(issue_api, event, "approved")
+    comment_and_close(
+        issue_api,
+        event,
+        "Only active organization owners can apply the `approved` label to authorize repository creation. "
+        "The label has been removed and no repository was created.",
+        close=False,
+    )
+    print(f"Rejected unauthorized approval label from {actor or 'unknown actor'}.", file=sys.stderr)
+    return False
+
+
 def main() -> int:
     org = os.environ.get("ORG_NAME", "").strip()
     token = os.environ.get("GH_TOKEN", "").strip()
@@ -428,20 +555,11 @@ def main() -> int:
     issue_api = GitHubClient(issue_token)
 
     try:
-        actor = (event.get("sender") or {}).get("login", "")
-        if not is_organization_owner(api, org, actor):
-            remove_issue_label(issue_api, event, "approved")
-            comment_and_close(
-                issue_api,
-                event,
-                "Only active organization owners can apply the `approved` label to authorize repository creation. "
-                "The label has been removed and no repository was created.",
-                close=False,
-            )
-            print(f"Rejected unauthorized approval label from {actor or 'unknown actor'}.")
+        if not authorize_approval(api, issue_api, event, org):
             return 0
 
         request = parse_request(event, org)
+        resolve_request_teams(api, request, org)
         repo_url = create_base_repository(request, org, token)
         add_team_permissions(api, org, request.repo_name, request.team_slugs)
         set_topics(api, org, request.repo_name, request.topics)
