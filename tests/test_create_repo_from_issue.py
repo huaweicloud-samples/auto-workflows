@@ -172,8 +172,7 @@ class ScenarioTests(unittest.TestCase):
             f"[![Scenario](https://img.shields.io/badge/Scenario-cloud%20native%20security-success)]({SCENARIO_DOC_URL})",
             readme,
         )
-        self.assertIn("## Scenario\n\ncloud native security", readme)
-        self.assertIn(f"Detailed scenario explanations: {SCENARIO_DOC_URL}", readme)
+        self.assertNotIn("## Scenario", readme)
 
 
 class OrganizationOwnerAuthorizationTests(unittest.TestCase):

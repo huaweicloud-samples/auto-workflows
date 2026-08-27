@@ -337,12 +337,6 @@ def readme_template(request: RepoRequest, org: str) -> str:
 
 {request.description}
 
-## Scenario
-
-{request.scenario}
-
-Detailed scenario explanations: {SCENARIO_DOC_URL}
-
 ## Overview
 
 This repository is created from the huaweicloud-samples automated repository request workflow.
