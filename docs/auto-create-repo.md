@@ -20,6 +20,16 @@ This repository creates public repositories for `huaweicloud-samples` from appro
 
 GitHub records a workflow run for every label event. For a non-owner applying `approved`, only the authorization job runs; the `create-repo` job is skipped.
 
+## Scenario field
+
+`Scenario` is a required dropdown with a fixed list of allowed values:
+
+`government`, `internet`, `automotive`, `enterprise`, `finance`, `telecom`, `application intelligence`, `data integration`, `distributed x infrastructure`, `lean governance`, `cloud native security`, `deterministic operations`, `multi-cloud`.
+
+Detailed explanations for each scenario: <https://3ms.huawei.com/docs/docinfo/1300901382590492672?bookstackId=866760814559879168&gid=3591759&l=zh-cn&documentkind=&attachmentIdx=5>
+
+The workflow validates the submitted value against this exact list (case-insensitive) before creating anything, records the selection in the generated repository `README.md`, adds it as a repository topic (spaces become hyphens, e.g. `multi-cloud`, `application-intelligence`), and echoes it back on the request issue. To change the list, update both `.github/ISSUE_TEMPLATE/new-repo-request.yml` and `VALID_SCENARIOS` in `scripts/create_repo_from_issue.py`; `tests/test_create_repo_from_issue.py` keeps them in sync.
+
 ## Team field
 
 The `Team` field accepts any of these forms:

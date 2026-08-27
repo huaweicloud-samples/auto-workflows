@@ -1,4 +1,5 @@
 import io
+import re
 import unittest
 from contextlib import redirect_stdout
 from pathlib import Path
@@ -6,8 +7,11 @@ from unittest.mock import patch
 
 from scripts import authorize_repo_approval
 from scripts.create_repo_from_issue import (
+    SCENARIO_DOC_URL,
+    VALID_SCENARIOS,
     authorize_approval,
     is_organization_owner,
+    normalize_scenario,
     parse_request,
     remove_issue_label,
     resolve_request_teams,
@@ -61,6 +65,8 @@ class TeamResolutionTests(unittest.TestCase):
                     [
                         "### Repository name",
                         "example-sample",
+                        "### Scenario",
+                        "finance",
                         "### Team",
                         self.TEAM_NAME,
                         "### Description",
@@ -77,6 +83,7 @@ class TeamResolutionTests(unittest.TestCase):
         request = parse_request(event, self.ORG)
         self.assertEqual(request.team_slugs, [self.TEAM_NAME])
         self.assertEqual(request.codeowners, [])
+        self.assertEqual(request.scenario, "finance")
 
         resolve_request_teams(self.team_client(), request, self.ORG)
 
@@ -93,6 +100,68 @@ class TeamResolutionTests(unittest.TestCase):
     def test_no_response_placeholder_is_not_treated_as_an_item(self) -> None:
         self.assertEqual(split_items("_No response_"), [])
         self.assertEqual(split_team_items("_No response_"), [])
+
+
+class ScenarioTests(unittest.TestCase):
+    ORG = "huaweicloud-samples"
+
+    @staticmethod
+    def event_with_scenario(scenario: str) -> dict:
+        return {
+            "issue": {
+                "body": "\n".join(
+                    [
+                        "### Repository name",
+                        "example-sample",
+                        "### Scenario",
+                        scenario,
+                        "### Team",
+                        "sample-maintainers",
+                        "### Description",
+                        "Example repository",
+                        "### CODEOWNERS",
+                        "_No response_",
+                        "### Required CI status check",
+                        "ci",
+                    ]
+                )
+            }
+        }
+
+    def test_issue_template_scenario_options_match_allowed_list(self) -> None:
+        template = Path(".github/ISSUE_TEMPLATE/new-repo-request.yml").read_text(encoding="utf-8")
+        form = __import__("yaml").safe_load(template)
+        scenario_field = next(item for item in form["body"] if item.get("id") == "scenario")
+
+        self.assertEqual(scenario_field["type"], "dropdown")
+        self.assertTrue(scenario_field["validations"]["required"])
+        self.assertIn(SCENARIO_DOC_URL, scenario_field["attributes"]["description"])
+        self.assertEqual(scenario_field["attributes"]["options"], VALID_SCENARIOS)
+
+    def test_parses_every_dropdown_option_case_insensitively(self) -> None:
+        for option in VALID_SCENARIOS:
+            with self.subTest(option=option):
+                request = parse_request(self.event_with_scenario(option.upper()), self.ORG)
+                self.assertEqual(request.scenario, option)
+
+    def test_rejects_missing_or_unknown_scenario(self) -> None:
+        for raw in ("", "_No response_", "online gaming", "government\\nfinance"):
+            with self.subTest(raw=raw):
+                with self.assertRaisesRegex(ValueError, "Scenario is required"):
+                    parse_request(self.event_with_scenario(raw), self.ORG)
+
+        with self.assertRaisesRegex(ValueError, re.escape(SCENARIO_DOC_URL)):
+            parse_request(self.event_with_scenario("finance,"), self.ORG)
+
+    def test_normalize_scenarios_strips_whitespace(self) -> None:
+        for raw, expected in (
+            (" Government ", "government"),
+            ("cloud  native   security", "cloud native security"),
+            ("Multi-Cloud", "multi-cloud"),
+            (VALID_SCENARIOS[8].upper(), VALID_SCENARIOS[8]),
+        ):
+            with self.subTest(raw=raw):
+                self.assertEqual(normalize_scenario(raw), expected)
 
 
 class OrganizationOwnerAuthorizationTests(unittest.TestCase):

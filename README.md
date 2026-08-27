@@ -8,9 +8,11 @@ Open a `New repository request` issue and fill in the required fields. An active
 
 The Team field accepts an exact team display name, slug, `@organization/slug` mention, or GitHub team URL. All requested teams are resolved and validated before a repository is created.
 
+The Scenario field is a required dropdown of 13 predefined values (government, internet, automotive, enterprise, finance, telecom, application intelligence, data integration, distributed x infrastructure, lean governance, cloud native security, deterministic operations, multi-cloud). Detailed scenario explanations: https://3ms.huawei.com/docs/docinfo/1300901382590492672?bookstackId=866760814559879168&gid=3591759&l=zh-cn&documentkind=&attachmentIdx=5
+
 The workflow will:
 
-- Validate issue fields and repository name uniqueness.
+- Validate issue fields and repository name uniqueness, including the required Scenario dropdown.
 - Create a public repository with generated baseline files.
 - Generate `README.md`, `.github/CODEOWNERS`, and a placeholder CI workflow.
 - Grant requested teams Write permission.

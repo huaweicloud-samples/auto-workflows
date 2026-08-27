@@ -19,6 +19,28 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: scenario
+    attributes:
+      label: Scenario
+      description: "Required. Select the scenario this repository targets from the predefined list. Detailed explanations for every scenario: https://3ms.huawei.com/docs/docinfo/1300901382590492672?bookstackId=866760814559879168&gid=3591759&l=zh-cn&documentkind=&attachmentIdx=5"
+      options:
+        - government
+        - internet
+        - automotive
+        - enterprise
+        - finance
+        - telecom
+        - application intelligence
+        - data integration
+        - distributed x infrastructure
+        - lean governance
+        - cloud native security
+        - deterministic operations
+        - multi-cloud
+    validations:
+      required: true
+
   - type: textarea
     id: team
     attributes:

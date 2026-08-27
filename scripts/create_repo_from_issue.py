@@ -26,12 +26,36 @@ NO_RESPONSE_RE = re.compile(r"^_?No\s*response_?$", re.IGNORECASE)
 AUTO_SECTION_START = "<!-- AUTO-WORKFLOWS:START -->"
 AUTO_SECTION_END = "<!-- AUTO-WORKFLOWS:END -->"
 
+# The scenario dropdown mirrors `.github/ISSUE_TEMPLATE/new-repo-request.yml`.
+# Keep both lists in sync when adding or renaming a scenario.
+SCENARIO_DOC_URL = (
+    "https://3ms.huawei.com/docs/docinfo/1300901382590492672"
+    "?bookstackId=866760814559879168&gid=3591759&l=zh-cn&documentkind=&attachmentIdx=5"
+)
+VALID_SCENARIOS = [
+    "government",
+    "internet",
+    "automotive",
+    "enterprise",
+    "finance",
+    "telecom",
+    "application intelligence",
+    "data integration",
+    "distributed x infrastructure",
+    "lean governance",
+    "cloud native security",
+    "deterministic operations",
+    "multi-cloud",
+]
+VALID_SCENARIOS_KEYED = {item.casefold(): item for item in VALID_SCENARIOS}
+
 
 @dataclass
 class RepoRequest:
     repo_name: str
     team_slugs: list[str]
     description: str
+    scenario: str
     codeowners: list[str]
     topics: list[str]
     ci_context: str
@@ -232,6 +256,11 @@ def normalize_codeowner(value: str, org: str) -> str:
     return f"@{org}/{value}"
 
 
+def normalize_scenario(raw: str) -> str | None:
+    """Match a raw issue value against the fixed scenario list, case-insensitively."""
+    return VALID_SCENARIOS_KEYED.get(" ".join(raw.split()).casefold())
+
+
 def parse_request(event: dict[str, Any], org: str) -> RepoRequest:
     issue_body = event["issue"]["body"] or ""
     fields = parse_issue_body(issue_body)
@@ -239,6 +268,7 @@ def parse_request(event: dict[str, Any], org: str) -> RepoRequest:
     repo_name = (fields.get("Repository name") or "").strip().lower()
     description = (fields.get("Description") or "").strip()
     team_slugs = split_team_items(fields.get("Team", ""))
+    scenario = normalize_scenario(fields.get("Scenario", ""))
     codeowners_raw = split_items(fields.get("CODEOWNERS", ""))
     codeowners = [normalize_codeowner(item, org) for item in codeowners_raw]
 
@@ -246,6 +276,9 @@ def parse_request(event: dict[str, Any], org: str) -> RepoRequest:
     for topic in ["huaweicloud", "sample", "incubating"]:
         if topic not in topics:
             topics.append(topic)
+    if scenario and scenario not in topics:
+        # Record the selected scenario as a repository topic for governance auditing.
+        topics.append(scenario)
 
     ci_context = (fields.get("Required CI status check") or os.environ.get("DEFAULT_CI_CONTEXT") or "ci").strip()
     awesome_category = (fields.get("Awesome index category") or "Incubating Samples").strip()
@@ -257,6 +290,11 @@ def parse_request(event: dict[str, Any], org: str) -> RepoRequest:
         errors.append("Repository name must not end with .git.")
     if not description:
         errors.append("Description is required.")
+    if scenario is None:
+        errors.append(
+            "Scenario is required and must be selected from the predefined list "
+            f"({len(VALID_SCENARIOS)} options). Detailed explanations: {SCENARIO_DOC_URL}"
+        )
     if not team_slugs:
         errors.append("At least one team name, slug, mention, or URL is required.")
     if not ci_context:
@@ -268,6 +306,7 @@ def parse_request(event: dict[str, Any], org: str) -> RepoRequest:
         repo_name=repo_name,
         team_slugs=team_slugs,
         description=description,
+        scenario=scenario or "",
         codeowners=codeowners,
         topics=topics,
         ci_context=ci_context,
@@ -288,6 +327,10 @@ def readme_template(request: RepoRequest, org: str) -> str:
 [![Huawei Cloud](https://img.shields.io/badge/Huawei%20Cloud-Samples-red)]()
 
 {request.description}
+
+## Scenario
+
+{request.scenario}
 
 ## Overview
 
@@ -574,6 +617,7 @@ def main() -> int:
                     "",
                     f"- Repository: {repo_url}",
                     f"- Awesome index: {index_url}",
+                    f"- Scenario: `{request.scenario}`",
                     f"- Status topic: `incubating`",
                     f"- Required approvals: {os.environ.get('APPROVALS_REQUIRED', '3')}",
                     f"- Required CI check: `{request.ci_context}`",
