@@ -13,6 +13,7 @@ from scripts.create_repo_from_issue import (
     is_organization_owner,
     normalize_scenario,
     parse_request,
+    readme_template,
     remove_issue_label,
     resolve_request_teams,
     resolve_team_slugs,
@@ -162,6 +163,17 @@ class ScenarioTests(unittest.TestCase):
         ):
             with self.subTest(raw=raw):
                 self.assertEqual(normalize_scenario(raw), expected)
+
+    def test_generated_readme_contains_scenario_badge_and_explanation_link(self) -> None:
+        request = parse_request(self.event_with_scenario("cloud native security"), self.ORG)
+        readme = readme_template(request, self.ORG)
+
+        self.assertIn(
+            f"[![Scenario](https://img.shields.io/badge/Scenario-cloud%20native%20security-success)]({SCENARIO_DOC_URL})",
+            readme,
+        )
+        self.assertIn("## Scenario\n\ncloud native security", readme)
+        self.assertIn(f"Detailed scenario explanations: {SCENARIO_DOC_URL}", readme)
 
 
 class OrganizationOwnerAuthorizationTests(unittest.TestCase):

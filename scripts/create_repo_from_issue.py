@@ -320,17 +320,28 @@ def ensure_repo_available(client: GitHubClient, org: str, repo_name: str) -> Non
         raise ValueError(f"Repository already exists: https://github.com/{org}/{repo_name}")
 
 
+def scenario_badge(request: RepoRequest) -> str:
+    """Render the selected scenario as a README badge linking to the detailed explanations."""
+    encoded_scenario = urllib.parse.quote(request.scenario)
+    return (
+        f"[![Scenario](https://img.shields.io/badge/Scenario-{encoded_scenario}-success)]({SCENARIO_DOC_URL})"
+    )
+
+
 def readme_template(request: RepoRequest, org: str) -> str:
     return f"""# {request.repo_name}
 
 [![Status](https://img.shields.io/badge/Status-Incubating-blue)]()
 [![Huawei Cloud](https://img.shields.io/badge/Huawei%20Cloud-Samples-red)]()
+{scenario_badge(request)}
 
 {request.description}
 
 ## Scenario
 
 {request.scenario}
+
+Detailed scenario explanations: {SCENARIO_DOC_URL}
 
 ## Overview
 
