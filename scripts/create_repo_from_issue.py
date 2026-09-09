@@ -26,6 +26,11 @@ NO_RESPONSE_RE = re.compile(r"^_?No\s*response_?$", re.IGNORECASE)
 AUTO_SECTION_START = "<!-- AUTO-WORKFLOWS:START -->"
 AUTO_SECTION_END = "<!-- AUTO-WORKFLOWS:END -->"
 
+# GitHub rejects a repository description longer than this with
+# "GraphQL: Description cannot be more than 350 characters (createRepository)".
+DESCRIPTION_MAX = 350
+TRUNCATION_MARK = "…"
+
 # The scenario dropdown mirrors `.github/ISSUE_TEMPLATE/new-repo-request.yml`.
 # Keep both lists in sync when adding or renaming a scenario.
 SCENARIO_DOC_URL = (
@@ -55,6 +60,9 @@ class RepoRequest:
     repo_name: str
     team_slugs: list[str]
     description: str
+    # GitHub "About" text: `description` collapsed to one line and shortened to
+    # DESCRIPTION_MAX. README and awesome index keep the full `description`.
+    repo_description: str
     scenario: str
     codeowners: list[str]
     topics: list[str]
@@ -261,6 +269,29 @@ def normalize_scenario(raw: str) -> str | None:
     return VALID_SCENARIOS_KEYED.get(" ".join(raw.split()).casefold())
 
 
+def shorten_description(description: str, limit: int = DESCRIPTION_MAX) -> str:
+    """Fit a description into GitHub's repository About field limit.
+
+    Newlines collapse to single spaces because About renders on one line. Longer
+    text is cut at the last word boundary and marked with an ellipsis, so the
+    About field can never break `gh repo create`. The caller keeps the original
+    text for the README and the awesome index.
+    """
+    collapsed = " ".join(description.split())
+    if len(collapsed) <= limit:
+        return collapsed
+
+    budget = limit - len(TRUNCATION_MARK)
+    cut = collapsed[:budget]
+    if " " in cut:
+        cut = cut[: cut.rfind(" ")]
+    cut = cut.rstrip(" \t,;:.、，；。")
+    if not cut:
+        # A single token longer than the limit: fall back to a hard cut.
+        cut = collapsed[:budget].rstrip()
+    return cut + TRUNCATION_MARK
+
+
 def parse_request(event: dict[str, Any], org: str) -> RepoRequest:
     issue_body = event["issue"]["body"] or ""
     fields = parse_issue_body(issue_body)
@@ -306,6 +337,7 @@ def parse_request(event: dict[str, Any], org: str) -> RepoRequest:
         repo_name=repo_name,
         team_slugs=team_slugs,
         description=description,
+        repo_description=shorten_description(description),
         scenario=scenario or "",
         codeowners=codeowners,
         topics=topics,
@@ -413,7 +445,7 @@ jobs:
                 f"{org}/{request.repo_name}",
                 "--public",
                 "--description",
-                request.description,
+                request.repo_description,
             ],
             cwd=repo_dir,
             env=env,
@@ -504,6 +536,25 @@ def authenticated_repo_url(token: str, org: str, repo: str) -> str:
     return f"https://x-access-token:{token}@github.com/{org}/{repo}.git"
 
 
+def markdown_cell(text: str) -> str:
+    """Render free-form request text as a single Markdown table cell.
+
+    A newline would split the row across lines and a `|` would add a column, so
+    both are normalized before the text reaches the awesome index table.
+    """
+    return " ".join(text.split()).replace("|", r"\|")
+
+
+def awesome_index_row(request: RepoRequest, org: str) -> str:
+    """Build the awesome-huaweicloud table row, keeping the full description."""
+    return (
+        f"| [{request.repo_name}](https://github.com/{org}/{request.repo_name}) "
+        f"| {markdown_cell(request.description)} "
+        f"| {', '.join(request.team_slugs)} "
+        "| incubating |\n"
+    )
+
+
 def update_awesome_index(request: RepoRequest, org: str, token: str, index_repo: str) -> str:
     temp_dir = Path(tempfile.mkdtemp(prefix="awesome-index-"))
     run(["git", "clone", authenticated_repo_url(token, org, index_repo), str(temp_dir)])
@@ -519,7 +570,7 @@ def update_awesome_index(request: RepoRequest, org: str, token: str, index_repo:
     else:
         content = "# Awesome HuaweiCloud\n\n"
 
-    row = f"| [{request.repo_name}](https://github.com/{org}/{request.repo_name}) | {request.description} | {', '.join(request.team_slugs)} | incubating |\n"
+    row = awesome_index_row(request, org)
     section_header = f"## {request.awesome_category}\n\n"
     table_header = "| Repository | Description | Team | Status |\n|------------|-------------|------|--------|\n"
 
@@ -613,23 +664,23 @@ def main() -> int:
         set_topics(api, org, request.repo_name, request.topics)
         set_branch_protection(api, org, request)
         index_url = update_awesome_index(request, org, token, index_repo)
-        comment_and_close(
-            issue_api,
-            event,
-            "\n".join(
-                [
-                    "Repository created successfully.",
-                    "",
-                    f"- Repository: {repo_url}",
-                    f"- Awesome index: {index_url}",
-                    f"- Scenario: `{request.scenario}`",
-                    f"- Status topic: `incubating`",
-                    f"- Required approvals: {os.environ.get('APPROVALS_REQUIRED', '3')}",
-                    f"- Required CI check: `{request.ci_context}`",
-                ]
-            ),
-            close=True,
-        )
+        summary = [
+            "Repository created successfully.",
+            "",
+            f"- Repository: {repo_url}",
+            f"- Awesome index: {index_url}",
+            f"- Scenario: `{request.scenario}`",
+            f"- Status topic: `incubating`",
+            f"- Required approvals: {os.environ.get('APPROVALS_REQUIRED', '3')}",
+            f"- Required CI check: `{request.ci_context}`",
+        ]
+        if request.repo_description != " ".join(request.description.split()):
+            summary.append(
+                f"- Note: the GitHub repository description was shortened to "
+                f"{len(request.repo_description)} characters (GitHub limit is {DESCRIPTION_MAX}). "
+                "The README and the awesome index keep the full text."
+            )
+        comment_and_close(issue_api, event, "\n".join(summary), close=True)
         print(f"Created {repo_url}")
         return 0
     except Exception as exc:

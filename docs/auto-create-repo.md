@@ -41,6 +41,18 @@ The `Team` field accepts any of these forms:
 
 Separate multiple teams by comma or newline. The workflow resolves names and references to canonical team slugs and validates all teams before repository creation. GitHub may offer its native `@` mention suggestions in the textarea, but repository creation does not depend on those suggestions.
 
+## Description field
+
+One `Description` text feeds three places:
+
+- The GitHub repository `About` field, which GitHub hard-limits to 350 characters.
+- The generated repository `README.md`, where the full text becomes the introduction paragraph under the badges.
+- The `awesome-huaweicloud` index table, where the full text becomes the `Description` column.
+
+Long descriptions are never rejected. `shorten_description()` in `scripts/create_repo_from_issue.py` collapses newlines into single spaces and, when the collapsed text exceeds `DESCRIPTION_MAX` (350), cuts at the last word boundary and appends `…`. Only the About field is shortened; the README and the index keep the complete text, and the success comment on the request issue reports the shortened length. Before this rule existed, a 353-character description reached `gh repo create` unchanged and failed the job with `GraphQL: Description cannot be more than 350 characters (createRepository)`.
+
+Because an index entry is a Markdown table row, `awesome_index_row()` writes the description through `markdown_cell()`: newlines collapse to spaces and `|` is escaped as `\|`, so a multi-line description can never split the row or add a column.
+
 ## Required secret
 
 Add `ORG_ADMIN_TOKEN` to this repository's Actions secrets.

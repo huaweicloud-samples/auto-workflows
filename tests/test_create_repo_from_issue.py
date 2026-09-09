@@ -1,24 +1,65 @@
 import io
 import re
+import tempfile
 import unittest
 from contextlib import redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
 
-from scripts import authorize_repo_approval
+from scripts import authorize_repo_approval, create_repo_from_issue
 from scripts.create_repo_from_issue import (
+    DESCRIPTION_MAX,
     SCENARIO_DOC_URL,
+    TRUNCATION_MARK,
     VALID_SCENARIOS,
     authorize_approval,
+    awesome_index_row,
+    create_base_repository,
     is_organization_owner,
+    markdown_cell,
     normalize_scenario,
     parse_request,
     readme_template,
     remove_issue_label,
     resolve_request_teams,
     resolve_team_slugs,
+    shorten_description,
     split_items,
     split_team_items,
+)
+
+
+def issue_event(description: str, scenario: str = "internet", repo_name: str = "example-sample") -> dict:
+    """Build a minimal repository request event carrying the given description."""
+    return {
+        "issue": {
+            "body": "\n".join(
+                [
+                    "### Repository name",
+                    repo_name,
+                    "### Scenario",
+                    scenario,
+                    "### Team",
+                    "sample-maintainers",
+                    "### Description",
+                    description,
+                    "### CODEOWNERS",
+                    "_No response_",
+                    "### Required CI status check",
+                    "ci",
+                ]
+            )
+        }
+    }
+
+
+# The description from the request that failed with
+# "GraphQL: Description cannot be more than 350 characters (createRepository)".
+INCIDENT_DESCRIPTION = (
+    "Real-time image optimization workflow based on Huawei Cloud CDN + FunctionGraph + OBS. "
+    "Original images are uploaded to OBS buckets and distributed globally via CDN; when cache misses, "
+    "FunctionGraph triggers real-time compression/format conversion (WebP/AVIF/thumbnails), writes results "
+    "back to OBS and caches them in CDN, balancing performance and cost."
 )
 
 
@@ -173,6 +214,121 @@ class ScenarioTests(unittest.TestCase):
             readme,
         )
         self.assertNotIn("## Scenario", readme)
+
+
+class DescriptionLimitTests(unittest.TestCase):
+    """Regression tests for the 353-character description that broke `gh repo create`."""
+
+    ORG = "huaweicloud-samples"
+    LONG_DESCRIPTION = INCIDENT_DESCRIPTION
+
+    def event_with_description(self, description: str) -> dict:
+        return issue_event(description)
+
+    def test_incident_description_really_exceeds_the_github_limit(self) -> None:
+        self.assertGreater(len(self.LONG_DESCRIPTION), DESCRIPTION_MAX)
+
+    def test_issue_template_documents_the_description_limit(self) -> None:
+        template = Path(".github/ISSUE_TEMPLATE/new-repo-request.yml").read_text(encoding="utf-8")
+        form = __import__("yaml").safe_load(template)
+        field = next(item for item in form["body"] if item.get("id") == "description")
+
+        self.assertTrue(field["validations"]["required"])
+        self.assertIn(str(DESCRIPTION_MAX), field["attributes"]["description"])
+        self.assertIn("README", field["attributes"]["description"])
+
+    def test_shortens_at_a_word_boundary_without_inventing_text(self) -> None:
+        collapsed = " ".join(self.LONG_DESCRIPTION.split())
+        shortened = shorten_description(self.LONG_DESCRIPTION)
+        body = shortened[: -len(TRUNCATION_MARK)]
+
+        self.assertLessEqual(len(shortened), DESCRIPTION_MAX)
+        self.assertTrue(shortened.endswith(TRUNCATION_MARK))
+        self.assertTrue(collapsed.startswith(body))
+        # The cut lands on a space, so the last visible word stays complete.
+        self.assertEqual(collapsed[len(body)], " ")
+        self.assertFalse(body.endswith((",", ";", ":", ".")))
+
+    def test_short_descriptions_survive_and_newlines_collapse(self) -> None:
+        self.assertEqual(shorten_description("Example repository"), "Example repository")
+        self.assertEqual(shorten_description("Line one\n\n  line two  "), "Line one line two")
+        self.assertEqual(len(shorten_description("a" * DESCRIPTION_MAX)), DESCRIPTION_MAX)
+
+    def test_single_long_token_falls_back_to_a_hard_cut(self) -> None:
+        shortened = shorten_description("x" * (DESCRIPTION_MAX + 50))
+
+        self.assertEqual(len(shortened), DESCRIPTION_MAX)
+        self.assertTrue(shortened.endswith(TRUNCATION_MARK))
+
+    def test_parse_request_keeps_full_text_for_readme_and_shortens_about(self) -> None:
+        request = parse_request(self.event_with_description(self.LONG_DESCRIPTION), self.ORG)
+
+        self.assertEqual(request.description, self.LONG_DESCRIPTION)
+        self.assertLessEqual(len(request.repo_description), DESCRIPTION_MAX)
+        self.assertIn(self.LONG_DESCRIPTION, readme_template(request, self.ORG))
+
+    def test_repository_creation_passes_the_shortened_description_to_gh(self) -> None:
+        request = parse_request(self.event_with_description(self.LONG_DESCRIPTION), self.ORG)
+        commands: list[list[str]] = []
+
+        with tempfile.TemporaryDirectory() as workspace:
+            with (
+                patch.object(create_repo_from_issue.tempfile, "mkdtemp", return_value=workspace),
+                patch.object(
+                    create_repo_from_issue,
+                    "run",
+                    side_effect=lambda cmd, **kwargs: commands.append(list(cmd)),
+                ),
+                patch.object(create_repo_from_issue, "client_repo_exists", return_value=False),
+                patch.object(
+                    create_repo_from_issue,
+                    "authenticated_repo_url",
+                    return_value="https://example.invalid/repo.git",
+                ),
+            ):
+                create_base_repository(request, self.ORG, "token")
+
+        create_command = next(cmd for cmd in commands if cmd[:3] == ["gh", "repo", "create"])
+        passed = create_command[create_command.index("--description") + 1]
+
+        self.assertEqual(passed, request.repo_description)
+        self.assertLessEqual(len(passed), DESCRIPTION_MAX)
+
+
+class AwesomeIndexRowTests(unittest.TestCase):
+    """The index entry is a Markdown table row, so the description must stay on one line."""
+
+    ORG = "huaweicloud-samples"
+
+    @staticmethod
+    def cells(row: str) -> list[str]:
+        return re.split(r"(?<!\\)\|", row.strip())
+
+    def test_multi_line_description_stays_on_one_row(self) -> None:
+        request = parse_request(issue_event("Line one\nLine two\n\nLine three"), self.ORG)
+        row = awesome_index_row(request, self.ORG)
+
+        self.assertEqual(row.count("\n"), 1)
+        self.assertTrue(row.startswith("| [example-sample](https://github.com/huaweicloud-samples/example-sample) | "))
+        self.assertTrue(row.endswith("| incubating |\n"))
+        self.assertIn("Line one Line two Line three", row)
+        self.assertEqual(len(self.cells(row)), 6)
+
+    def test_pipe_characters_are_escaped_instead_of_adding_columns(self) -> None:
+        request = parse_request(issue_event("CDN | OBS | FunctionGraph"), self.ORG)
+        row = awesome_index_row(request, self.ORG)
+
+        self.assertIn(r"CDN \| OBS \| FunctionGraph", row)
+        self.assertEqual(len(self.cells(row)), 6)
+        self.assertEqual(markdown_cell("a|b"), r"a\|b")
+
+    def test_long_description_is_kept_in_full(self) -> None:
+        request = parse_request(issue_event(INCIDENT_DESCRIPTION), self.ORG)
+        row = awesome_index_row(request, self.ORG)
+
+        self.assertIn(INCIDENT_DESCRIPTION, row)
+        self.assertNotIn(TRUNCATION_MARK, row)
+        self.assertEqual(len(self.cells(row)), 6)
 
 
 class OrganizationOwnerAuthorizationTests(unittest.TestCase):

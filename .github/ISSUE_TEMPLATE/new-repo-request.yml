@@ -56,7 +56,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: Short repository description used in GitHub and the awesome index.
+      description: "Short repository description used for the GitHub About field (350 characters max) and the awesome index. Longer text is not rejected: the About field is shortened automatically at a word boundary, while the generated README and the awesome index keep the full text."
       placeholder: Sample project for deploying ...
     validations:
       required: true
