@@ -121,6 +121,15 @@ jobs:
           PYTHONIOENCODING: utf-8
         run: python collector.py forks-history
 
+      # ── 固定 30 天滚动窗口报告（每天重新生成）─────────────
+      - name: 30-day rolling report
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          # 清理旧的滚动报告，只保留当日生成的一份（避免仓库堆积）
+          rm -f reports/window_*d_*.csv || true
+          python report_window.py --days 30
+
       # ── 回写数据库（唯一长期存储，traffic 只活 14 天）─────
       # 注意：defaults 的 working-directory 是 collector/，git 操作要回仓库根
       - name: Commit data
