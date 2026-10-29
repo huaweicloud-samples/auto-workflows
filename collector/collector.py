@@ -492,8 +492,14 @@ def cmd_report(args, token: str | None) -> None:
     else:
         print("  （区间内暂无 fork 增长，或快照天数不足）")
 
-    # 导出
-    out_csv = os.path.join(OUT_DIR, f"report_{s}_{e}.csv")
+    # 导出：单文件全量（DB 永久累积，不滚动删除）
+    # 文件名用实际数据范围，避免 --days 与实际不符造成误读
+    span = conn.execute(
+        "SELECT MIN(date), MAX(date), COUNT(DISTINCT date) FROM repo_traffic_daily"
+        " WHERE date BETWEEN ? AND ?", (s, e)
+    ).fetchone()
+    actual_days = span[2] or 0
+    out_csv = os.path.join(OUT_DIR, f"report_all_{span[0]}_{span[1]}_{actual_days}d.csv")
     with open(out_csv, "w", newline="", encoding="utf-8-sig") as fh:
         w = csv.writer(fh)
         w.writerow(["repo", "views", "unique_visitors_daily_sum", "clones", "unique_cloners_daily_sum"])
@@ -503,6 +509,8 @@ def cmd_report(args, token: str | None) -> None:
                GROUP BY repo ORDER BY SUM(views) DESC""", (s, e)
         ).fetchall())
     print(f"\n明细已导出: {out_csv}")
+    print(f"  （实际覆盖 {actual_days} 天：{span[0]} ~ {span[1]}；"
+          f"请求区间 {args.days} 天，差额为采集启动前缺失的数据）")
     conn.close()
 
 
