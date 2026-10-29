@@ -1,0 +1,12 @@
+# Shell 脚本必须是 LF，否则在 Linux runner 上 bash 会报错
+*.sh text eol=lf
+
+# Python 用 LF
+*.py text eol=lf
+
+# YAML 用 LF
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# SQLite 数据库按二进制处理
+*.db binary

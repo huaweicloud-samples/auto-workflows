@@ -1,0 +1,133 @@
+name: Collect traffic & forks
+
+# 云端定时采集 huaweicloud-samples 的访问量 / fork 数据。
+# 完全不依赖本地机器 —— GitHub 服务器每天自己跑。
+#
+# 鉴权：GitHub App（hwc-traffic-collector, App ID 5522782）
+#   · 本仓库 Variables 需设 APP_ID
+#   · 本仓库 Secrets 需设 APP_PRIVATE_KEY
+
+on:
+  schedule:
+    # 每天 01:17 UTC = 09:17 北京时间。避开整点减少排队。
+    # GitHub cron 有 5-30 分钟抖动，按日聚合不受影响。
+    - cron: '17 1 * * *'
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: '回溯补齐（重扫已有 fork 历史）'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write            # 需要 commit 数据库回仓库
+
+concurrency:
+  group: traffic-collector
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: collector
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # ── 鉴权：App 优先，PAT 兜底 ───────────────────────────
+      - name: Mint token via GitHub App
+        id: app-token
+        if: ${{ vars.APP_ID != '' }}
+        uses: actions/create-github-app-token@v3
+        with:
+          app-id: ${{ vars.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: huaweicloud-samples
+
+      - name: Resolve token
+        id: tok
+        env:
+          APP_TOKEN: ${{ steps.app-token.outputs.token }}
+          PAT: ${{ secrets.ORG_OWNER_PAT }}
+        run: |
+          set -euo pipefail
+          if [ -n "${APP_TOKEN:-}" ]; then
+            echo "::add-mask::$APP_TOKEN"
+            echo "token=$APP_TOKEN" >> "$GITHUB_OUTPUT"
+            echo "mode=github-app"  >> "$GITHUB_OUTPUT"
+          elif [ -n "${PAT:-}" ]; then
+            echo "::add-mask::$PAT"
+            echo "token=$PAT" >> "$GITHUB_OUTPUT"
+            echo "mode=pat" >> "$GITHUB_OUTPUT"
+          else
+            echo "::error::未配置鉴权：请设置 vars.APP_ID + secrets.APP_PRIVATE_KEY，或 secrets.ORG_OWNER_PAT"
+            exit 1
+          fi
+
+      # ── 自检：权限不对立刻失败，不写空数据 ─────────────────
+      - name: Preflight
+        env:
+          GITHUB_TOKEN: ${{ steps.tok.outputs.token }}
+        run: bash scripts/preflight.sh
+
+      # ── 采集 ───────────────────────────────────────────────
+      - name: Collect
+        env:
+          GITHUB_TOKEN: ${{ steps.tok.outputs.token }}
+          PYTHONIOENCODING: utf-8
+        run: python collector.py collect
+
+      - name: Backfill fork history
+        if: ${{ github.event.inputs.backfill == 'true' || github.run_number == 1 }}
+        env:
+          GITHUB_TOKEN: ${{ steps.tok.outputs.token }}
+          PYTHONIOENCODING: utf-8
+        run: python collector.py forks-history
+
+      # ── 回写数据库（唯一长期存储，traffic 只活 14 天）─────
+      # 注意：defaults 的 working-directory 是 collector/，git 操作要回仓库根
+      - name: Commit data
+        working-directory: .
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A collector/hwc_traffic.db collector/reports/
+          if git diff --staged --quiet; then
+            echo "无变更"
+          else
+            git commit -m "data: $(date -u +%Y-%m-%d) traffic & forks [skip ci]"
+            git push
+          fi
+
+      - name: Upload artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: traffic-db-${{ github.run_number }}
+          path: |
+            collector/hwc_traffic.db
+            collector/reports/
+          retention-days: 90
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## 采集结果"
+            echo "- 鉴权: \`${{ steps.tok.outputs.mode }}\`"
+            echo "- 运行号: #${{ github.run_number }}"
+            echo '```'
+            python collector.py status 2>&1 | head -30 || true
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

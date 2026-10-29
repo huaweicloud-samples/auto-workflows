@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# 敏感文件（绝不入库）
+config.json
+*.pem
+.env
+.env.*
+
+# 临时产物
+tmp/
+*.rar
+*.zip
+
+# 本地报告缓存（reports/ 里的 CSV 是要入库的，见 collector/.gitignore）
+outputs/*.log
