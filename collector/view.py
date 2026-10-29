@@ -8,18 +8,38 @@
   python view.py forks-new 30    # 最近 30 天新增 fork
   python view.py repo <名字>     # 单仓库详情
   python view.py export          # 导出全部为 CSV
+
+指定其他数据库（如从 Actions Artifact 解压出来的）：
+  方法一：python view.py --db "E:\\path\\hwc_traffic.db"
+  方法二：set HWC_DB=E:\\path\\hwc_traffic.db  然后 python view.py
 """
 import sqlite3
 import sys
 import os
 from datetime import datetime, timedelta, timezone
 
-DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), "hwc_traffic.db")
+
+def _resolve_db():
+    # 优先级：--db 参数 > 环境变量 HWC_DB > 脚本同目录
+    for i, a in enumerate(sys.argv):
+        if a in ("--db", "-d") and i + 1 < len(sys.argv):
+            return sys.argv[i + 1], True
+    if os.environ.get("HWC_DB"):
+        return os.environ["HWC_DB"], False
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), "hwc_traffic.db"), False
+
+
+DB, _strip_db = _resolve_db()
+if _strip_db:
+    for _i, _a in enumerate(sys.argv):
+        if _a in ("--db", "-d"):
+            del sys.argv[_i:_i + 2]
+            break
 
 
 def conn():
     if not os.path.exists(DB):
-        sys.exit("数据库不存在: %s" % DB)
+        sys.exit("数据库不存在: %s\n  提示: 用 --db 参数或环境变量 HWC_DB 指定路径" % DB)
     c = sqlite3.connect(DB)
     c.row_factory = sqlite3.Row
     return c
