@@ -74,18 +74,39 @@ jobs:
             exit 1
           fi
 
-      # ── 自检：权限不对立刻失败，不写空数据 ─────────────────
+      # ── 自检：区分「致命」(token 无效/枚举失败) 与「降级」(无 traffic 权限)
+      #    无 traffic 时仍继续采 forks/stars —— 公开数据，pull 权限就够
       - name: Preflight
+        id: preflight
         env:
           GITHUB_TOKEN: ${{ steps.tok.outputs.token }}
-        run: bash scripts/preflight.sh
+        run: |
+          set +e
+          bash scripts/preflight.sh
+          rc=$?
+          set -e
+          if [ $rc -eq 0 ]; then
+            echo "traffic_ok=true" >> "$GITHUB_OUTPUT"
+          elif [ $rc -eq 2 ]; then
+            # 2 = 仅 traffic 不可用，其余正常 → 降级继续
+            echo "traffic_ok=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::traffic 不可用，本次仅采集 forks/stars"
+          else
+            echo "::error::预检失败（token 无效或无法枚举仓库）"
+            exit 1
+          fi
 
       # ── 采集 ───────────────────────────────────────────────
       - name: Collect
         env:
           GITHUB_TOKEN: ${{ steps.tok.outputs.token }}
           PYTHONIOENCODING: utf-8
-        run: python collector.py collect
+        run: |
+          if [ "${{ steps.preflight.outputs.traffic_ok }}" = "true" ]; then
+            python collector.py collect
+          else
+            python collector.py collect --no-traffic
+          fi
 
       - name: Backfill fork history
         if: ${{ github.event.inputs.backfill == 'true' || github.run_number == 1 }}

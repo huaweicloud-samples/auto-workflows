@@ -61,8 +61,8 @@ state=$(echo "$mem_json" | jget state)
 echo "     $ORG: state=${state:-?} role=${role:-?}"
 case "$role" in
   admin)  echo "     ✓ org owner → 对全部仓库有 admin，traffic 应可用" ;;
-  member) echo "     ⚠ 仅 member → traffic 需逐仓库 push/admin，可能全部 403" ;;
-  *)      echo "     ⚠ 无法判定角色" ;;
+  member) echo "     · member（traffic 是否能读取决于该仓库的 push/admin，见第 4 步）" ;;
+  *)      echo "     · 无法判定角色（token 可能缺 read:org），继续测 traffic" ;;
 esac
 
 # ---- 3. 枚举仓库 ----
@@ -102,13 +102,23 @@ else
   echo "     traffic 需要目标仓库的 push/admin 权限。请确认："
   echo "       • GitHub App 已授予 Administration: Read，且已安装到 $ORG"
   echo "       • 或 PAT 所属账号是 $ORG 的 owner / 目标仓库的 admin"
-  fail=1
+  traffic_fail=1
 fi
 
 echo ""
 echo "══════════ 自检结束 ══════════"
+
+# 退出码约定：
+#   0 = 全部可用（traffic + forks）
+#   2 = 仅 traffic 不可用，forks/stars 仍可采（降级模式）
+#   1 = 致命错误（token 无效 / 无法枚举仓库），不应继续
 if [ "$fail" -ne 0 ]; then
-  echo "❌ 自检未通过，终止采集（避免写入空数据）"
+  echo "❌ 致命错误：token 无效或无法枚举仓库，终止"
   exit 1
 fi
+if [ "${traffic_fail:-0}" -ne 0 ]; then
+  echo "⚠ traffic 不可用，将降级为仅采集 forks/stars"
+  exit 2
+fi
 echo "✅ 全部通过，开始采集"
+exit 0

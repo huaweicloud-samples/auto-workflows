@@ -234,7 +234,11 @@ def cmd_collect(args, token: str) -> None:
     # traffic 需要仓库 push/admin 权限。组织把 member 降为 read 后此接口会 403，
     # 但 forks/stars 是公开数据，只要有 pull 权限（甚至匿名 + 限额）就能采。
     traffic_ok = True
-    if not args.no_traffic:
+    if args.no_traffic:
+        # 显式指定跳过 traffic：直接降级，不做探测
+        traffic_ok = False
+        print("      已指定 --no-traffic，跳过 traffic，仅采集 forks/stars")
+    else:
         err, code = api_check(f"/repos/{ORG}/{repos[0]['name']}/traffic/views?per=day", token)
         if code != 200:
             traffic_ok = False
