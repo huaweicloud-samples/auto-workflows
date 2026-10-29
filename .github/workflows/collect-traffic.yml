@@ -58,19 +58,25 @@ jobs:
         id: tok
         env:
           APP_TOKEN: ${{ steps.app-token.outputs.token }}
-          PAT: ${{ secrets.ORG_OWNER_PAT }}
+          OWNER_PAT: ${{ secrets.ORG_OWNER_PAT }}
+          ADMIN_TOKEN: ${{ secrets.ORG_ADMIN_TOKEN }}
         run: |
           set -euo pipefail
+          # 优先级：App（最短寿命）> 专用 owner PAT > 仓库既有 ORG_ADMIN_TOKEN
           if [ -n "${APP_TOKEN:-}" ]; then
             echo "::add-mask::$APP_TOKEN"
             echo "token=$APP_TOKEN" >> "$GITHUB_OUTPUT"
             echo "mode=github-app"  >> "$GITHUB_OUTPUT"
-          elif [ -n "${PAT:-}" ]; then
-            echo "::add-mask::$PAT"
-            echo "token=$PAT" >> "$GITHUB_OUTPUT"
-            echo "mode=pat" >> "$GITHUB_OUTPUT"
+          elif [ -n "${OWNER_PAT:-}" ]; then
+            echo "::add-mask::$OWNER_PAT"
+            echo "token=$OWNER_PAT" >> "$GITHUB_OUTPUT"
+            echo "mode=pat-owner" >> "$GITHUB_OUTPUT"
+          elif [ -n "${ADMIN_TOKEN:-}" ]; then
+            echo "::add-mask::$ADMIN_TOKEN"
+            echo "token=$ADMIN_TOKEN" >> "$GITHUB_OUTPUT"
+            echo "mode=pat-existing(ORG_ADMIN_TOKEN)" >> "$GITHUB_OUTPUT"
           else
-            echo "::error::未配置鉴权：请设置 vars.APP_ID + secrets.APP_PRIVATE_KEY，或 secrets.ORG_OWNER_PAT"
+            echo "::error::未配置鉴权：请设置 vars.APP_ID + secrets.APP_PRIVATE_KEY，或 secrets.ORG_OWNER_PAT，或复用 secrets.ORG_ADMIN_TOKEN"
             exit 1
           fi
 
