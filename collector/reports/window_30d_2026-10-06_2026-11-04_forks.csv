@@ -31,6 +31,7 @@ ai-openhands-image,2,0,0
 iaas-katib-image,2,0,0
 iaas-karpenter-provider-huawei,2,2,6
 cloud-operations-regionless-dataset,1,2,0
+security-encryption-sdk-java,1,1,0
 cloud-operations-solution-batch-reinstall-os,1,0,0
 cloud-foundation-huaweicloudtoolkit,1,0,0
 migration-flink-cdc,1,0,0
@@ -179,7 +180,6 @@ cloud-operations-solution-rewarding-cloud-native-project,0,0,0
 iaas-obs-code-samples-java,0,0,0
 iaas-obs-code-samples-python,0,0,0
 iaas-obs-code-samples-go,0,0,0
-security-encryption-sdk-java,0,1,0
 security-secretsmanager-jdbc-sdk-java,0,0,0
 cloud-foundation-solution-accessing-obs-through-nginx,0,0,0
 ai-solution-building-high-availability-aigc-applications-with-stable-diffusion,0,0,0
@@ -268,7 +268,7 @@ distributed-x-infrastructure-serverless-activity-crud,0,0,0
 deterministic-operations-css-ces-alarm-checker,0,0,0
 database-sea-orm-gaussdb,0,0,0
 database-dapper-orm-gaussdb,0,0,0
-internet-react-cors-spa,0,0,0
+internet-react-cors-spa,0,0,1
 internet-elastic-beanstalk-express-js,0,0,1
 internet-cce-fluxv2-gitops-example,0,0,1
 government-rekognition-virtual-proctor,0,0,1
