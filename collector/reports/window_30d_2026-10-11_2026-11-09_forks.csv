@@ -155,7 +155,7 @@ database-pygsvector,1,1,0
 database-llama-index-vector-stores-gaussdb,1,0,0
 cloudnative-harbor,1,0,0
 ai-customer_insight_deep_research,1,0,1
-solution-as-code-internal,1,0,0
+solution-as-code-internal,1,0,1
 Myolotrain-sac,1,0,0
 retail-solution-E-commerce-shop-based-magento,0,0,0
 cloud-operations-solution-deploy-a-source-code-build-system-based-on-jenkins,0,0,0
