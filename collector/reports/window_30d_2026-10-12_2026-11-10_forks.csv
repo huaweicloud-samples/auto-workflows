@@ -8,7 +8,7 @@ database-gaussdb-dotnet,7,12,2
 cloudnative-cluster-api-provider-huawei,6,8,11
 database-gaussdb-python,6,4,2
 database-gaussdb-go,6,19,1
-cloudrobo-samples,6,2,2
+cloudrobo-samples,6,2,1
 database-gaussdb-rust,5,3,2
 ai-dify-tools,5,15,2
 database-gaussdb-flink-connector-jdbc,5,7,1
@@ -155,7 +155,7 @@ database-pygsvector,1,1,0
 database-llama-index-vector-stores-gaussdb,1,0,0
 cloudnative-harbor,1,0,0
 ai-customer_insight_deep_research,1,0,1
-solution-as-code-internal,1,0,1
+solution-as-code-internal,1,0,0
 Myolotrain-sac,1,0,0
 retail-solution-E-commerce-shop-based-magento,0,0,0
 cloud-operations-solution-deploy-a-source-code-build-system-based-on-jenkins,0,0,0
@@ -191,7 +191,7 @@ cloud-operations-solution-building-a-personal-website-based-on-wordpress,0,1,0
 huaweicloud-app-orchestration-hcl,0,0,0
 cloudnative-image-builder,0,1,0
 application-modernization-hibernate-orm,0,0,0
-database-druid,0,0,0
+database-druid,0,0,1
 n8n-image,0,0,0
 fastgpt-image,0,0,0
 cloud-operations-scenario-specific-solution,0,0,0
@@ -222,7 +222,7 @@ iaas-cloud-aercurity-assessment,0,0,0
 paas-cce-resource-manager,0,2,0
 ai-insight-tools,0,2,0
 migration-rvtoolsvmware,0,2,0
-auto-workflows,0,0,13
+auto-workflows,0,0,14
 .github,0,0,1
 database-awesome-huaweicloud,0,0,0
 example-samples,0,0,0
@@ -242,7 +242,7 @@ database-langchain-gaussdb-sync,0,0,0
 database-n8n-gaussdb,0,0,0
 argo-workflow-installation-for-cce,0,0,0
 sac-cicd,0,0,0
-chrome-template-editor,0,0,0
+chrome-template-editor,0,0,1
 enterprise-serverless-todo,0,0,0
 enterprise-observability,0,0,0
 government-tak-server,0,0,0
@@ -288,3 +288,9 @@ data-integration-s3-cross-account-replication,0,0,0
 data-integration-dicom-metadata-extractor,0,0,0
 distributed-x-infrastructure-video-streaming,0,0,0
 data-integration-sample-s3-hybrid-cache,0,0,0
+distributed-x-infrastructure-scheduled-web-scraper-layer,0,0,1
+distributed-x-infrastructure-serverless-crud-api,0,0,1
+cloud-native-security-obs-upload-virus-scanning,0,0,1
+internet-serverless-form-submission-notification,0,0,1
+internet-obs-signed-url-upload,0,0,1
+application-intelligence-story-generation,0,0,1
