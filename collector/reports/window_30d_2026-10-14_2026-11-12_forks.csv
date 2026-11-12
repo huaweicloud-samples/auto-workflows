@@ -1,5 +1,5 @@
 ﻿repo,forks,stars,open_issues
-iaas-mcp-server,24,49,21
+iaas-mcp-server,24,50,21
 database-gaussdb-drivers,16,22,2
 database-gaussdb-ecosystem,16,9,5
 ai-huaweicloud-agent,10,4,0
@@ -33,7 +33,7 @@ iaas-karpenter-provider-huawei,2,2,6
 cloud-operations-regionless-dataset,1,2,0
 security-encryption-sdk-java,1,1,0
 cloud-operations-solution-batch-reinstall-os,1,0,0
-cloud-foundation-huaweicloudtoolkit,1,0,0
+cloud-foundation-huaweicloudtoolkit,1,1,0
 migration-flink-cdc,1,0,0
 ai-agent-architecture,1,0,0
 database-flair-image,1,0,0
@@ -163,7 +163,7 @@ cloud-foundation-solution-cdn-download-acceleration,0,0,0
 cloud-operations-solution-cloud-backup,0,0,0
 cloud-solution-operations-global-data-transfer-acceleration,0,0,0
 database-solution-oracle-rac-in-cloud,0,0,0
-database-solution-search-acceleration-based-css,0,0,0
+database-solution-search-acceleration-based-css,0,1,0
 cloudnative-solution-application-containerization-to-the-cloud,0,0,0
 security-solution-build-a-WAF-based-on-modsecurity,0,1,0
 database-solution-deploy-a-highly-available-mongodb,0,0,0
@@ -172,7 +172,7 @@ database-solution-deploy-a-highly-available-mha-mysql-cluster,0,0,0
 security-solution-harden-for-ssh-login-to-linux-ecs,0,0,0
 cloud-operations-solution-serverless-real-time-log-analysis,0,0,0
 cloud-operations-solution-website-om-based-on-log-tank-service,0,0,0
-cloud-foundation-solution-scheduled-changing-instances-specifications,0,0,0
+cloud-foundation-solution-scheduled-changing-instances-specifications,0,1,0
 cloud-operations-solution-scheduled-power-on-and-power-off,0,0,0
 cloud-operations-solution-rapid-deployment-of-sap-s4hana-cloud-environment,0,0,0
 cloud-operations-solution-serverless-video-transcoding,0,0,0
@@ -182,7 +182,7 @@ iaas-obs-code-samples-java,0,0,0
 iaas-obs-code-samples-python,0,0,0
 iaas-obs-code-samples-go,0,0,0
 security-secretsmanager-jdbc-sdk-java,0,0,0
-cloud-foundation-solution-accessing-obs-through-nginx,0,0,0
+cloud-foundation-solution-accessing-obs-through-nginx,0,1,0
 ai-solution-building-high-availability-aigc-applications-with-stable-diffusion,0,0,0
 cloud-foundation-solution-backend-instances-to-an-elb-across-vpcs,0,0,0
 cloudnative-huaweicloud-harbor-obs,0,0,0
@@ -228,7 +228,7 @@ database-awesome-huaweicloud,0,0,0
 example-samples,0,0,0
 migration-to-huawei-cloud,0,1,0
 database-gaussdb-sqlalchemy-python-driver,0,0,0
-cloudoperation-resource-monitor-dashboard,0,3,0
+cloudoperation-resource-monitor-dashboard,0,4,0
 database-hibernate-orm,0,0,0
 cloudnative-everest-elb-controller,0,0,1
 cloudnative-vpc-hub,0,0,0
@@ -251,7 +251,7 @@ internet-obs-image-processing,0,0,0
 enterprise-synthetic-document-generator,0,0,0
 enterprise-knowledge-graph-visualization,0,0,0
 database-lightrag-gaussdb,0,0,0
-modelarts-vllm-ascend-deploy-skill,0,0,1
+modelarts-vllm-ascend-deploy-skill,0,1,1
 database-crewai-gaussdb,0,0,0
 database-superagi-gaussdb,0,1,0
 media-cloud-serverless-architecture,0,0,0
@@ -274,7 +274,7 @@ internet-elastic-beanstalk-express-js,0,0,1
 internet-cce-fluxv2-gitops-example,0,0,1
 government-rekognition-virtual-proctor,0,0,1
 internet-agent-trace-exporter,0,0,1
-enterprise-security-review-tool,0,0,1
+enterprise-security-review-tool,0,1,1
 enterprise-rds-mysql-upgrade-assistant,0,0,1
 enterprise-ecs-cce-managed-nodes-tco-calculator,0,0,1
 enterprise-mcp-server-obs,0,0,1
