@@ -8,7 +8,7 @@ database-gaussdb-dotnet,7,12,2
 cloudnative-cluster-api-provider-huawei,6,8,11
 database-gaussdb-python,6,4,2
 database-gaussdb-go,6,19,1
-cloudrobo-samples,6,2,1
+cloudrobo-samples,6,2,2
 database-gaussdb-rust,5,3,2
 ai-dify-tools,5,15,2
 database-gaussdb-flink-connector-jdbc,5,7,1
@@ -304,3 +304,4 @@ internet-content-aggregator,0,0,0
 distributed-x-infrastructure-php-serverless-examples,0,0,0
 cloud-native-security-resource-control-policies,0,0,0
 cloud-native-security-db-audit-log-serverless,0,0,0
+hw-kms-xksproxy-api-spec,0,0,0
