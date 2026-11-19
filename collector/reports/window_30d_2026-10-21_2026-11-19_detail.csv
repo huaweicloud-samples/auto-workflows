@@ -1,5 +1,4 @@
 ﻿repo,date,views,unique_visitors,clones,unique_cloners
-.github,2026-10-20,0,0,2,2
 .github,2026-10-21,0,0,0,0
 .github,2026-10-22,0,0,0,0
 .github,2026-10-23,0,0,0,0
@@ -28,7 +27,7 @@
 .github,2026-11-15,0,0,1,1
 .github,2026-11-16,0,0,0,0
 .github,2026-11-17,0,0,0,0
-HuaweiCloud-Airflow-provider,2026-10-20,0,0,0,0
+.github,2026-11-18,0,0,3,3
 HuaweiCloud-Airflow-provider,2026-10-21,0,0,0,0
 HuaweiCloud-Airflow-provider,2026-10-22,0,0,0,0
 HuaweiCloud-Airflow-provider,2026-10-23,0,0,0,0
@@ -57,6 +56,7 @@ HuaweiCloud-Airflow-provider,2026-11-14,0,0,17,1
 HuaweiCloud-Airflow-provider,2026-11-15,0,0,10,1
 HuaweiCloud-Airflow-provider,2026-11-16,1,1,7,1
 HuaweiCloud-Airflow-provider,2026-11-17,0,0,2,1
+HuaweiCloud-Airflow-provider,2026-11-18,0,0,13,3
 Myolotrain-sac,2026-10-22,0,0,0,0
 Myolotrain-sac,2026-10-23,0,0,0,0
 Myolotrain-sac,2026-10-24,0,0,0,0
@@ -83,7 +83,8 @@ Myolotrain-sac,2026-11-13,0,0,0,0
 Myolotrain-sac,2026-11-14,0,0,0,0
 Myolotrain-sac,2026-11-15,0,0,0,0
 Myolotrain-sac,2026-11-16,0,0,0,0
-ai-agent-architecture,2026-10-20,0,0,0,0
+Myolotrain-sac,2026-11-17,0,0,0,0
+Myolotrain-sac,2026-11-18,0,0,0,0
 ai-agent-architecture,2026-10-21,0,0,0,0
 ai-agent-architecture,2026-10-22,0,0,1,1
 ai-agent-architecture,2026-10-23,0,0,0,0
@@ -111,7 +112,8 @@ ai-agent-architecture,2026-11-13,0,0,3,2
 ai-agent-architecture,2026-11-14,0,0,0,0
 ai-agent-architecture,2026-11-15,0,0,1,1
 ai-agent-architecture,2026-11-16,0,0,0,0
-ai-chatrwkv-image,2026-10-20,0,0,0,0
+ai-agent-architecture,2026-11-17,0,0,0,0
+ai-agent-architecture,2026-11-18,0,0,7,5
 ai-chatrwkv-image,2026-10-21,0,0,2,2
 ai-chatrwkv-image,2026-10-22,0,0,2,2
 ai-chatrwkv-image,2026-10-23,0,0,2,1
@@ -140,7 +142,7 @@ ai-chatrwkv-image,2026-11-14,0,0,1,1
 ai-chatrwkv-image,2026-11-15,0,0,0,0
 ai-chatrwkv-image,2026-11-16,0,0,0,0
 ai-chatrwkv-image,2026-11-17,0,0,0,0
-ai-customer_insight_deep_research,2026-10-20,0,0,0,0
+ai-chatrwkv-image,2026-11-18,0,0,4,3
 ai-customer_insight_deep_research,2026-10-21,0,0,3,3
 ai-customer_insight_deep_research,2026-10-22,0,0,1,1
 ai-customer_insight_deep_research,2026-10-23,0,0,0,0
@@ -169,7 +171,7 @@ ai-customer_insight_deep_research,2026-11-14,0,0,5,3
 ai-customer_insight_deep_research,2026-11-15,0,0,1,1
 ai-customer_insight_deep_research,2026-11-16,0,0,0,0
 ai-customer_insight_deep_research,2026-11-17,0,0,0,0
-ai-dify,2026-10-20,0,0,1,1
+ai-customer_insight_deep_research,2026-11-18,0,0,3,2
 ai-dify,2026-10-21,0,0,0,0
 ai-dify,2026-10-22,0,0,0,0
 ai-dify,2026-10-23,0,0,0,0
@@ -198,7 +200,7 @@ ai-dify,2026-11-14,0,0,0,0
 ai-dify,2026-11-15,1,1,0,0
 ai-dify,2026-11-16,0,0,0,0
 ai-dify,2026-11-17,1,1,0,0
-ai-dify-image,2026-10-20,0,0,0,0
+ai-dify,2026-11-18,1,1,0,0
 ai-dify-image,2026-10-21,0,0,0,0
 ai-dify-image,2026-10-22,0,0,1,1
 ai-dify-image,2026-10-23,0,0,0,0
@@ -227,7 +229,7 @@ ai-dify-image,2026-11-14,0,0,1,1
 ai-dify-image,2026-11-15,0,0,0,0
 ai-dify-image,2026-11-16,0,0,0,0
 ai-dify-image,2026-11-17,0,0,0,0
-ai-dify-tools,2026-10-20,0,0,0,0
+ai-dify-image,2026-11-18,0,0,2,2
 ai-dify-tools,2026-10-21,1,1,1,1
 ai-dify-tools,2026-10-22,0,0,3,3
 ai-dify-tools,2026-10-23,0,0,0,0
@@ -256,7 +258,7 @@ ai-dify-tools,2026-11-14,3,3,4,2
 ai-dify-tools,2026-11-15,0,0,1,1
 ai-dify-tools,2026-11-16,2,1,2,1
 ai-dify-tools,2026-11-17,0,0,0,0
-ai-facenet-image,2026-10-20,0,0,0,0
+ai-dify-tools,2026-11-18,2,1,5,4
 ai-facenet-image,2026-10-21,0,0,0,0
 ai-facenet-image,2026-10-22,0,0,2,2
 ai-facenet-image,2026-10-23,0,0,2,2
@@ -285,7 +287,6 @@ ai-facenet-image,2026-11-14,0,0,2,1
 ai-facenet-image,2026-11-15,0,0,0,0
 ai-facenet-image,2026-11-16,0,0,0,0
 ai-facenet-image,2026-11-17,0,0,0,0
-ai-hivisionidphotos-image,2026-10-20,0,0,0,0
 ai-hivisionidphotos-image,2026-10-21,0,0,0,0
 ai-hivisionidphotos-image,2026-10-22,9,1,1,1
 ai-hivisionidphotos-image,2026-10-23,0,0,0,0
@@ -313,7 +314,8 @@ ai-hivisionidphotos-image,2026-11-13,0,0,2,1
 ai-hivisionidphotos-image,2026-11-14,0,0,1,1
 ai-hivisionidphotos-image,2026-11-15,1,1,0,0
 ai-hivisionidphotos-image,2026-11-16,0,0,0,0
-ai-huaweicloud-agent,2026-10-20,0,0,0,0
+ai-hivisionidphotos-image,2026-11-17,0,0,0,0
+ai-hivisionidphotos-image,2026-11-18,0,0,2,2
 ai-huaweicloud-agent,2026-10-21,0,0,0,0
 ai-huaweicloud-agent,2026-10-22,0,0,0,0
 ai-huaweicloud-agent,2026-10-23,0,0,0,0
@@ -343,7 +345,7 @@ ai-huaweicloud-agent,2026-11-15,0,0,0,0
 ai-huaweicloud-agent,2026-11-16,0,0,0,0
 ai-huaweicloud-agent,2026-11-17,0,0,0,0
 ai-huaweicloud-agent,2026-11-18,0,0,0,0
-ai-insight-tools,2026-10-20,0,0,2,2
+ai-huaweicloud-agent,2026-11-19,0,0,0,0
 ai-insight-tools,2026-10-21,0,0,0,0
 ai-insight-tools,2026-10-22,0,0,1,1
 ai-insight-tools,2026-10-23,0,0,2,1
@@ -372,7 +374,7 @@ ai-insight-tools,2026-11-14,0,0,2,1
 ai-insight-tools,2026-11-15,0,0,0,0
 ai-insight-tools,2026-11-16,0,0,0,0
 ai-insight-tools,2026-11-17,0,0,0,0
-ai-internlm-image,2026-10-20,0,0,0,0
+ai-insight-tools,2026-11-18,0,0,0,0
 ai-internlm-image,2026-10-21,0,0,0,0
 ai-internlm-image,2026-10-22,0,0,1,1
 ai-internlm-image,2026-10-23,0,0,1,1
@@ -401,7 +403,7 @@ ai-internlm-image,2026-11-14,0,0,1,1
 ai-internlm-image,2026-11-15,0,0,0,0
 ai-internlm-image,2026-11-16,0,0,0,0
 ai-internlm-image,2026-11-17,0,0,0,0
-ai-kruise-game,2026-10-20,0,0,1,1
+ai-internlm-image,2026-11-18,0,0,5,4
 ai-kruise-game,2026-10-21,0,0,4,4
 ai-kruise-game,2026-10-22,0,0,1,1
 ai-kruise-game,2026-10-23,0,0,0,0
@@ -429,7 +431,8 @@ ai-kruise-game,2026-11-13,1,1,4,4
 ai-kruise-game,2026-11-14,2,2,0,0
 ai-kruise-game,2026-11-15,0,0,0,0
 ai-kruise-game,2026-11-16,0,0,0,0
-ai-langchain-chatchat-image,2026-10-20,0,0,0,0
+ai-kruise-game,2026-11-17,0,0,3,3
+ai-kruise-game,2026-11-18,1,1,0,0
 ai-langchain-chatchat-image,2026-10-21,0,0,1,1
 ai-langchain-chatchat-image,2026-10-22,0,0,1,1
 ai-langchain-chatchat-image,2026-10-23,0,0,0,0
@@ -458,7 +461,7 @@ ai-langchain-chatchat-image,2026-11-14,1,1,1,1
 ai-langchain-chatchat-image,2026-11-15,0,0,0,0
 ai-langchain-chatchat-image,2026-11-16,0,0,0,0
 ai-langchain-chatchat-image,2026-11-17,0,0,0,0
-ai-langflow-image,2026-10-20,0,0,0,0
+ai-langchain-chatchat-image,2026-11-18,3,3,2,2
 ai-langflow-image,2026-10-21,0,0,0,0
 ai-langflow-image,2026-10-22,0,0,1,1
 ai-langflow-image,2026-10-23,0,0,0,0
@@ -487,7 +490,7 @@ ai-langflow-image,2026-11-14,0,0,1,1
 ai-langflow-image,2026-11-15,0,0,1,1
 ai-langflow-image,2026-11-16,0,0,0,0
 ai-langflow-image,2026-11-17,0,0,0,0
-ai-langgraph-image,2026-10-20,0,0,0,0
+ai-langflow-image,2026-11-18,0,0,2,2
 ai-langgraph-image,2026-10-21,0,0,0,0
 ai-langgraph-image,2026-10-22,0,0,1,1
 ai-langgraph-image,2026-10-23,0,0,0,0
@@ -516,7 +519,7 @@ ai-langgraph-image,2026-11-14,0,0,1,1
 ai-langgraph-image,2026-11-15,0,0,0,0
 ai-langgraph-image,2026-11-16,0,0,0,0
 ai-langgraph-image,2026-11-17,0,0,0,0
-ai-llama.cpp-image,2026-10-20,0,0,0,0
+ai-langgraph-image,2026-11-18,0,0,2,2
 ai-llama.cpp-image,2026-10-21,0,0,1,1
 ai-llama.cpp-image,2026-10-22,0,0,1,1
 ai-llama.cpp-image,2026-10-23,0,0,0,0
@@ -545,7 +548,7 @@ ai-llama.cpp-image,2026-11-14,0,0,1,1
 ai-llama.cpp-image,2026-11-15,0,0,0,0
 ai-llama.cpp-image,2026-11-16,2,1,0,0
 ai-llama.cpp-image,2026-11-17,0,0,0,0
-ai-localai-image,2026-10-20,0,0,0,0
+ai-llama.cpp-image,2026-11-18,3,3,2,2
 ai-localai-image,2026-10-21,0,0,1,1
 ai-localai-image,2026-10-22,0,0,1,1
 ai-localai-image,2026-10-23,0,0,0,0
@@ -574,7 +577,7 @@ ai-localai-image,2026-11-14,1,1,1,1
 ai-localai-image,2026-11-15,1,1,0,0
 ai-localai-image,2026-11-16,0,0,0,0
 ai-localai-image,2026-11-17,2,1,0,0
-ai-mcp-server-marketplace,2026-10-20,0,0,2,1
+ai-localai-image,2026-11-18,0,0,2,2
 ai-mcp-server-marketplace,2026-10-21,3,3,0,0
 ai-mcp-server-marketplace,2026-10-22,0,0,1,1
 ai-mcp-server-marketplace,2026-10-23,0,0,0,0
@@ -603,7 +606,7 @@ ai-mcp-server-marketplace,2026-11-14,1,1,2,1
 ai-mcp-server-marketplace,2026-11-15,0,0,1,1
 ai-mcp-server-marketplace,2026-11-16,0,0,0,0
 ai-mcp-server-marketplace,2026-11-17,0,0,0,0
-ai-mlmd-image,2026-10-20,0,0,0,0
+ai-mcp-server-marketplace,2026-11-18,0,0,2,2
 ai-mlmd-image,2026-10-21,0,0,0,0
 ai-mlmd-image,2026-10-22,0,0,1,1
 ai-mlmd-image,2026-10-23,0,0,0,0
@@ -631,7 +634,8 @@ ai-mlmd-image,2026-11-13,0,0,2,1
 ai-mlmd-image,2026-11-14,0,0,2,1
 ai-mlmd-image,2026-11-15,0,0,0,0
 ai-mlmd-image,2026-11-16,0,0,0,0
-ai-mmcv-image,2026-10-20,0,0,0,0
+ai-mlmd-image,2026-11-17,0,0,1,1
+ai-mlmd-image,2026-11-18,0,0,2,2
 ai-mmcv-image,2026-10-21,0,0,0,0
 ai-mmcv-image,2026-10-22,0,0,1,1
 ai-mmcv-image,2026-10-23,0,0,1,1
@@ -660,7 +664,7 @@ ai-mmcv-image,2026-11-14,0,0,2,1
 ai-mmcv-image,2026-11-15,0,0,0,0
 ai-mmcv-image,2026-11-16,0,0,0,0
 ai-mmcv-image,2026-11-17,0,0,0,0
-ai-ncnn-image,2026-10-20,0,0,0,0
+ai-mmcv-image,2026-11-18,0,0,2,2
 ai-ncnn-image,2026-10-21,0,0,0,0
 ai-ncnn-image,2026-10-22,0,0,1,1
 ai-ncnn-image,2026-10-23,0,0,1,1
@@ -689,7 +693,7 @@ ai-ncnn-image,2026-11-14,0,0,1,1
 ai-ncnn-image,2026-11-15,1,1,0,0
 ai-ncnn-image,2026-11-16,0,0,0,0
 ai-ncnn-image,2026-11-17,0,0,0,0
-ai-ollama-image,2026-10-20,0,0,0,0
+ai-ncnn-image,2026-11-18,0,0,2,2
 ai-ollama-image,2026-10-21,0,0,0,0
 ai-ollama-image,2026-10-22,0,0,1,1
 ai-ollama-image,2026-10-23,0,0,0,0
@@ -718,7 +722,7 @@ ai-ollama-image,2026-11-14,0,0,1,1
 ai-ollama-image,2026-11-15,0,0,0,0
 ai-ollama-image,2026-11-16,0,0,0,0
 ai-ollama-image,2026-11-17,0,0,0,0
-ai-openface-image,2026-10-20,0,0,0,0
+ai-ollama-image,2026-11-18,0,0,2,2
 ai-openface-image,2026-10-21,0,0,1,1
 ai-openface-image,2026-10-22,0,0,1,1
 ai-openface-image,2026-10-23,0,0,0,0
@@ -747,7 +751,7 @@ ai-openface-image,2026-11-14,0,0,2,1
 ai-openface-image,2026-11-15,0,0,0,0
 ai-openface-image,2026-11-16,0,0,0,0
 ai-openface-image,2026-11-17,0,0,0,0
-ai-openhands-image,2026-10-20,0,0,0,0
+ai-openface-image,2026-11-18,0,0,2,2
 ai-openhands-image,2026-10-21,0,0,1,1
 ai-openhands-image,2026-10-22,0,0,1,1
 ai-openhands-image,2026-10-23,0,0,0,0
@@ -776,7 +780,7 @@ ai-openhands-image,2026-11-14,0,0,1,1
 ai-openhands-image,2026-11-15,1,1,0,0
 ai-openhands-image,2026-11-16,0,0,0,0
 ai-openhands-image,2026-11-17,0,0,0,0
-ai-openmanus-image,2026-10-20,0,0,0,0
+ai-openhands-image,2026-11-18,3,3,1,1
 ai-openmanus-image,2026-10-21,0,0,1,1
 ai-openmanus-image,2026-10-22,0,0,2,1
 ai-openmanus-image,2026-10-23,1,1,0,0
@@ -805,7 +809,7 @@ ai-openmanus-image,2026-11-14,1,1,2,1
 ai-openmanus-image,2026-11-15,3,1,0,0
 ai-openmanus-image,2026-11-16,0,0,0,0
 ai-openmanus-image,2026-11-17,2,2,0,0
-ai-openmemory-mcp-image,2026-10-20,0,0,0,0
+ai-openmanus-image,2026-11-18,0,0,3,2
 ai-openmemory-mcp-image,2026-10-21,0,0,0,0
 ai-openmemory-mcp-image,2026-10-22,0,0,1,1
 ai-openmemory-mcp-image,2026-10-23,0,0,0,0
@@ -834,7 +838,7 @@ ai-openmemory-mcp-image,2026-11-14,0,0,1,1
 ai-openmemory-mcp-image,2026-11-15,0,0,0,0
 ai-openmemory-mcp-image,2026-11-16,0,0,0,0
 ai-openmemory-mcp-image,2026-11-17,0,0,0,0
-ai-openwebui-image,2026-10-20,0,0,0,0
+ai-openmemory-mcp-image,2026-11-18,0,0,2,2
 ai-openwebui-image,2026-10-21,0,0,0,0
 ai-openwebui-image,2026-10-22,0,0,1,1
 ai-openwebui-image,2026-10-23,0,0,0,0
@@ -863,7 +867,7 @@ ai-openwebui-image,2026-11-14,0,0,1,1
 ai-openwebui-image,2026-11-15,0,0,0,0
 ai-openwebui-image,2026-11-16,0,0,0,0
 ai-openwebui-image,2026-11-17,0,0,0,0
-ai-paddlespeech-image,2026-10-20,0,0,1,1
+ai-openwebui-image,2026-11-18,0,0,2,2
 ai-paddlespeech-image,2026-10-21,0,0,0,0
 ai-paddlespeech-image,2026-10-22,0,0,1,1
 ai-paddlespeech-image,2026-10-23,0,0,2,2
@@ -891,7 +895,8 @@ ai-paddlespeech-image,2026-11-13,1,1,2,1
 ai-paddlespeech-image,2026-11-14,0,0,2,1
 ai-paddlespeech-image,2026-11-15,0,0,0,0
 ai-paddlespeech-image,2026-11-16,0,0,0,0
-ai-pandas-ai-image,2026-10-20,0,0,0,0
+ai-paddlespeech-image,2026-11-17,1,1,0,0
+ai-paddlespeech-image,2026-11-18,0,0,2,2
 ai-pandas-ai-image,2026-10-21,0,0,0,0
 ai-pandas-ai-image,2026-10-22,0,0,1,1
 ai-pandas-ai-image,2026-10-23,0,0,0,0
@@ -920,7 +925,7 @@ ai-pandas-ai-image,2026-11-14,1,1,2,1
 ai-pandas-ai-image,2026-11-15,0,0,0,0
 ai-pandas-ai-image,2026-11-16,0,0,0,0
 ai-pandas-ai-image,2026-11-17,0,0,0,0
-ai-ragflow,2026-10-20,1,1,0,0
+ai-pandas-ai-image,2026-11-18,0,0,2,2
 ai-ragflow,2026-10-21,0,0,0,0
 ai-ragflow,2026-10-22,0,0,0,0
 ai-ragflow,2026-10-23,1,1,0,0
@@ -949,7 +954,7 @@ ai-ragflow,2026-11-14,0,0,0,0
 ai-ragflow,2026-11-15,0,0,0,0
 ai-ragflow,2026-11-16,1,1,0,0
 ai-ragflow,2026-11-17,0,0,0,0
-ai-scenario-dify-deepseek-ai-agent,2026-10-20,0,0,1,1
+ai-ragflow,2026-11-18,1,1,1,1
 ai-scenario-dify-deepseek-ai-agent,2026-10-21,0,0,0,0
 ai-scenario-dify-deepseek-ai-agent,2026-10-22,0,0,1,1
 ai-scenario-dify-deepseek-ai-agent,2026-10-23,0,0,1,1
@@ -978,7 +983,7 @@ ai-scenario-dify-deepseek-ai-agent,2026-11-14,0,0,2,1
 ai-scenario-dify-deepseek-ai-agent,2026-11-15,0,0,0,0
 ai-scenario-dify-deepseek-ai-agent,2026-11-16,0,0,0,0
 ai-scenario-dify-deepseek-ai-agent,2026-11-17,1,1,0,0
-ai-solution-building-high-availability-aigc-applications-with-stable-diffusion,2026-10-20,0,0,0,0
+ai-scenario-dify-deepseek-ai-agent,2026-11-18,0,0,4,3
 ai-solution-building-high-availability-aigc-applications-with-stable-diffusion,2026-10-21,0,0,0,0
 ai-solution-building-high-availability-aigc-applications-with-stable-diffusion,2026-10-22,0,0,1,1
 ai-solution-building-high-availability-aigc-applications-with-stable-diffusion,2026-10-23,0,0,0,0
@@ -1006,7 +1011,8 @@ ai-solution-building-high-availability-aigc-applications-with-stable-diffusion,2
 ai-solution-building-high-availability-aigc-applications-with-stable-diffusion,2026-11-14,0,0,3,2
 ai-solution-building-high-availability-aigc-applications-with-stable-diffusion,2026-11-15,0,0,0,0
 ai-solution-building-high-availability-aigc-applications-with-stable-diffusion,2026-11-16,0,0,0,0
-ai-streamlit-image,2026-10-20,0,0,0,0
+ai-solution-building-high-availability-aigc-applications-with-stable-diffusion,2026-11-17,0,0,0,0
+ai-solution-building-high-availability-aigc-applications-with-stable-diffusion,2026-11-18,0,0,6,5
 ai-streamlit-image,2026-10-21,0,0,3,2
 ai-streamlit-image,2026-10-22,0,0,3,1
 ai-streamlit-image,2026-10-23,0,0,0,0
@@ -1034,7 +1040,8 @@ ai-streamlit-image,2026-11-13,0,0,2,1
 ai-streamlit-image,2026-11-14,0,0,1,1
 ai-streamlit-image,2026-11-15,0,0,0,0
 ai-streamlit-image,2026-11-16,0,0,0,0
-ai-superduper-image,2026-10-20,0,0,0,0
+ai-streamlit-image,2026-11-17,0,0,0,0
+ai-streamlit-image,2026-11-18,0,0,3,2
 ai-superduper-image,2026-10-21,0,0,0,0
 ai-superduper-image,2026-10-22,0,0,2,2
 ai-superduper-image,2026-10-23,0,0,0,0
@@ -1063,7 +1070,7 @@ ai-superduper-image,2026-11-14,0,0,2,1
 ai-superduper-image,2026-11-15,0,0,0,0
 ai-superduper-image,2026-11-16,0,0,0,0
 ai-superduper-image,2026-11-17,0,0,0,0
-ai-tigerbot-image,2026-10-20,0,0,0,0
+ai-superduper-image,2026-11-18,0,0,2,2
 ai-tigerbot-image,2026-10-21,0,0,0,0
 ai-tigerbot-image,2026-10-22,0,0,1,1
 ai-tigerbot-image,2026-10-23,0,0,0,0
@@ -1091,7 +1098,8 @@ ai-tigerbot-image,2026-11-13,0,0,2,1
 ai-tigerbot-image,2026-11-14,0,0,2,1
 ai-tigerbot-image,2026-11-15,0,0,0,0
 ai-tigerbot-image,2026-11-16,0,0,0,0
-ai-vanna-flask-image,2026-10-20,0,0,0,0
+ai-tigerbot-image,2026-11-17,0,0,0,0
+ai-tigerbot-image,2026-11-18,0,0,2,2
 ai-vanna-flask-image,2026-10-21,0,0,1,1
 ai-vanna-flask-image,2026-10-22,0,0,1,1
 ai-vanna-flask-image,2026-10-23,0,0,3,3
@@ -1119,7 +1127,7 @@ ai-vanna-flask-image,2026-11-13,0,0,2,1
 ai-vanna-flask-image,2026-11-14,0,0,2,1
 ai-vanna-flask-image,2026-11-15,0,0,0,0
 ai-vanna-flask-image,2026-11-16,0,0,0,0
-ai-vllm-image,2026-10-20,0,0,0,0
+ai-vanna-flask-image,2026-11-17,0,0,0,0
 ai-vllm-image,2026-10-21,0,0,0,0
 ai-vllm-image,2026-10-22,0,0,1,1
 ai-vllm-image,2026-10-23,0,0,0,0
@@ -1148,7 +1156,7 @@ ai-vllm-image,2026-11-14,0,0,1,1
 ai-vllm-image,2026-11-15,0,0,0,0
 ai-vllm-image,2026-11-16,0,0,0,0
 ai-vllm-image,2026-11-17,0,0,0,0
-ansible-image,2026-10-20,0,0,0,0
+ai-vllm-image,2026-11-18,0,0,2,2
 ansible-image,2026-10-21,0,0,0,0
 ansible-image,2026-10-22,0,0,0,0
 ansible-image,2026-10-23,0,0,0,0
@@ -1178,7 +1186,7 @@ ansible-image,2026-11-15,0,0,0,0
 ansible-image,2026-11-16,0,0,0,0
 ansible-image,2026-11-17,0,0,0,0
 ansible-image,2026-11-18,0,0,0,0
-apollo-image,2026-10-20,0,0,0,0
+ansible-image,2026-11-19,0,0,0,0
 apollo-image,2026-10-21,0,0,1,1
 apollo-image,2026-10-22,0,0,1,1
 apollo-image,2026-10-23,0,0,0,0
@@ -1233,7 +1241,7 @@ application-intelligence-application-intelligence-semantic-search-css,2026-11-14
 application-intelligence-application-intelligence-semantic-search-css,2026-11-15,0,0,1,1
 application-intelligence-application-intelligence-semantic-search-css,2026-11-16,5,1,9,5
 application-intelligence-application-intelligence-semantic-search-css,2026-11-17,0,0,0,0
-application-intelligence-durable-workflow-otel-tracing,2026-10-20,0,0,1,1
+application-intelligence-application-intelligence-semantic-search-css,2026-11-18,0,0,5,2
 application-intelligence-durable-workflow-otel-tracing,2026-10-21,0,0,0,0
 application-intelligence-durable-workflow-otel-tracing,2026-10-22,1,1,0,0
 application-intelligence-durable-workflow-otel-tracing,2026-10-23,4,2,0,0
@@ -1261,6 +1269,8 @@ application-intelligence-durable-workflow-otel-tracing,2026-11-13,0,0,3,1
 application-intelligence-durable-workflow-otel-tracing,2026-11-14,0,0,5,1
 application-intelligence-durable-workflow-otel-tracing,2026-11-15,0,0,0,0
 application-intelligence-durable-workflow-otel-tracing,2026-11-16,0,0,0,0
+application-intelligence-durable-workflow-otel-tracing,2026-11-17,0,0,0,0
+application-intelligence-durable-workflow-otel-tracing,2026-11-18,0,0,7,1
 application-intelligence-ecommerce-genai-suite,2026-11-05,0,0,0,0
 application-intelligence-ecommerce-genai-suite,2026-11-06,0,0,0,0
 application-intelligence-ecommerce-genai-suite,2026-11-07,0,0,0,0
@@ -1274,8 +1284,21 @@ application-intelligence-ecommerce-genai-suite,2026-11-14,0,0,0,0
 application-intelligence-ecommerce-genai-suite,2026-11-15,0,0,0,0
 application-intelligence-ecommerce-genai-suite,2026-11-16,0,0,0,0
 application-intelligence-ecommerce-genai-suite,2026-11-17,0,0,0,0
-application-intelligence-ecommerce-genai-suite,2026-11-18,0,0,0,0
-application-intelligence-logistics-tracking,2026-10-20,0,0,0,0
+application-intelligence-ecommerce-genai-suite,2026-11-18,14,3,36,22
+application-intelligence-image-moderation-chatbot,2026-11-06,0,0,0,0
+application-intelligence-image-moderation-chatbot,2026-11-07,0,0,0,0
+application-intelligence-image-moderation-chatbot,2026-11-08,0,0,0,0
+application-intelligence-image-moderation-chatbot,2026-11-09,0,0,0,0
+application-intelligence-image-moderation-chatbot,2026-11-10,0,0,0,0
+application-intelligence-image-moderation-chatbot,2026-11-11,0,0,0,0
+application-intelligence-image-moderation-chatbot,2026-11-12,0,0,0,0
+application-intelligence-image-moderation-chatbot,2026-11-13,0,0,0,0
+application-intelligence-image-moderation-chatbot,2026-11-14,0,0,0,0
+application-intelligence-image-moderation-chatbot,2026-11-15,0,0,0,0
+application-intelligence-image-moderation-chatbot,2026-11-16,0,0,0,0
+application-intelligence-image-moderation-chatbot,2026-11-17,0,0,0,0
+application-intelligence-image-moderation-chatbot,2026-11-18,0,0,0,0
+application-intelligence-image-moderation-chatbot,2026-11-19,0,0,0,0
 application-intelligence-logistics-tracking,2026-10-21,0,0,0,0
 application-intelligence-logistics-tracking,2026-10-22,0,0,1,1
 application-intelligence-logistics-tracking,2026-10-23,0,0,0,0
@@ -1304,6 +1327,7 @@ application-intelligence-logistics-tracking,2026-11-14,0,0,6,2
 application-intelligence-logistics-tracking,2026-11-15,0,0,1,1
 application-intelligence-logistics-tracking,2026-11-16,1,1,0,0
 application-intelligence-logistics-tracking,2026-11-17,0,0,0,0
+application-intelligence-logistics-tracking,2026-11-18,2,1,2,1
 application-intelligence-mcp-servers,2026-11-05,0,0,0,0
 application-intelligence-mcp-servers,2026-11-06,0,0,0,0
 application-intelligence-mcp-servers,2026-11-07,0,0,0,0
@@ -1317,8 +1341,7 @@ application-intelligence-mcp-servers,2026-11-14,0,0,0,0
 application-intelligence-mcp-servers,2026-11-15,0,0,0,0
 application-intelligence-mcp-servers,2026-11-16,0,0,0,0
 application-intelligence-mcp-servers,2026-11-17,0,0,0,0
-application-intelligence-mcp-servers,2026-11-18,0,0,0,0
-application-intelligence-modelarts-private-workspace,2026-10-20,0,0,1,1
+application-intelligence-mcp-servers,2026-11-18,15,3,50,32
 application-intelligence-modelarts-private-workspace,2026-10-21,0,0,1,1
 application-intelligence-modelarts-private-workspace,2026-10-22,0,0,1,1
 application-intelligence-modelarts-private-workspace,2026-10-23,0,0,0,0
@@ -1347,6 +1370,49 @@ application-intelligence-modelarts-private-workspace,2026-11-14,0,0,6,2
 application-intelligence-modelarts-private-workspace,2026-11-15,0,0,1,1
 application-intelligence-modelarts-private-workspace,2026-11-16,0,0,0,0
 application-intelligence-modelarts-private-workspace,2026-11-17,12,2,6,4
+application-intelligence-modelarts-private-workspace,2026-11-18,3,1,2,1
+application-intelligence-prompt-chaining-pipeline,2026-11-06,0,0,0,0
+application-intelligence-prompt-chaining-pipeline,2026-11-07,0,0,0,0
+application-intelligence-prompt-chaining-pipeline,2026-11-08,0,0,0,0
+application-intelligence-prompt-chaining-pipeline,2026-11-09,0,0,0,0
+application-intelligence-prompt-chaining-pipeline,2026-11-10,0,0,0,0
+application-intelligence-prompt-chaining-pipeline,2026-11-11,0,0,0,0
+application-intelligence-prompt-chaining-pipeline,2026-11-12,0,0,0,0
+application-intelligence-prompt-chaining-pipeline,2026-11-13,0,0,0,0
+application-intelligence-prompt-chaining-pipeline,2026-11-14,0,0,0,0
+application-intelligence-prompt-chaining-pipeline,2026-11-15,0,0,0,0
+application-intelligence-prompt-chaining-pipeline,2026-11-16,0,0,0,0
+application-intelligence-prompt-chaining-pipeline,2026-11-17,0,0,0,0
+application-intelligence-prompt-chaining-pipeline,2026-11-18,0,0,0,0
+application-intelligence-prompt-chaining-pipeline,2026-11-19,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-06,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-07,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-08,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-09,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-10,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-11,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-12,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-13,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-14,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-15,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-16,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-17,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-18,0,0,0,0
+application-intelligence-rag-langchain-search,2026-11-19,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-06,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-07,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-08,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-09,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-10,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-11,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-12,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-13,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-14,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-15,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-16,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-17,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-18,0,0,0,0
+application-intelligence-realtime-recommendations,2026-11-19,0,0,0,0
 application-intelligence-serverless-file-processing,2026-11-05,0,0,0,0
 application-intelligence-serverless-file-processing,2026-11-06,0,0,0,0
 application-intelligence-serverless-file-processing,2026-11-07,0,0,0,0
@@ -1360,7 +1426,7 @@ application-intelligence-serverless-file-processing,2026-11-14,0,0,0,0
 application-intelligence-serverless-file-processing,2026-11-15,0,0,0,0
 application-intelligence-serverless-file-processing,2026-11-16,0,0,0,0
 application-intelligence-serverless-file-processing,2026-11-17,0,0,0,0
-application-intelligence-serverless-file-processing,2026-11-18,0,0,0,0
+application-intelligence-serverless-file-processing,2026-11-18,15,3,42,25
 application-intelligence-serverless-mcp-integration,2026-11-05,0,0,0,0
 application-intelligence-serverless-mcp-integration,2026-11-06,0,0,0,0
 application-intelligence-serverless-mcp-integration,2026-11-07,0,0,0,0
@@ -1374,7 +1440,7 @@ application-intelligence-serverless-mcp-integration,2026-11-14,0,0,0,0
 application-intelligence-serverless-mcp-integration,2026-11-15,0,0,0,0
 application-intelligence-serverless-mcp-integration,2026-11-16,0,0,0,0
 application-intelligence-serverless-mcp-integration,2026-11-17,0,0,0,0
-application-intelligence-serverless-mcp-integration,2026-11-18,0,0,0,0
+application-intelligence-serverless-mcp-integration,2026-11-18,15,3,48,27
 application-intelligence-serverless-nlp-inference,2026-11-04,0,0,0,0
 application-intelligence-serverless-nlp-inference,2026-11-05,0,0,0,0
 application-intelligence-serverless-nlp-inference,2026-11-06,0,0,0,0
@@ -1389,6 +1455,7 @@ application-intelligence-serverless-nlp-inference,2026-11-14,0,0,0,0
 application-intelligence-serverless-nlp-inference,2026-11-15,0,0,0,0
 application-intelligence-serverless-nlp-inference,2026-11-16,0,0,0,0
 application-intelligence-serverless-nlp-inference,2026-11-17,5,2,36,24
+application-intelligence-serverless-nlp-inference,2026-11-18,0,0,2,1
 application-intelligence-serverless-pdf-chat,2026-10-28,0,0,0,0
 application-intelligence-serverless-pdf-chat,2026-10-29,0,0,0,0
 application-intelligence-serverless-pdf-chat,2026-10-30,0,0,0,0
@@ -1410,6 +1477,7 @@ application-intelligence-serverless-pdf-chat,2026-11-14,0,0,5,1
 application-intelligence-serverless-pdf-chat,2026-11-15,0,0,2,1
 application-intelligence-serverless-pdf-chat,2026-11-16,10,2,14,9
 application-intelligence-serverless-pdf-chat,2026-11-17,0,0,0,0
+application-intelligence-serverless-pdf-chat,2026-11-18,0,0,1,1
 application-intelligence-story-generation,2026-10-27,0,0,0,0
 application-intelligence-story-generation,2026-10-28,0,0,0,0
 application-intelligence-story-generation,2026-10-29,0,0,0,0
@@ -1432,6 +1500,7 @@ application-intelligence-story-generation,2026-11-14,0,0,8,4
 application-intelligence-story-generation,2026-11-15,0,0,3,3
 application-intelligence-story-generation,2026-11-16,0,0,1,1
 application-intelligence-story-generation,2026-11-17,0,0,1,1
+application-intelligence-story-generation,2026-11-18,0,0,1,1
 application-intelligence-trust-safety-agent-orchestration,2026-11-04,0,0,0,0
 application-intelligence-trust-safety-agent-orchestration,2026-11-05,0,0,0,0
 application-intelligence-trust-safety-agent-orchestration,2026-11-06,0,0,0,0
@@ -1446,7 +1515,7 @@ application-intelligence-trust-safety-agent-orchestration,2026-11-14,0,0,0,0
 application-intelligence-trust-safety-agent-orchestration,2026-11-15,0,0,0,0
 application-intelligence-trust-safety-agent-orchestration,2026-11-16,0,0,0,0
 application-intelligence-trust-safety-agent-orchestration,2026-11-17,10,2,38,25
-application-modernization-django,2026-10-20,0,0,1,1
+application-intelligence-trust-safety-agent-orchestration,2026-11-18,0,0,2,1
 application-modernization-django,2026-10-21,0,0,1,1
 application-modernization-django,2026-10-22,0,0,0,0
 application-modernization-django,2026-10-23,0,0,0,0
@@ -1474,7 +1543,8 @@ application-modernization-django,2026-11-13,0,0,0,0
 application-modernization-django,2026-11-14,0,0,0,0
 application-modernization-django,2026-11-15,0,0,0,0
 application-modernization-django,2026-11-16,0,0,0,0
-application-modernization-gogs-image,2026-10-20,0,0,0,0
+application-modernization-django,2026-11-17,0,0,0,0
+application-modernization-django,2026-11-18,0,0,0,0
 application-modernization-gogs-image,2026-10-21,0,0,0,0
 application-modernization-gogs-image,2026-10-22,0,0,0,0
 application-modernization-gogs-image,2026-10-23,0,0,0,0
@@ -1503,7 +1573,7 @@ application-modernization-gogs-image,2026-11-14,0,0,4,1
 application-modernization-gogs-image,2026-11-15,0,0,0,0
 application-modernization-gogs-image,2026-11-16,0,0,0,0
 application-modernization-gogs-image,2026-11-17,0,0,0,0
-application-modernization-hibernate-orm,2026-10-20,0,0,0,0
+application-modernization-gogs-image,2026-11-18,0,0,2,2
 application-modernization-hibernate-orm,2026-10-21,0,0,1,1
 application-modernization-hibernate-orm,2026-10-22,0,0,0,0
 application-modernization-hibernate-orm,2026-10-23,0,0,0,0
@@ -1532,7 +1602,7 @@ application-modernization-hibernate-orm,2026-11-14,0,0,0,0
 application-modernization-hibernate-orm,2026-11-15,0,0,0,0
 application-modernization-hibernate-orm,2026-11-16,0,0,0,0
 application-modernization-hibernate-orm,2026-11-17,0,0,0,0
-application-modernization-jenkins-image,2026-10-20,0,0,0,0
+application-modernization-hibernate-orm,2026-11-18,0,0,0,0
 application-modernization-jenkins-image,2026-10-21,0,0,0,0
 application-modernization-jenkins-image,2026-10-22,0,0,0,0
 application-modernization-jenkins-image,2026-10-23,0,0,0,0
@@ -1561,7 +1631,7 @@ application-modernization-jenkins-image,2026-11-14,0,0,3,1
 application-modernization-jenkins-image,2026-11-15,0,0,0,0
 application-modernization-jenkins-image,2026-11-16,0,0,0,0
 application-modernization-jenkins-image,2026-11-17,0,0,0,0
-application-modernization-seata-image,2026-10-20,0,0,0,0
+application-modernization-jenkins-image,2026-11-18,0,0,2,2
 application-modernization-seata-image,2026-10-21,0,0,0,0
 application-modernization-seata-image,2026-10-22,0,0,0,0
 application-modernization-seata-image,2026-10-23,0,0,1,1
@@ -1590,7 +1660,7 @@ application-modernization-seata-image,2026-11-14,0,0,4,1
 application-modernization-seata-image,2026-11-15,0,0,0,0
 application-modernization-seata-image,2026-11-16,0,0,0,0
 application-modernization-seata-image,2026-11-17,0,0,0,0
-argo-workflow-installation-for-cce,2026-10-20,0,0,0,0
+application-modernization-seata-image,2026-11-18,0,0,3,2
 argo-workflow-installation-for-cce,2026-10-21,0,0,0,0
 argo-workflow-installation-for-cce,2026-10-22,0,0,1,1
 argo-workflow-installation-for-cce,2026-10-23,0,0,1,1
@@ -1619,7 +1689,7 @@ argo-workflow-installation-for-cce,2026-11-14,0,0,4,1
 argo-workflow-installation-for-cce,2026-11-15,0,0,1,1
 argo-workflow-installation-for-cce,2026-11-16,0,0,0,0
 argo-workflow-installation-for-cce,2026-11-17,0,0,0,0
-auto-workflows,2026-10-20,25,5,13,2
+argo-workflow-installation-for-cce,2026-11-18,0,0,2,1
 auto-workflows,2026-10-21,20,2,6,2
 auto-workflows,2026-10-22,2,2,1,1
 auto-workflows,2026-10-23,61,2,28,1
@@ -1661,7 +1731,7 @@ automotive-damage-processing,2026-11-14,0,0,0,0
 automotive-damage-processing,2026-11-15,0,0,0,0
 automotive-damage-processing,2026-11-16,0,0,0,0
 automotive-damage-processing,2026-11-17,0,0,0,0
-automotive-damage-processing,2026-11-18,0,0,0,0
+automotive-damage-processing,2026-11-18,3,2,31,22
 automotive-software-developer-workbench,2026-11-05,0,0,0,0
 automotive-software-developer-workbench,2026-11-06,0,0,0,0
 automotive-software-developer-workbench,2026-11-07,0,0,0,0
@@ -1675,8 +1745,7 @@ automotive-software-developer-workbench,2026-11-14,0,0,0,0
 automotive-software-developer-workbench,2026-11-15,0,0,0,0
 automotive-software-developer-workbench,2026-11-16,0,0,0,0
 automotive-software-developer-workbench,2026-11-17,0,0,0,0
-automotive-software-developer-workbench,2026-11-18,0,0,0,0
-azkaban-image,2026-10-20,0,0,0,0
+automotive-software-developer-workbench,2026-11-18,4,1,30,20
 azkaban-image,2026-10-21,0,0,0,0
 azkaban-image,2026-10-22,0,0,0,0
 azkaban-image,2026-10-23,0,0,0,0
@@ -1704,7 +1773,8 @@ azkaban-image,2026-11-13,0,0,3,1
 azkaban-image,2026-11-14,0,0,2,1
 azkaban-image,2026-11-15,0,0,0,0
 azkaban-image,2026-11-16,0,0,0,0
-chrome-template-editor,2026-10-20,0,0,0,0
+azkaban-image,2026-11-17,0,0,0,0
+azkaban-image,2026-11-18,0,0,4,2
 chrome-template-editor,2026-10-21,0,0,0,0
 chrome-template-editor,2026-10-22,0,0,0,0
 chrome-template-editor,2026-10-23,2,1,0,0
@@ -1733,7 +1803,7 @@ chrome-template-editor,2026-11-14,0,0,0,0
 chrome-template-editor,2026-11-15,0,0,0,0
 chrome-template-editor,2026-11-16,0,0,0,0
 chrome-template-editor,2026-11-17,0,0,0,0
-cloud-foundation-huaweicloudtoolkit,2026-10-20,0,0,0,0
+chrome-template-editor,2026-11-18,0,0,0,0
 cloud-foundation-huaweicloudtoolkit,2026-10-21,0,0,0,0
 cloud-foundation-huaweicloudtoolkit,2026-10-22,0,0,0,0
 cloud-foundation-huaweicloudtoolkit,2026-10-23,0,0,0,0
@@ -1762,7 +1832,7 @@ cloud-foundation-huaweicloudtoolkit,2026-11-14,1,1,2,1
 cloud-foundation-huaweicloudtoolkit,2026-11-15,0,0,1,1
 cloud-foundation-huaweicloudtoolkit,2026-11-16,0,0,0,0
 cloud-foundation-huaweicloudtoolkit,2026-11-17,0,0,0,0
-cloud-foundation-solution-accessing-obs-through-nginx,2026-10-20,0,0,0,0
+cloud-foundation-huaweicloudtoolkit,2026-11-18,0,0,7,5
 cloud-foundation-solution-accessing-obs-through-nginx,2026-10-21,0,0,0,0
 cloud-foundation-solution-accessing-obs-through-nginx,2026-10-22,0,0,0,0
 cloud-foundation-solution-accessing-obs-through-nginx,2026-10-23,0,0,0,0
@@ -1791,7 +1861,7 @@ cloud-foundation-solution-accessing-obs-through-nginx,2026-11-14,0,0,5,2
 cloud-foundation-solution-accessing-obs-through-nginx,2026-11-15,0,0,0,0
 cloud-foundation-solution-accessing-obs-through-nginx,2026-11-16,1,1,0,0
 cloud-foundation-solution-accessing-obs-through-nginx,2026-11-17,0,0,0,0
-cloud-foundation-solution-backend-instances-to-an-elb-across-vpcs,2026-10-20,0,0,1,1
+cloud-foundation-solution-accessing-obs-through-nginx,2026-11-18,0,0,6,5
 cloud-foundation-solution-backend-instances-to-an-elb-across-vpcs,2026-10-21,0,0,0,0
 cloud-foundation-solution-backend-instances-to-an-elb-across-vpcs,2026-10-22,0,0,0,0
 cloud-foundation-solution-backend-instances-to-an-elb-across-vpcs,2026-10-23,0,0,0,0
@@ -1820,7 +1890,7 @@ cloud-foundation-solution-backend-instances-to-an-elb-across-vpcs,2026-11-14,0,0
 cloud-foundation-solution-backend-instances-to-an-elb-across-vpcs,2026-11-15,0,0,0,0
 cloud-foundation-solution-backend-instances-to-an-elb-across-vpcs,2026-11-16,0,0,0,0
 cloud-foundation-solution-backend-instances-to-an-elb-across-vpcs,2026-11-17,0,0,0,0
-cloud-foundation-solution-cdn-download-acceleration,2026-10-20,0,0,0,0
+cloud-foundation-solution-backend-instances-to-an-elb-across-vpcs,2026-11-18,0,0,6,5
 cloud-foundation-solution-cdn-download-acceleration,2026-10-21,0,0,0,0
 cloud-foundation-solution-cdn-download-acceleration,2026-10-22,0,0,0,0
 cloud-foundation-solution-cdn-download-acceleration,2026-10-23,0,0,0,0
@@ -1848,7 +1918,8 @@ cloud-foundation-solution-cdn-download-acceleration,2026-11-13,0,0,2,1
 cloud-foundation-solution-cdn-download-acceleration,2026-11-14,1,1,4,1
 cloud-foundation-solution-cdn-download-acceleration,2026-11-15,0,0,0,0
 cloud-foundation-solution-cdn-download-acceleration,2026-11-16,0,0,0,0
-cloud-foundation-solution-scheduled-changing-instances-specifications,2026-10-20,0,0,0,0
+cloud-foundation-solution-cdn-download-acceleration,2026-11-17,0,0,0,0
+cloud-foundation-solution-cdn-download-acceleration,2026-11-18,2,2,8,7
 cloud-foundation-solution-scheduled-changing-instances-specifications,2026-10-21,0,0,1,1
 cloud-foundation-solution-scheduled-changing-instances-specifications,2026-10-22,0,0,0,0
 cloud-foundation-solution-scheduled-changing-instances-specifications,2026-10-23,0,0,0,0
@@ -1877,6 +1948,7 @@ cloud-foundation-solution-scheduled-changing-instances-specifications,2026-11-14
 cloud-foundation-solution-scheduled-changing-instances-specifications,2026-11-15,0,0,1,1
 cloud-foundation-solution-scheduled-changing-instances-specifications,2026-11-16,0,0,0,0
 cloud-foundation-solution-scheduled-changing-instances-specifications,2026-11-17,0,0,1,1
+cloud-foundation-solution-scheduled-changing-instances-specifications,2026-11-18,0,0,6,5
 cloud-native-computing-gpu-diagnostics-collector,2026-10-28,0,0,0,0
 cloud-native-computing-gpu-diagnostics-collector,2026-10-29,0,0,0,0
 cloud-native-computing-gpu-diagnostics-collector,2026-10-30,0,0,0,0
@@ -1898,6 +1970,7 @@ cloud-native-computing-gpu-diagnostics-collector,2026-11-14,0,0,6,3
 cloud-native-computing-gpu-diagnostics-collector,2026-11-15,0,0,3,2
 cloud-native-computing-gpu-diagnostics-collector,2026-11-16,10,2,9,4
 cloud-native-computing-gpu-diagnostics-collector,2026-11-17,0,0,0,0
+cloud-native-computing-gpu-diagnostics-collector,2026-11-18,0,0,1,1
 cloud-native-observability-distributed-tracing-sample,2026-10-28,0,0,0,0
 cloud-native-observability-distributed-tracing-sample,2026-10-29,0,0,0,0
 cloud-native-observability-distributed-tracing-sample,2026-10-30,0,0,0,0
@@ -1919,6 +1992,7 @@ cloud-native-observability-distributed-tracing-sample,2026-11-14,0,0,6,3
 cloud-native-observability-distributed-tracing-sample,2026-11-15,0,0,3,2
 cloud-native-observability-distributed-tracing-sample,2026-11-16,12,2,13,7
 cloud-native-observability-distributed-tracing-sample,2026-11-17,0,0,1,1
+cloud-native-observability-distributed-tracing-sample,2026-11-18,0,0,2,1
 cloud-native-security-bastion-host,2026-11-05,0,0,0,0
 cloud-native-security-bastion-host,2026-11-06,0,0,0,0
 cloud-native-security-bastion-host,2026-11-07,0,0,0,0
@@ -1932,7 +2006,7 @@ cloud-native-security-bastion-host,2026-11-14,0,0,0,0
 cloud-native-security-bastion-host,2026-11-15,0,0,0,0
 cloud-native-security-bastion-host,2026-11-16,0,0,0,0
 cloud-native-security-bastion-host,2026-11-17,0,0,0,0
-cloud-native-security-bastion-host,2026-11-18,0,0,0,0
+cloud-native-security-bastion-host,2026-11-18,0,0,28,20
 cloud-native-security-cloudhsm-jce-examples,2026-10-28,0,0,0,0
 cloud-native-security-cloudhsm-jce-examples,2026-10-29,0,0,0,0
 cloud-native-security-cloudhsm-jce-examples,2026-10-30,0,0,0,0
@@ -1954,6 +2028,7 @@ cloud-native-security-cloudhsm-jce-examples,2026-11-14,0,0,5,2
 cloud-native-security-cloudhsm-jce-examples,2026-11-15,0,0,3,2
 cloud-native-security-cloudhsm-jce-examples,2026-11-16,15,2,6,4
 cloud-native-security-cloudhsm-jce-examples,2026-11-17,0,0,1,1
+cloud-native-security-cloudhsm-jce-examples,2026-11-18,0,0,1,1
 cloud-native-security-cross-account-private-api,2026-11-04,0,0,0,0
 cloud-native-security-cross-account-private-api,2026-11-05,0,0,0,0
 cloud-native-security-cross-account-private-api,2026-11-06,0,0,0,0
@@ -1967,8 +2042,8 @@ cloud-native-security-cross-account-private-api,2026-11-13,0,0,0,0
 cloud-native-security-cross-account-private-api,2026-11-14,0,0,0,0
 cloud-native-security-cross-account-private-api,2026-11-15,0,0,0,0
 cloud-native-security-cross-account-private-api,2026-11-16,0,0,0,0
-cloud-native-security-cross-account-private-api,2026-11-17,0,0,0,0
-cloud-native-security-cross-account-private-api,2026-11-18,0,0,0,0
+cloud-native-security-cross-account-private-api,2026-11-17,6,2,40,26
+cloud-native-security-cross-account-private-api,2026-11-18,0,0,2,1
 cloud-native-security-db-audit-log-serverless,2026-10-28,0,0,0,0
 cloud-native-security-db-audit-log-serverless,2026-10-29,0,0,0,0
 cloud-native-security-db-audit-log-serverless,2026-10-30,0,0,0,0
@@ -1990,6 +2065,7 @@ cloud-native-security-db-audit-log-serverless,2026-11-14,0,0,5,2
 cloud-native-security-db-audit-log-serverless,2026-11-15,0,0,2,1
 cloud-native-security-db-audit-log-serverless,2026-11-16,10,2,6,4
 cloud-native-security-db-audit-log-serverless,2026-11-17,0,0,3,2
+cloud-native-security-db-audit-log-serverless,2026-11-18,0,0,2,1
 cloud-native-security-iam-access-key-auto-rotation,2026-11-04,0,0,0,0
 cloud-native-security-iam-access-key-auto-rotation,2026-11-05,0,0,0,0
 cloud-native-security-iam-access-key-auto-rotation,2026-11-06,0,0,0,0
@@ -2004,6 +2080,7 @@ cloud-native-security-iam-access-key-auto-rotation,2026-11-14,0,0,0,0
 cloud-native-security-iam-access-key-auto-rotation,2026-11-15,0,0,0,0
 cloud-native-security-iam-access-key-auto-rotation,2026-11-16,0,0,0,0
 cloud-native-security-iam-access-key-auto-rotation,2026-11-17,5,1,29,21
+cloud-native-security-iam-access-key-auto-rotation,2026-11-18,10,2,3,2
 cloud-native-security-obs-upload-virus-scanning,2026-10-27,0,0,0,0
 cloud-native-security-obs-upload-virus-scanning,2026-10-28,0,0,0,0
 cloud-native-security-obs-upload-virus-scanning,2026-10-29,0,0,0,0
@@ -2025,6 +2102,8 @@ cloud-native-security-obs-upload-virus-scanning,2026-11-13,2,1,2,1
 cloud-native-security-obs-upload-virus-scanning,2026-11-14,0,0,5,2
 cloud-native-security-obs-upload-virus-scanning,2026-11-15,0,0,2,2
 cloud-native-security-obs-upload-virus-scanning,2026-11-16,0,0,2,2
+cloud-native-security-obs-upload-virus-scanning,2026-11-17,0,0,2,2
+cloud-native-security-obs-upload-virus-scanning,2026-11-18,0,0,2,1
 cloud-native-security-private-saas-access,2026-11-05,0,0,0,0
 cloud-native-security-private-saas-access,2026-11-06,0,0,0,0
 cloud-native-security-private-saas-access,2026-11-07,0,0,0,0
@@ -2038,7 +2117,7 @@ cloud-native-security-private-saas-access,2026-11-14,0,0,0,0
 cloud-native-security-private-saas-access,2026-11-15,0,0,0,0
 cloud-native-security-private-saas-access,2026-11-16,0,0,0,0
 cloud-native-security-private-saas-access,2026-11-17,0,0,0,0
-cloud-native-security-private-saas-access,2026-11-18,0,0,0,0
+cloud-native-security-private-saas-access,2026-11-18,0,0,22,17
 cloud-native-security-resource-control-policies,2026-10-29,0,0,0,0
 cloud-native-security-resource-control-policies,2026-10-30,0,0,0,0
 cloud-native-security-resource-control-policies,2026-10-31,0,0,0,0
@@ -2059,6 +2138,7 @@ cloud-native-security-resource-control-policies,2026-11-14,0,0,5,2
 cloud-native-security-resource-control-policies,2026-11-15,0,0,4,3
 cloud-native-security-resource-control-policies,2026-11-16,9,2,5,3
 cloud-native-security-resource-control-policies,2026-11-17,0,0,0,0
+cloud-native-security-resource-control-policies,2026-11-18,0,0,2,1
 cloud-native-security-secrets-manager-rotation,2026-11-04,0,0,0,0
 cloud-native-security-secrets-manager-rotation,2026-11-05,0,0,0,0
 cloud-native-security-secrets-manager-rotation,2026-11-06,0,0,0,0
@@ -2073,6 +2153,21 @@ cloud-native-security-secrets-manager-rotation,2026-11-14,0,0,0,0
 cloud-native-security-secrets-manager-rotation,2026-11-15,0,0,0,0
 cloud-native-security-secrets-manager-rotation,2026-11-16,0,0,0,0
 cloud-native-security-secrets-manager-rotation,2026-11-17,4,1,37,25
+cloud-native-security-secrets-manager-rotation,2026-11-18,9,2,5,4
+cloud-native-security-serverless-auth-workshop,2026-11-06,0,0,0,0
+cloud-native-security-serverless-auth-workshop,2026-11-07,0,0,0,0
+cloud-native-security-serverless-auth-workshop,2026-11-08,0,0,0,0
+cloud-native-security-serverless-auth-workshop,2026-11-09,0,0,0,0
+cloud-native-security-serverless-auth-workshop,2026-11-10,0,0,0,0
+cloud-native-security-serverless-auth-workshop,2026-11-11,0,0,0,0
+cloud-native-security-serverless-auth-workshop,2026-11-12,0,0,0,0
+cloud-native-security-serverless-auth-workshop,2026-11-13,0,0,0,0
+cloud-native-security-serverless-auth-workshop,2026-11-14,0,0,0,0
+cloud-native-security-serverless-auth-workshop,2026-11-15,0,0,0,0
+cloud-native-security-serverless-auth-workshop,2026-11-16,0,0,0,0
+cloud-native-security-serverless-auth-workshop,2026-11-17,0,0,0,0
+cloud-native-security-serverless-auth-workshop,2026-11-18,0,0,0,0
+cloud-native-security-serverless-auth-workshop,2026-11-19,0,0,0,0
 cloud-native-security-threatdetection-multi-account-coverage-report,2026-11-04,0,0,0,0
 cloud-native-security-threatdetection-multi-account-coverage-report,2026-11-05,0,0,0,0
 cloud-native-security-threatdetection-multi-account-coverage-report,2026-11-06,0,0,0,0
@@ -2087,6 +2182,7 @@ cloud-native-security-threatdetection-multi-account-coverage-report,2026-11-14,0
 cloud-native-security-threatdetection-multi-account-coverage-report,2026-11-15,0,0,0,0
 cloud-native-security-threatdetection-multi-account-coverage-report,2026-11-16,0,0,0,0
 cloud-native-security-threatdetection-multi-account-coverage-report,2026-11-17,4,1,39,27
+cloud-native-security-threatdetection-multi-account-coverage-report,2026-11-18,9,2,3,2
 cloud-native-security-vulnerable-app-agents,2026-11-05,0,0,0,0
 cloud-native-security-vulnerable-app-agents,2026-11-06,0,0,0,0
 cloud-native-security-vulnerable-app-agents,2026-11-07,0,0,0,0
@@ -2100,8 +2196,7 @@ cloud-native-security-vulnerable-app-agents,2026-11-14,0,0,0,0
 cloud-native-security-vulnerable-app-agents,2026-11-15,0,0,0,0
 cloud-native-security-vulnerable-app-agents,2026-11-16,0,0,0,0
 cloud-native-security-vulnerable-app-agents,2026-11-17,0,0,0,0
-cloud-native-security-vulnerable-app-agents,2026-11-18,0,0,0,0
-cloud-operations-github-analysis,2026-10-20,0,0,0,0
+cloud-native-security-vulnerable-app-agents,2026-11-18,0,0,39,25
 cloud-operations-github-analysis,2026-10-21,0,0,0,0
 cloud-operations-github-analysis,2026-10-22,0,0,0,0
 cloud-operations-github-analysis,2026-10-23,0,0,0,0
@@ -2131,7 +2226,7 @@ cloud-operations-github-analysis,2026-11-15,0,0,0,0
 cloud-operations-github-analysis,2026-11-16,0,0,0,0
 cloud-operations-github-analysis,2026-11-17,0,0,0,0
 cloud-operations-github-analysis,2026-11-18,0,0,0,0
-cloud-operations-grafana-image,2026-10-20,0,0,0,0
+cloud-operations-github-analysis,2026-11-19,0,0,0,0
 cloud-operations-grafana-image,2026-10-21,0,0,0,0
 cloud-operations-grafana-image,2026-10-22,0,0,0,0
 cloud-operations-grafana-image,2026-10-23,0,0,0,0
@@ -2159,7 +2254,8 @@ cloud-operations-grafana-image,2026-11-13,0,0,2,1
 cloud-operations-grafana-image,2026-11-14,0,0,3,1
 cloud-operations-grafana-image,2026-11-15,0,0,0,0
 cloud-operations-grafana-image,2026-11-16,0,0,0,0
-cloud-operations-open-source-image-repos,2026-10-20,0,0,1,1
+cloud-operations-grafana-image,2026-11-17,0,0,0,0
+cloud-operations-grafana-image,2026-11-18,0,0,1,1
 cloud-operations-open-source-image-repos,2026-10-21,1,1,1,1
 cloud-operations-open-source-image-repos,2026-10-22,0,0,1,1
 cloud-operations-open-source-image-repos,2026-10-23,1,1,12,7
@@ -2187,7 +2283,8 @@ cloud-operations-open-source-image-repos,2026-11-13,0,0,4,2
 cloud-operations-open-source-image-repos,2026-11-14,0,0,2,1
 cloud-operations-open-source-image-repos,2026-11-15,1,1,0,0
 cloud-operations-open-source-image-repos,2026-11-16,5,4,0,0
-cloud-operations-regionless-dataset,2026-10-20,0,0,0,0
+cloud-operations-open-source-image-repos,2026-11-17,3,3,0,0
+cloud-operations-open-source-image-repos,2026-11-18,2,1,6,5
 cloud-operations-regionless-dataset,2026-10-21,0,0,0,0
 cloud-operations-regionless-dataset,2026-10-22,0,0,1,1
 cloud-operations-regionless-dataset,2026-10-23,0,0,0,0
@@ -2216,7 +2313,7 @@ cloud-operations-regionless-dataset,2026-11-14,0,0,3,1
 cloud-operations-regionless-dataset,2026-11-15,0,0,0,0
 cloud-operations-regionless-dataset,2026-11-16,2,1,0,0
 cloud-operations-regionless-dataset,2026-11-17,0,0,0,0
-cloud-operations-scenario-specific-solution,2026-10-20,0,0,0,0
+cloud-operations-regionless-dataset,2026-11-18,0,0,7,6
 cloud-operations-scenario-specific-solution,2026-10-21,0,0,1,1
 cloud-operations-scenario-specific-solution,2026-10-22,0,0,1,1
 cloud-operations-scenario-specific-solution,2026-10-23,0,0,1,1
@@ -2245,7 +2342,7 @@ cloud-operations-scenario-specific-solution,2026-11-14,0,0,3,1
 cloud-operations-scenario-specific-solution,2026-11-15,0,0,0,0
 cloud-operations-scenario-specific-solution,2026-11-16,0,0,0,0
 cloud-operations-scenario-specific-solution,2026-11-17,0,0,0,0
-cloud-operations-solution-batch-reinstall-os,2026-10-20,0,0,0,0
+cloud-operations-scenario-specific-solution,2026-11-18,0,0,2,2
 cloud-operations-solution-batch-reinstall-os,2026-10-21,0,0,0,0
 cloud-operations-solution-batch-reinstall-os,2026-10-22,0,0,0,0
 cloud-operations-solution-batch-reinstall-os,2026-10-23,0,0,0,0
@@ -2274,7 +2371,7 @@ cloud-operations-solution-batch-reinstall-os,2026-11-14,1,1,5,2
 cloud-operations-solution-batch-reinstall-os,2026-11-15,0,0,0,0
 cloud-operations-solution-batch-reinstall-os,2026-11-16,0,0,0,0
 cloud-operations-solution-batch-reinstall-os,2026-11-17,0,0,0,0
-cloud-operations-solution-building-a-personal-website-based-on-wordpress,2026-10-20,0,0,0,0
+cloud-operations-solution-batch-reinstall-os,2026-11-18,0,0,6,5
 cloud-operations-solution-building-a-personal-website-based-on-wordpress,2026-10-21,0,0,1,1
 cloud-operations-solution-building-a-personal-website-based-on-wordpress,2026-10-22,0,0,0,0
 cloud-operations-solution-building-a-personal-website-based-on-wordpress,2026-10-23,0,0,0,0
@@ -2303,7 +2400,7 @@ cloud-operations-solution-building-a-personal-website-based-on-wordpress,2026-11
 cloud-operations-solution-building-a-personal-website-based-on-wordpress,2026-11-15,0,0,0,0
 cloud-operations-solution-building-a-personal-website-based-on-wordpress,2026-11-16,0,0,0,0
 cloud-operations-solution-building-a-personal-website-based-on-wordpress,2026-11-17,0,0,0,0
-cloud-operations-solution-cloud-backup,2026-10-20,0,0,0,0
+cloud-operations-solution-building-a-personal-website-based-on-wordpress,2026-11-18,0,0,6,5
 cloud-operations-solution-cloud-backup,2026-10-21,0,0,1,1
 cloud-operations-solution-cloud-backup,2026-10-22,1,1,0,0
 cloud-operations-solution-cloud-backup,2026-10-23,0,0,0,0
@@ -2332,7 +2429,7 @@ cloud-operations-solution-cloud-backup,2026-11-14,0,0,4,1
 cloud-operations-solution-cloud-backup,2026-11-15,0,0,0,0
 cloud-operations-solution-cloud-backup,2026-11-16,0,0,0,0
 cloud-operations-solution-cloud-backup,2026-11-17,0,0,0,0
-cloud-operations-solution-deploy-a-source-code-build-system-based-on-jenkins,2026-10-20,0,0,0,0
+cloud-operations-solution-cloud-backup,2026-11-18,0,0,8,7
 cloud-operations-solution-deploy-a-source-code-build-system-based-on-jenkins,2026-10-21,0,0,0,0
 cloud-operations-solution-deploy-a-source-code-build-system-based-on-jenkins,2026-10-22,0,0,0,0
 cloud-operations-solution-deploy-a-source-code-build-system-based-on-jenkins,2026-10-23,0,0,0,0
@@ -2361,7 +2458,7 @@ cloud-operations-solution-deploy-a-source-code-build-system-based-on-jenkins,202
 cloud-operations-solution-deploy-a-source-code-build-system-based-on-jenkins,2026-11-15,0,0,0,0
 cloud-operations-solution-deploy-a-source-code-build-system-based-on-jenkins,2026-11-16,0,0,0,0
 cloud-operations-solution-deploy-a-source-code-build-system-based-on-jenkins,2026-11-17,0,0,1,1
-cloud-operations-solution-rapid-deployment-of-sap-b1-cloud-environment,2026-10-20,0,0,0,0
+cloud-operations-solution-deploy-a-source-code-build-system-based-on-jenkins,2026-11-18,0,0,7,6
 cloud-operations-solution-rapid-deployment-of-sap-b1-cloud-environment,2026-10-21,0,0,0,0
 cloud-operations-solution-rapid-deployment-of-sap-b1-cloud-environment,2026-10-22,0,0,0,0
 cloud-operations-solution-rapid-deployment-of-sap-b1-cloud-environment,2026-10-23,0,0,0,0
@@ -2390,7 +2487,7 @@ cloud-operations-solution-rapid-deployment-of-sap-b1-cloud-environment,2026-11-1
 cloud-operations-solution-rapid-deployment-of-sap-b1-cloud-environment,2026-11-15,0,0,0,0
 cloud-operations-solution-rapid-deployment-of-sap-b1-cloud-environment,2026-11-16,0,0,0,0
 cloud-operations-solution-rapid-deployment-of-sap-b1-cloud-environment,2026-11-17,0,0,0,0
-cloud-operations-solution-rapid-deployment-of-sap-s4hana-cloud-environment,2026-10-20,0,0,0,0
+cloud-operations-solution-rapid-deployment-of-sap-b1-cloud-environment,2026-11-18,0,0,7,6
 cloud-operations-solution-rapid-deployment-of-sap-s4hana-cloud-environment,2026-10-21,0,0,0,0
 cloud-operations-solution-rapid-deployment-of-sap-s4hana-cloud-environment,2026-10-22,0,0,0,0
 cloud-operations-solution-rapid-deployment-of-sap-s4hana-cloud-environment,2026-10-23,0,0,0,0
@@ -2419,7 +2516,7 @@ cloud-operations-solution-rapid-deployment-of-sap-s4hana-cloud-environment,2026-
 cloud-operations-solution-rapid-deployment-of-sap-s4hana-cloud-environment,2026-11-15,0,0,0,0
 cloud-operations-solution-rapid-deployment-of-sap-s4hana-cloud-environment,2026-11-16,0,0,0,0
 cloud-operations-solution-rapid-deployment-of-sap-s4hana-cloud-environment,2026-11-17,0,0,0,0
-cloud-operations-solution-rewarding-cloud-native-project,2026-10-20,0,0,0,0
+cloud-operations-solution-rapid-deployment-of-sap-s4hana-cloud-environment,2026-11-18,0,0,7,6
 cloud-operations-solution-rewarding-cloud-native-project,2026-10-21,0,0,0,0
 cloud-operations-solution-rewarding-cloud-native-project,2026-10-22,0,0,0,0
 cloud-operations-solution-rewarding-cloud-native-project,2026-10-23,0,0,0,0
@@ -2447,7 +2544,8 @@ cloud-operations-solution-rewarding-cloud-native-project,2026-11-13,0,0,5,2
 cloud-operations-solution-rewarding-cloud-native-project,2026-11-14,0,0,1,1
 cloud-operations-solution-rewarding-cloud-native-project,2026-11-15,0,0,0,0
 cloud-operations-solution-rewarding-cloud-native-project,2026-11-16,0,0,0,0
-cloud-operations-solution-scheduled-power-on-and-power-off,2026-10-20,0,0,0,0
+cloud-operations-solution-rewarding-cloud-native-project,2026-11-17,0,0,0,0
+cloud-operations-solution-rewarding-cloud-native-project,2026-11-18,0,0,7,6
 cloud-operations-solution-scheduled-power-on-and-power-off,2026-10-21,0,0,0,0
 cloud-operations-solution-scheduled-power-on-and-power-off,2026-10-22,0,0,0,0
 cloud-operations-solution-scheduled-power-on-and-power-off,2026-10-23,0,0,0,0
@@ -2476,7 +2574,7 @@ cloud-operations-solution-scheduled-power-on-and-power-off,2026-11-14,0,0,4,1
 cloud-operations-solution-scheduled-power-on-and-power-off,2026-11-15,0,0,0,0
 cloud-operations-solution-scheduled-power-on-and-power-off,2026-11-16,0,0,0,0
 cloud-operations-solution-scheduled-power-on-and-power-off,2026-11-17,0,0,1,1
-cloud-operations-solution-serverless-real-time-log-analysis,2026-10-20,0,0,0,0
+cloud-operations-solution-scheduled-power-on-and-power-off,2026-11-18,0,0,6,5
 cloud-operations-solution-serverless-real-time-log-analysis,2026-10-21,0,0,0,0
 cloud-operations-solution-serverless-real-time-log-analysis,2026-10-22,0,0,0,0
 cloud-operations-solution-serverless-real-time-log-analysis,2026-10-23,0,0,0,0
@@ -2505,7 +2603,7 @@ cloud-operations-solution-serverless-real-time-log-analysis,2026-11-14,0,0,4,1
 cloud-operations-solution-serverless-real-time-log-analysis,2026-11-15,0,0,1,1
 cloud-operations-solution-serverless-real-time-log-analysis,2026-11-16,0,0,0,0
 cloud-operations-solution-serverless-real-time-log-analysis,2026-11-17,0,0,0,0
-cloud-operations-solution-serverless-video-transcoding,2026-10-20,0,0,0,0
+cloud-operations-solution-serverless-real-time-log-analysis,2026-11-18,0,0,7,6
 cloud-operations-solution-serverless-video-transcoding,2026-10-21,0,0,1,1
 cloud-operations-solution-serverless-video-transcoding,2026-10-22,0,0,0,0
 cloud-operations-solution-serverless-video-transcoding,2026-10-23,0,0,0,0
@@ -2534,7 +2632,7 @@ cloud-operations-solution-serverless-video-transcoding,2026-11-14,0,0,4,1
 cloud-operations-solution-serverless-video-transcoding,2026-11-15,0,0,0,0
 cloud-operations-solution-serverless-video-transcoding,2026-11-16,6,2,5,3
 cloud-operations-solution-serverless-video-transcoding,2026-11-17,0,0,1,1
-cloud-operations-solution-website-om-based-on-log-tank-service,2026-10-20,0,0,0,0
+cloud-operations-solution-serverless-video-transcoding,2026-11-18,0,0,6,5
 cloud-operations-solution-website-om-based-on-log-tank-service,2026-10-21,0,0,0,0
 cloud-operations-solution-website-om-based-on-log-tank-service,2026-10-22,0,0,0,0
 cloud-operations-solution-website-om-based-on-log-tank-service,2026-10-23,0,0,0,0
@@ -2563,7 +2661,7 @@ cloud-operations-solution-website-om-based-on-log-tank-service,2026-11-14,0,0,4,
 cloud-operations-solution-website-om-based-on-log-tank-service,2026-11-15,0,0,0,0
 cloud-operations-solution-website-om-based-on-log-tank-service,2026-11-16,0,0,0,0
 cloud-operations-solution-website-om-based-on-log-tank-service,2026-11-17,0,0,0,0
-cloud-solution-operations-global-data-transfer-acceleration,2026-10-20,0,0,0,0
+cloud-operations-solution-website-om-based-on-log-tank-service,2026-11-18,0,0,7,6
 cloud-solution-operations-global-data-transfer-acceleration,2026-10-21,0,0,0,0
 cloud-solution-operations-global-data-transfer-acceleration,2026-10-22,0,0,0,0
 cloud-solution-operations-global-data-transfer-acceleration,2026-10-23,0,0,0,0
@@ -2592,7 +2690,7 @@ cloud-solution-operations-global-data-transfer-acceleration,2026-11-14,0,0,4,1
 cloud-solution-operations-global-data-transfer-acceleration,2026-11-15,0,0,0,0
 cloud-solution-operations-global-data-transfer-acceleration,2026-11-16,0,0,0,0
 cloud-solution-operations-global-data-transfer-acceleration,2026-11-17,0,0,1,1
-cloudnative-apisix-image,2026-10-20,0,0,0,0
+cloud-solution-operations-global-data-transfer-acceleration,2026-11-18,0,0,8,6
 cloudnative-apisix-image,2026-10-21,0,0,0,0
 cloudnative-apisix-image,2026-10-22,0,0,0,0
 cloudnative-apisix-image,2026-10-23,0,0,0,0
@@ -2621,7 +2719,7 @@ cloudnative-apisix-image,2026-11-14,0,0,4,1
 cloudnative-apisix-image,2026-11-15,0,0,0,0
 cloudnative-apisix-image,2026-11-16,0,0,0,0
 cloudnative-apisix-image,2026-11-17,0,0,0,0
-cloudnative-argo-workflows,2026-10-20,0,0,1,1
+cloudnative-apisix-image,2026-11-18,0,0,2,2
 cloudnative-argo-workflows,2026-10-21,0,0,0,0
 cloudnative-argo-workflows,2026-10-22,0,0,0,0
 cloudnative-argo-workflows,2026-10-23,0,0,0,0
@@ -2650,7 +2748,7 @@ cloudnative-argo-workflows,2026-11-14,0,0,0,0
 cloudnative-argo-workflows,2026-11-15,0,0,0,0
 cloudnative-argo-workflows,2026-11-16,0,0,0,0
 cloudnative-argo-workflows,2026-11-17,0,0,0,0
-cloudnative-cert-manager-webhook-huawei,2026-10-20,0,0,3,3
+cloudnative-argo-workflows,2026-11-18,0,0,1,1
 cloudnative-cert-manager-webhook-huawei,2026-10-21,0,0,2,2
 cloudnative-cert-manager-webhook-huawei,2026-10-22,0,0,1,1
 cloudnative-cert-manager-webhook-huawei,2026-10-23,0,0,1,1
@@ -2679,7 +2777,7 @@ cloudnative-cert-manager-webhook-huawei,2026-11-14,1,1,4,1
 cloudnative-cert-manager-webhook-huawei,2026-11-15,0,0,0,0
 cloudnative-cert-manager-webhook-huawei,2026-11-16,0,0,0,0
 cloudnative-cert-manager-webhook-huawei,2026-11-17,1,1,0,0
-cloudnative-cluster-api-provider-cce,2026-10-20,0,0,22,14
+cloudnative-cert-manager-webhook-huawei,2026-11-18,0,0,2,2
 cloudnative-cluster-api-provider-cce,2026-10-21,0,0,2,2
 cloudnative-cluster-api-provider-cce,2026-10-22,0,0,2,2
 cloudnative-cluster-api-provider-cce,2026-10-23,0,0,0,0
@@ -2708,7 +2806,7 @@ cloudnative-cluster-api-provider-cce,2026-11-14,0,0,4,1
 cloudnative-cluster-api-provider-cce,2026-11-15,0,0,1,1
 cloudnative-cluster-api-provider-cce,2026-11-16,0,0,0,0
 cloudnative-cluster-api-provider-cce,2026-11-17,0,0,0,0
-cloudnative-cluster-api-provider-huawei,2026-10-20,0,0,2,2
+cloudnative-cluster-api-provider-cce,2026-11-18,0,0,11,1
 cloudnative-cluster-api-provider-huawei,2026-10-21,0,0,2,2
 cloudnative-cluster-api-provider-huawei,2026-10-22,1,1,0,0
 cloudnative-cluster-api-provider-huawei,2026-10-23,1,1,1,1
@@ -2737,7 +2835,7 @@ cloudnative-cluster-api-provider-huawei,2026-11-14,0,0,9,1
 cloudnative-cluster-api-provider-huawei,2026-11-15,0,0,0,0
 cloudnative-cluster-api-provider-huawei,2026-11-16,0,0,2,2
 cloudnative-cluster-api-provider-huawei,2026-11-17,0,0,0,0
-cloudnative-consul-image,2026-10-20,0,0,1,1
+cloudnative-cluster-api-provider-huawei,2026-11-18,0,0,8,6
 cloudnative-consul-image,2026-10-21,0,0,1,1
 cloudnative-consul-image,2026-10-22,0,0,0,0
 cloudnative-consul-image,2026-10-23,0,0,0,0
@@ -2766,7 +2864,7 @@ cloudnative-consul-image,2026-11-14,0,0,4,1
 cloudnative-consul-image,2026-11-15,0,0,0,0
 cloudnative-consul-image,2026-11-16,0,0,0,0
 cloudnative-consul-image,2026-11-17,0,0,1,1
-cloudnative-distribution,2026-10-20,0,0,0,0
+cloudnative-consul-image,2026-11-18,0,0,3,3
 cloudnative-distribution,2026-10-21,0,0,0,0
 cloudnative-distribution,2026-10-22,0,0,1,1
 cloudnative-distribution,2026-10-23,0,0,0,0
@@ -2794,7 +2892,8 @@ cloudnative-distribution,2026-11-13,0,0,0,0
 cloudnative-distribution,2026-11-14,0,0,0,0
 cloudnative-distribution,2026-11-15,0,0,1,1
 cloudnative-distribution,2026-11-16,1,1,0,0
-cloudnative-etcd-image,2026-10-20,0,0,0,0
+cloudnative-distribution,2026-11-17,0,0,1,1
+cloudnative-distribution,2026-11-18,0,0,0,0
 cloudnative-etcd-image,2026-10-21,0,0,0,0
 cloudnative-etcd-image,2026-10-22,0,0,0,0
 cloudnative-etcd-image,2026-10-23,0,0,0,0
@@ -2822,7 +2921,8 @@ cloudnative-etcd-image,2026-11-13,0,0,2,1
 cloudnative-etcd-image,2026-11-14,0,0,4,1
 cloudnative-etcd-image,2026-11-15,0,0,0,0
 cloudnative-etcd-image,2026-11-16,0,0,0,0
-cloudnative-everest-elb-controller,2026-10-20,0,0,1,1
+cloudnative-etcd-image,2026-11-17,0,0,0,0
+cloudnative-etcd-image,2026-11-18,0,0,2,2
 cloudnative-everest-elb-controller,2026-10-21,0,0,1,1
 cloudnative-everest-elb-controller,2026-10-22,0,0,0,0
 cloudnative-everest-elb-controller,2026-10-23,0,0,1,1
@@ -2851,7 +2951,7 @@ cloudnative-everest-elb-controller,2026-11-14,0,0,4,1
 cloudnative-everest-elb-controller,2026-11-15,0,0,0,0
 cloudnative-everest-elb-controller,2026-11-16,0,0,0,0
 cloudnative-everest-elb-controller,2026-11-17,0,0,0,0
-cloudnative-harbor,2026-10-20,0,0,1,1
+cloudnative-everest-elb-controller,2026-11-18,0,0,2,1
 cloudnative-harbor,2026-10-21,0,0,1,1
 cloudnative-harbor,2026-10-22,0,0,0,0
 cloudnative-harbor,2026-10-23,0,0,0,0
@@ -2880,7 +2980,7 @@ cloudnative-harbor,2026-11-14,0,0,2,1
 cloudnative-harbor,2026-11-15,0,0,0,0
 cloudnative-harbor,2026-11-16,0,0,0,0
 cloudnative-harbor,2026-11-17,0,0,1,1
-cloudnative-harbor-image,2026-10-20,0,0,0,0
+cloudnative-harbor,2026-11-18,0,0,0,0
 cloudnative-harbor-image,2026-10-21,0,0,0,0
 cloudnative-harbor-image,2026-10-22,0,0,0,0
 cloudnative-harbor-image,2026-10-23,0,0,2,2
@@ -2909,7 +3009,7 @@ cloudnative-harbor-image,2026-11-14,0,0,4,1
 cloudnative-harbor-image,2026-11-15,0,0,0,0
 cloudnative-harbor-image,2026-11-16,2,2,0,0
 cloudnative-harbor-image,2026-11-17,2,2,1,1
-cloudnative-helm-image,2026-10-20,0,0,0,0
+cloudnative-harbor-image,2026-11-18,0,0,1,1
 cloudnative-helm-image,2026-10-21,0,0,0,0
 cloudnative-helm-image,2026-10-22,0,0,0,0
 cloudnative-helm-image,2026-10-23,0,0,0,0
@@ -2938,7 +3038,7 @@ cloudnative-helm-image,2026-11-14,0,0,4,1
 cloudnative-helm-image,2026-11-15,0,0,0,0
 cloudnative-helm-image,2026-11-16,0,0,0,0
 cloudnative-helm-image,2026-11-17,0,0,0,0
-cloudnative-huaweicloud-harbor-obs,2026-10-20,0,0,0,0
+cloudnative-helm-image,2026-11-18,0,0,1,1
 cloudnative-huaweicloud-harbor-obs,2026-10-21,0,0,0,0
 cloudnative-huaweicloud-harbor-obs,2026-10-22,0,0,1,1
 cloudnative-huaweicloud-harbor-obs,2026-10-23,0,0,0,0
@@ -2967,7 +3067,7 @@ cloudnative-huaweicloud-harbor-obs,2026-11-14,0,0,7,1
 cloudnative-huaweicloud-harbor-obs,2026-11-15,0,0,0,0
 cloudnative-huaweicloud-harbor-obs,2026-11-16,0,0,0,0
 cloudnative-huaweicloud-harbor-obs,2026-11-17,0,0,0,0
-cloudnative-image-builder,2026-10-20,0,0,0,0
+cloudnative-huaweicloud-harbor-obs,2026-11-18,0,0,6,5
 cloudnative-image-builder,2026-10-21,0,0,0,0
 cloudnative-image-builder,2026-10-22,0,0,2,2
 cloudnative-image-builder,2026-10-23,0,0,0,0
@@ -2996,7 +3096,7 @@ cloudnative-image-builder,2026-11-14,0,0,0,0
 cloudnative-image-builder,2026-11-15,0,0,0,0
 cloudnative-image-builder,2026-11-16,0,0,0,0
 cloudnative-image-builder,2026-11-17,0,0,0,0
-cloudnative-jaeger-image,2026-10-20,0,0,0,0
+cloudnative-image-builder,2026-11-18,0,0,0,0
 cloudnative-jaeger-image,2026-10-21,0,0,1,1
 cloudnative-jaeger-image,2026-10-22,0,0,0,0
 cloudnative-jaeger-image,2026-10-23,0,0,1,1
@@ -3024,7 +3124,8 @@ cloudnative-jaeger-image,2026-11-13,0,0,1,1
 cloudnative-jaeger-image,2026-11-14,0,0,3,1
 cloudnative-jaeger-image,2026-11-15,0,0,0,0
 cloudnative-jaeger-image,2026-11-16,0,0,0,0
-cloudnative-kafka-image,2026-10-20,0,0,0,0
+cloudnative-jaeger-image,2026-11-17,0,0,0,0
+cloudnative-jaeger-image,2026-11-18,0,0,5,4
 cloudnative-kafka-image,2026-10-21,0,0,0,0
 cloudnative-kafka-image,2026-10-22,0,0,0,0
 cloudnative-kafka-image,2026-10-23,0,0,1,1
@@ -3053,7 +3154,7 @@ cloudnative-kafka-image,2026-11-14,0,0,3,1
 cloudnative-kafka-image,2026-11-15,0,0,0,0
 cloudnative-kafka-image,2026-11-16,0,0,0,0
 cloudnative-kafka-image,2026-11-17,0,0,0,0
-cloudnative-kestra-image,2026-10-20,0,0,0,0
+cloudnative-kafka-image,2026-11-18,0,0,3,2
 cloudnative-kestra-image,2026-10-21,0,0,1,1
 cloudnative-kestra-image,2026-10-22,0,0,0,0
 cloudnative-kestra-image,2026-10-23,0,0,1,1
@@ -3082,7 +3183,7 @@ cloudnative-kestra-image,2026-11-14,0,0,3,1
 cloudnative-kestra-image,2026-11-15,0,0,0,0
 cloudnative-kestra-image,2026-11-16,0,0,0,0
 cloudnative-kestra-image,2026-11-17,0,0,0,0
-cloudnative-nacos-image,2026-10-20,0,0,0,0
+cloudnative-kestra-image,2026-11-18,0,0,6,5
 cloudnative-nacos-image,2026-10-21,0,0,0,0
 cloudnative-nacos-image,2026-10-22,0,0,0,0
 cloudnative-nacos-image,2026-10-23,0,0,0,0
@@ -3111,7 +3212,7 @@ cloudnative-nacos-image,2026-11-14,0,0,4,1
 cloudnative-nacos-image,2026-11-15,0,0,0,0
 cloudnative-nacos-image,2026-11-16,0,0,0,0
 cloudnative-nacos-image,2026-11-17,0,0,1,1
-cloudnative-nats-image,2026-10-20,0,0,0,0
+cloudnative-nacos-image,2026-11-18,0,0,2,2
 cloudnative-nats-image,2026-10-21,0,0,2,2
 cloudnative-nats-image,2026-10-22,0,0,0,0
 cloudnative-nats-image,2026-10-23,0,0,1,1
@@ -3140,7 +3241,7 @@ cloudnative-nats-image,2026-11-14,0,0,4,1
 cloudnative-nats-image,2026-11-15,0,0,0,0
 cloudnative-nats-image,2026-11-16,0,0,0,0
 cloudnative-nats-image,2026-11-17,0,0,0,0
-cloudnative-nsq-image,2026-10-20,0,0,0,0
+cloudnative-nats-image,2026-11-18,0,0,2,2
 cloudnative-nsq-image,2026-10-21,0,0,0,0
 cloudnative-nsq-image,2026-10-22,0,0,0,0
 cloudnative-nsq-image,2026-10-23,0,0,0,0
@@ -3169,7 +3270,7 @@ cloudnative-nsq-image,2026-11-14,0,0,4,1
 cloudnative-nsq-image,2026-11-15,0,0,0,0
 cloudnative-nsq-image,2026-11-16,0,0,0,0
 cloudnative-nsq-image,2026-11-17,0,0,0,0
-cloudnative-oss-quickstart,2026-10-20,0,0,2,2
+cloudnative-nsq-image,2026-11-18,2,2,2,2
 cloudnative-oss-quickstart,2026-10-21,0,0,1,1
 cloudnative-oss-quickstart,2026-10-22,0,0,1,1
 cloudnative-oss-quickstart,2026-10-23,0,0,0,0
@@ -3197,7 +3298,8 @@ cloudnative-oss-quickstart,2026-11-13,1,1,3,1
 cloudnative-oss-quickstart,2026-11-14,0,0,2,1
 cloudnative-oss-quickstart,2026-11-15,1,1,1,1
 cloudnative-oss-quickstart,2026-11-16,0,0,1,1
-cloudnative-prometheus-blackbox-exporter-image,2026-10-20,0,0,1,1
+cloudnative-oss-quickstart,2026-11-17,0,0,1,1
+cloudnative-oss-quickstart,2026-11-18,0,0,2,1
 cloudnative-prometheus-blackbox-exporter-image,2026-10-21,0,0,0,0
 cloudnative-prometheus-blackbox-exporter-image,2026-10-22,0,0,0,0
 cloudnative-prometheus-blackbox-exporter-image,2026-10-23,0,0,0,0
@@ -3226,7 +3328,7 @@ cloudnative-prometheus-blackbox-exporter-image,2026-11-14,0,0,4,1
 cloudnative-prometheus-blackbox-exporter-image,2026-11-15,0,0,0,0
 cloudnative-prometheus-blackbox-exporter-image,2026-11-16,0,0,0,0
 cloudnative-prometheus-blackbox-exporter-image,2026-11-17,0,0,0,0
-cloudnative-prometheus-image,2026-10-20,0,0,0,0
+cloudnative-prometheus-blackbox-exporter-image,2026-11-18,0,0,1,1
 cloudnative-prometheus-image,2026-10-21,0,0,0,0
 cloudnative-prometheus-image,2026-10-22,0,0,1,1
 cloudnative-prometheus-image,2026-10-23,0,0,0,0
@@ -3255,7 +3357,7 @@ cloudnative-prometheus-image,2026-11-14,0,0,3,1
 cloudnative-prometheus-image,2026-11-15,0,0,0,0
 cloudnative-prometheus-image,2026-11-16,0,0,0,0
 cloudnative-prometheus-image,2026-11-17,0,0,0,0
-cloudnative-prometheus-pushgateway-image,2026-10-20,0,0,0,0
+cloudnative-prometheus-image,2026-11-18,0,0,4,3
 cloudnative-prometheus-pushgateway-image,2026-10-21,0,0,1,1
 cloudnative-prometheus-pushgateway-image,2026-10-22,0,0,0,0
 cloudnative-prometheus-pushgateway-image,2026-10-23,0,0,10,9
@@ -3284,7 +3386,7 @@ cloudnative-prometheus-pushgateway-image,2026-11-14,0,0,4,1
 cloudnative-prometheus-pushgateway-image,2026-11-15,0,0,0,0
 cloudnative-prometheus-pushgateway-image,2026-11-16,1,1,0,0
 cloudnative-prometheus-pushgateway-image,2026-11-17,0,0,0,0
-cloudnative-prometheus-snmp-exporter-image,2026-10-20,0,0,0,0
+cloudnative-prometheus-pushgateway-image,2026-11-18,0,0,2,2
 cloudnative-prometheus-snmp-exporter-image,2026-10-21,0,0,0,0
 cloudnative-prometheus-snmp-exporter-image,2026-10-22,0,0,0,0
 cloudnative-prometheus-snmp-exporter-image,2026-10-23,0,0,0,0
@@ -3313,7 +3415,7 @@ cloudnative-prometheus-snmp-exporter-image,2026-11-14,0,0,4,1
 cloudnative-prometheus-snmp-exporter-image,2026-11-15,0,0,0,0
 cloudnative-prometheus-snmp-exporter-image,2026-11-16,0,0,0,0
 cloudnative-prometheus-snmp-exporter-image,2026-11-17,0,0,0,0
-cloudnative-shenyu-image,2026-10-20,0,0,0,0
+cloudnative-prometheus-snmp-exporter-image,2026-11-18,0,0,1,1
 cloudnative-shenyu-image,2026-10-21,0,0,0,0
 cloudnative-shenyu-image,2026-10-22,0,0,0,0
 cloudnative-shenyu-image,2026-10-23,0,0,0,0
@@ -3342,7 +3444,7 @@ cloudnative-shenyu-image,2026-11-14,0,0,3,1
 cloudnative-shenyu-image,2026-11-15,0,0,0,0
 cloudnative-shenyu-image,2026-11-16,0,0,0,0
 cloudnative-shenyu-image,2026-11-17,0,0,1,1
-cloudnative-solution-application-containerization-to-the-cloud,2026-10-20,0,0,0,0
+cloudnative-shenyu-image,2026-11-18,0,0,2,2
 cloudnative-solution-application-containerization-to-the-cloud,2026-10-21,0,0,0,0
 cloudnative-solution-application-containerization-to-the-cloud,2026-10-22,0,0,0,0
 cloudnative-solution-application-containerization-to-the-cloud,2026-10-23,0,0,0,0
@@ -3371,7 +3473,7 @@ cloudnative-solution-application-containerization-to-the-cloud,2026-11-14,0,0,4,
 cloudnative-solution-application-containerization-to-the-cloud,2026-11-15,0,0,0,0
 cloudnative-solution-application-containerization-to-the-cloud,2026-11-16,0,0,0,0
 cloudnative-solution-application-containerization-to-the-cloud,2026-11-17,0,0,1,1
-cloudnative-solution-build-a-highly-available-RabbitMQ-cluster,2026-10-20,0,0,1,1
+cloudnative-solution-application-containerization-to-the-cloud,2026-11-18,0,0,7,6
 cloudnative-solution-build-a-highly-available-RabbitMQ-cluster,2026-10-21,0,0,0,0
 cloudnative-solution-build-a-highly-available-RabbitMQ-cluster,2026-10-22,0,0,0,0
 cloudnative-solution-build-a-highly-available-RabbitMQ-cluster,2026-10-23,0,0,0,0
@@ -3400,7 +3502,7 @@ cloudnative-solution-build-a-highly-available-RabbitMQ-cluster,2026-11-14,0,0,4,
 cloudnative-solution-build-a-highly-available-RabbitMQ-cluster,2026-11-15,0,0,0,0
 cloudnative-solution-build-a-highly-available-RabbitMQ-cluster,2026-11-16,0,0,0,0
 cloudnative-solution-build-a-highly-available-RabbitMQ-cluster,2026-11-17,0,0,1,1
-cloudnative-temporal-image,2026-10-20,0,0,0,0
+cloudnative-solution-build-a-highly-available-RabbitMQ-cluster,2026-11-18,0,0,6,5
 cloudnative-temporal-image,2026-10-21,0,0,1,1
 cloudnative-temporal-image,2026-10-22,0,0,0,0
 cloudnative-temporal-image,2026-10-23,0,0,2,2
@@ -3429,7 +3531,7 @@ cloudnative-temporal-image,2026-11-14,0,0,4,1
 cloudnative-temporal-image,2026-11-15,0,0,0,0
 cloudnative-temporal-image,2026-11-16,0,0,1,1
 cloudnative-temporal-image,2026-11-17,0,0,0,0
-cloudnative-vpc-hub,2026-10-20,0,0,1,1
+cloudnative-temporal-image,2026-11-18,0,0,3,2
 cloudnative-vpc-hub,2026-10-21,0,0,2,2
 cloudnative-vpc-hub,2026-10-22,0,0,0,0
 cloudnative-vpc-hub,2026-10-23,0,0,0,0
@@ -3458,7 +3560,7 @@ cloudnative-vpc-hub,2026-11-14,1,1,6,2
 cloudnative-vpc-hub,2026-11-15,0,0,1,1
 cloudnative-vpc-hub,2026-11-16,0,0,1,1
 cloudnative-vpc-hub,2026-11-17,0,0,0,0
-cloudoperation-resource-monitor-dashboard,2026-10-20,0,0,0,0
+cloudnative-vpc-hub,2026-11-18,0,0,0,0
 cloudoperation-resource-monitor-dashboard,2026-10-21,2,1,3,3
 cloudoperation-resource-monitor-dashboard,2026-10-22,7,4,4,3
 cloudoperation-resource-monitor-dashboard,2026-10-23,1,1,0,0
@@ -3487,7 +3589,6 @@ cloudoperation-resource-monitor-dashboard,2026-11-14,0,0,7,2
 cloudoperation-resource-monitor-dashboard,2026-11-15,0,0,0,0
 cloudoperation-resource-monitor-dashboard,2026-11-16,0,0,0,0
 cloudoperation-resource-monitor-dashboard,2026-11-17,0,0,1,1
-cloudrobo-samples,2026-10-20,16,5,15,7
 cloudrobo-samples,2026-10-21,24,2,11,6
 cloudrobo-samples,2026-10-22,40,2,53,19
 cloudrobo-samples,2026-10-23,41,4,84,27
@@ -3516,6 +3617,7 @@ cloudrobo-samples,2026-11-14,18,6,6,3
 cloudrobo-samples,2026-11-15,95,1,30,12
 cloudrobo-samples,2026-11-16,246,16,24,11
 cloudrobo-samples,2026-11-17,33,12,15,4
+cloudrobo-samples,2026-11-18,94,12,23,9
 data-integration-database-acceleration,2026-11-05,0,0,0,0
 data-integration-database-acceleration,2026-11-06,0,0,0,0
 data-integration-database-acceleration,2026-11-07,0,0,0,0
@@ -3529,7 +3631,7 @@ data-integration-database-acceleration,2026-11-14,0,0,0,0
 data-integration-database-acceleration,2026-11-15,0,0,0,0
 data-integration-database-acceleration,2026-11-16,0,0,0,0
 data-integration-database-acceleration,2026-11-17,0,0,0,0
-data-integration-database-acceleration,2026-11-18,0,0,0,0
+data-integration-database-acceleration,2026-11-18,0,0,30,22
 data-integration-dicom-metadata-extractor,2026-10-23,0,0,0,0
 data-integration-dicom-metadata-extractor,2026-10-24,0,0,0,0
 data-integration-dicom-metadata-extractor,2026-10-25,0,0,0,0
@@ -3556,6 +3658,7 @@ data-integration-dicom-metadata-extractor,2026-11-14,0,0,3,1
 data-integration-dicom-metadata-extractor,2026-11-15,0,0,1,1
 data-integration-dicom-metadata-extractor,2026-11-16,5,1,6,4
 data-integration-dicom-metadata-extractor,2026-11-17,0,0,0,0
+data-integration-dicom-metadata-extractor,2026-11-18,0,0,1,1
 data-integration-iceberg-snapshot-restore,2026-11-05,0,0,0,0
 data-integration-iceberg-snapshot-restore,2026-11-06,0,0,0,0
 data-integration-iceberg-snapshot-restore,2026-11-07,0,0,0,0
@@ -3569,7 +3672,7 @@ data-integration-iceberg-snapshot-restore,2026-11-14,0,0,0,0
 data-integration-iceberg-snapshot-restore,2026-11-15,0,0,0,0
 data-integration-iceberg-snapshot-restore,2026-11-16,0,0,0,0
 data-integration-iceberg-snapshot-restore,2026-11-17,0,0,0,0
-data-integration-iceberg-snapshot-restore,2026-11-18,0,0,0,0
+data-integration-iceberg-snapshot-restore,2026-11-18,0,0,26,20
 data-integration-s3-cross-account-replication,2026-10-23,0,0,0,0
 data-integration-s3-cross-account-replication,2026-10-24,0,0,0,0
 data-integration-s3-cross-account-replication,2026-10-25,0,0,0,0
@@ -3596,6 +3699,7 @@ data-integration-s3-cross-account-replication,2026-11-14,0,0,3,1
 data-integration-s3-cross-account-replication,2026-11-15,0,0,1,1
 data-integration-s3-cross-account-replication,2026-11-16,4,1,6,4
 data-integration-s3-cross-account-replication,2026-11-17,0,0,0,0
+data-integration-s3-cross-account-replication,2026-11-18,0,0,2,1
 data-integration-sample-s3-hybrid-cache,2026-10-24,0,0,0,0
 data-integration-sample-s3-hybrid-cache,2026-10-25,0,0,0,0
 data-integration-sample-s3-hybrid-cache,2026-10-26,0,0,0,0
@@ -3621,7 +3725,7 @@ data-integration-sample-s3-hybrid-cache,2026-11-14,0,0,3,1
 data-integration-sample-s3-hybrid-cache,2026-11-15,0,0,1,1
 data-integration-sample-s3-hybrid-cache,2026-11-16,5,1,12,6
 data-integration-sample-s3-hybrid-cache,2026-11-17,0,0,2,2
-database-arangodb-image,2026-10-20,0,0,0,0
+data-integration-sample-s3-hybrid-cache,2026-11-18,0,0,1,1
 database-arangodb-image,2026-10-21,0,0,0,0
 database-arangodb-image,2026-10-22,0,0,0,0
 database-arangodb-image,2026-10-23,0,0,0,0
@@ -3650,7 +3754,7 @@ database-arangodb-image,2026-11-14,0,0,3,1
 database-arangodb-image,2026-11-15,0,0,0,0
 database-arangodb-image,2026-11-16,0,0,0,0
 database-arangodb-image,2026-11-17,0,0,0,0
-database-archery,2026-10-20,0,0,0,0
+database-arangodb-image,2026-11-18,0,0,1,1
 database-archery,2026-10-21,0,0,0,0
 database-archery,2026-10-22,0,0,1,1
 database-archery,2026-10-23,0,0,0,0
@@ -3679,7 +3783,7 @@ database-archery,2026-11-14,0,0,38,1
 database-archery,2026-11-15,0,0,0,0
 database-archery,2026-11-16,0,0,0,0
 database-archery,2026-11-17,0,0,38,1
-database-awesome-huaweicloud,2026-10-20,0,0,67,32
+database-archery,2026-11-18,0,0,0,0
 database-awesome-huaweicloud,2026-10-21,0,0,27,14
 database-awesome-huaweicloud,2026-10-22,0,0,0,0
 database-awesome-huaweicloud,2026-10-23,0,0,109,44
@@ -3708,7 +3812,7 @@ database-awesome-huaweicloud,2026-11-14,0,0,11,10
 database-awesome-huaweicloud,2026-11-15,0,0,5,4
 database-awesome-huaweicloud,2026-11-16,0,0,36,21
 database-awesome-huaweicloud,2026-11-17,0,0,339,137
-database-cassandra-image,2026-10-20,0,0,0,0
+database-awesome-huaweicloud,2026-11-18,1,1,182,68
 database-cassandra-image,2026-10-21,0,0,1,1
 database-cassandra-image,2026-10-22,0,0,0,0
 database-cassandra-image,2026-10-23,0,0,0,0
@@ -3737,7 +3841,7 @@ database-cassandra-image,2026-11-14,0,0,2,1
 database-cassandra-image,2026-11-15,0,0,0,0
 database-cassandra-image,2026-11-16,0,0,0,0
 database-cassandra-image,2026-11-17,0,0,0,0
-database-clickhouse-image,2026-10-20,0,0,0,0
+database-cassandra-image,2026-11-18,0,0,3,2
 database-clickhouse-image,2026-10-21,0,0,1,1
 database-clickhouse-image,2026-10-22,0,0,0,0
 database-clickhouse-image,2026-10-23,0,0,2,2
@@ -3766,7 +3870,7 @@ database-clickhouse-image,2026-11-14,0,0,4,2
 database-clickhouse-image,2026-11-15,0,0,0,0
 database-clickhouse-image,2026-11-16,0,0,0,0
 database-clickhouse-image,2026-11-17,0,0,0,0
-database-cloudbeaver-image,2026-10-20,0,0,0,0
+database-clickhouse-image,2026-11-18,0,0,1,1
 database-cloudbeaver-image,2026-10-21,0,0,1,1
 database-cloudbeaver-image,2026-10-22,0,0,0,0
 database-cloudbeaver-image,2026-10-23,0,0,0,0
@@ -3795,7 +3899,7 @@ database-cloudbeaver-image,2026-11-14,0,0,2,1
 database-cloudbeaver-image,2026-11-15,0,0,0,0
 database-cloudbeaver-image,2026-11-16,0,0,0,0
 database-cloudbeaver-image,2026-11-17,0,0,0,0
-database-couchdb-image,2026-10-20,0,0,0,0
+database-cloudbeaver-image,2026-11-18,0,0,2,2
 database-couchdb-image,2026-10-21,0,0,1,1
 database-couchdb-image,2026-10-22,0,0,0,0
 database-couchdb-image,2026-10-23,0,0,2,2
@@ -3824,7 +3928,7 @@ database-couchdb-image,2026-11-14,0,0,4,2
 database-couchdb-image,2026-11-15,0,0,0,0
 database-couchdb-image,2026-11-16,0,0,0,0
 database-couchdb-image,2026-11-17,1,1,0,0
-database-crewai-gaussdb,2026-10-20,0,0,1,1
+database-couchdb-image,2026-11-18,0,0,1,1
 database-crewai-gaussdb,2026-10-21,0,0,0,0
 database-crewai-gaussdb,2026-10-22,0,0,1,1
 database-crewai-gaussdb,2026-10-23,0,0,0,0
@@ -3852,7 +3956,8 @@ database-crewai-gaussdb,2026-11-13,0,0,1,1
 database-crewai-gaussdb,2026-11-14,0,0,19,1
 database-crewai-gaussdb,2026-11-15,0,0,0,0
 database-crewai-gaussdb,2026-11-16,0,0,1,1
-database-dapper-orm-gaussdb,2026-10-20,0,0,0,0
+database-crewai-gaussdb,2026-11-17,0,0,0,0
+database-crewai-gaussdb,2026-11-18,0,0,1,1
 database-dapper-orm-gaussdb,2026-10-21,0,0,21,15
 database-dapper-orm-gaussdb,2026-10-22,0,0,2,2
 database-dapper-orm-gaussdb,2026-10-23,0,0,3,3
@@ -3881,7 +3986,7 @@ database-dapper-orm-gaussdb,2026-11-14,0,0,4,2
 database-dapper-orm-gaussdb,2026-11-15,0,0,0,0
 database-dapper-orm-gaussdb,2026-11-16,0,0,1,1
 database-dapper-orm-gaussdb,2026-11-17,0,0,0,0
-database-dbeaver,2026-10-20,0,0,0,0
+database-dapper-orm-gaussdb,2026-11-18,0,0,1,1
 database-dbeaver,2026-10-21,0,0,0,0
 database-dbeaver,2026-10-22,0,0,0,0
 database-dbeaver,2026-10-23,0,0,0,0
@@ -3910,7 +4015,7 @@ database-dbeaver,2026-11-14,1,1,0,0
 database-dbeaver,2026-11-15,0,0,0,0
 database-dbeaver,2026-11-16,0,0,0,0
 database-dbeaver,2026-11-17,0,0,1,1
-database-deltaLake-image,2026-10-20,0,0,0,0
+database-dbeaver,2026-11-18,0,0,0,0
 database-deltaLake-image,2026-10-21,0,0,0,0
 database-deltaLake-image,2026-10-22,0,0,0,0
 database-deltaLake-image,2026-10-23,0,0,0,0
@@ -3938,7 +4043,8 @@ database-deltaLake-image,2026-11-13,0,0,2,1
 database-deltaLake-image,2026-11-14,0,0,2,1
 database-deltaLake-image,2026-11-15,0,0,0,0
 database-deltaLake-image,2026-11-16,0,0,0,0
-database-dgraph-image,2026-10-20,0,0,1,1
+database-deltaLake-image,2026-11-17,0,0,0,0
+database-deltaLake-image,2026-11-18,0,0,1,1
 database-dgraph-image,2026-10-21,0,0,0,0
 database-dgraph-image,2026-10-22,0,0,0,0
 database-dgraph-image,2026-10-23,0,0,0,0
@@ -3967,7 +4073,7 @@ database-dgraph-image,2026-11-14,0,0,3,1
 database-dgraph-image,2026-11-15,0,0,0,0
 database-dgraph-image,2026-11-16,0,0,1,1
 database-dgraph-image,2026-11-17,0,0,1,1
-database-diesel,2026-10-20,0,0,1,1
+database-dgraph-image,2026-11-18,0,0,2,2
 database-diesel,2026-10-21,0,0,0,0
 database-diesel,2026-10-22,0,0,0,0
 database-diesel,2026-10-23,0,0,0,0
@@ -3996,7 +4102,7 @@ database-diesel,2026-11-14,0,0,0,0
 database-diesel,2026-11-15,0,0,0,0
 database-diesel,2026-11-16,0,0,0,0
 database-diesel,2026-11-17,0,0,0,0
-database-dify-gaussdb,2026-10-20,0,0,2,2
+database-diesel,2026-11-18,0,0,0,0
 database-dify-gaussdb,2026-10-21,0,0,1,1
 database-dify-gaussdb,2026-10-22,0,0,2,2
 database-dify-gaussdb,2026-10-23,0,0,0,0
@@ -4025,7 +4131,7 @@ database-dify-gaussdb,2026-11-14,0,0,34,1
 database-dify-gaussdb,2026-11-15,0,0,1,1
 database-dify-gaussdb,2026-11-16,0,0,1,1
 database-dify-gaussdb,2026-11-17,0,0,0,0
-database-doris-image,2026-10-20,0,0,0,0
+database-dify-gaussdb,2026-11-18,0,0,1,1
 database-doris-image,2026-10-21,0,0,1,1
 database-doris-image,2026-10-22,0,0,0,0
 database-doris-image,2026-10-23,0,0,0,0
@@ -4054,7 +4160,7 @@ database-doris-image,2026-11-14,2,1,3,1
 database-doris-image,2026-11-15,0,0,0,0
 database-doris-image,2026-11-16,0,0,0,0
 database-doris-image,2026-11-17,0,0,0,0
-database-druid,2026-10-20,0,0,0,0
+database-doris-image,2026-11-18,0,0,2,2
 database-druid,2026-10-21,0,0,0,0
 database-druid,2026-10-22,0,0,0,0
 database-druid,2026-10-23,0,0,0,0
@@ -4082,7 +4188,8 @@ database-druid,2026-11-13,1,1,2,2
 database-druid,2026-11-14,0,0,1,1
 database-druid,2026-11-15,0,0,6,2
 database-druid,2026-11-16,0,0,0,0
-database-druid-image,2026-10-20,0,0,0,0
+database-druid,2026-11-17,0,0,0,0
+database-druid,2026-11-18,0,0,0,0
 database-druid-image,2026-10-21,0,0,0,0
 database-druid-image,2026-10-22,0,0,0,0
 database-druid-image,2026-10-23,0,0,1,1
@@ -4111,7 +4218,7 @@ database-druid-image,2026-11-14,0,0,3,1
 database-druid-image,2026-11-15,0,0,1,1
 database-druid-image,2026-11-16,0,0,0,0
 database-druid-image,2026-11-17,0,0,0,0
-database-faiss-image,2026-10-20,0,0,0,0
+database-druid-image,2026-11-18,0,0,2,2
 database-faiss-image,2026-10-21,0,0,0,0
 database-faiss-image,2026-10-22,0,0,1,1
 database-faiss-image,2026-10-23,0,0,0,0
@@ -4140,7 +4247,6 @@ database-faiss-image,2026-11-14,0,0,4,1
 database-faiss-image,2026-11-15,0,0,0,0
 database-faiss-image,2026-11-16,0,0,0,0
 database-faiss-image,2026-11-17,0,0,0,0
-database-fake2db-image,2026-10-20,1,1,0,0
 database-fake2db-image,2026-10-21,0,0,0,0
 database-fake2db-image,2026-10-22,0,0,0,0
 database-fake2db-image,2026-10-23,0,0,0,0
@@ -4169,7 +4275,7 @@ database-fake2db-image,2026-11-14,0,0,5,2
 database-fake2db-image,2026-11-15,0,0,0,0
 database-fake2db-image,2026-11-16,0,0,0,0
 database-fake2db-image,2026-11-17,0,0,0,0
-database-flair-image,2026-10-20,0,0,0,0
+database-fake2db-image,2026-11-18,0,0,2,2
 database-flair-image,2026-10-21,0,0,1,1
 database-flair-image,2026-10-22,0,0,3,3
 database-flair-image,2026-10-23,0,0,0,0
@@ -4198,7 +4304,7 @@ database-flair-image,2026-11-14,0,0,3,1
 database-flair-image,2026-11-15,0,0,0,0
 database-flair-image,2026-11-16,0,0,0,0
 database-flair-image,2026-11-17,0,0,0,0
-database-gaussdb-diesel,2026-10-20,0,0,0,0
+database-flair-image,2026-11-18,0,0,6,5
 database-gaussdb-diesel,2026-10-21,0,0,2,2
 database-gaussdb-diesel,2026-10-22,0,0,0,0
 database-gaussdb-diesel,2026-10-23,0,0,2,2
@@ -4227,7 +4333,7 @@ database-gaussdb-diesel,2026-11-14,1,1,7,3
 database-gaussdb-diesel,2026-11-15,0,0,0,0
 database-gaussdb-diesel,2026-11-16,0,0,0,0
 database-gaussdb-diesel,2026-11-17,0,0,1,1
-database-gaussdb-django,2026-10-20,0,0,1,1
+database-gaussdb-diesel,2026-11-18,0,0,2,2
 database-gaussdb-django,2026-10-21,0,0,2,2
 database-gaussdb-django,2026-10-22,0,0,1,1
 database-gaussdb-django,2026-10-23,0,0,1,1
@@ -4256,7 +4362,7 @@ database-gaussdb-django,2026-11-14,1,1,6,2
 database-gaussdb-django,2026-11-15,0,0,0,0
 database-gaussdb-django,2026-11-16,0,0,0,0
 database-gaussdb-django,2026-11-17,1,1,0,0
-database-gaussdb-dotnet,2026-10-20,0,0,0,0
+database-gaussdb-django,2026-11-18,1,1,3,3
 database-gaussdb-dotnet,2026-10-21,3,2,2,2
 database-gaussdb-dotnet,2026-10-22,2,2,1,1
 database-gaussdb-dotnet,2026-10-23,0,0,1,1
@@ -4285,7 +4391,7 @@ database-gaussdb-dotnet,2026-11-14,1,1,0,0
 database-gaussdb-dotnet,2026-11-15,3,2,0,0
 database-gaussdb-dotnet,2026-11-16,3,3,0,0
 database-gaussdb-dotnet,2026-11-17,7,4,0,0
-database-gaussdb-drivers,2026-10-20,4,4,0,0
+database-gaussdb-dotnet,2026-11-18,3,2,0,0
 database-gaussdb-drivers,2026-10-21,3,2,2,2
 database-gaussdb-drivers,2026-10-22,1,1,4,3
 database-gaussdb-drivers,2026-10-23,1,1,3,3
@@ -4314,7 +4420,7 @@ database-gaussdb-drivers,2026-11-14,5,4,8,2
 database-gaussdb-drivers,2026-11-15,2,2,1,1
 database-gaussdb-drivers,2026-11-16,5,5,0,0
 database-gaussdb-drivers,2026-11-17,3,3,0,0
-database-gaussdb-ecosystem,2026-10-20,3,3,0,0
+database-gaussdb-drivers,2026-11-18,7,5,17,9
 database-gaussdb-ecosystem,2026-10-21,21,9,12,7
 database-gaussdb-ecosystem,2026-10-22,3,2,16,11
 database-gaussdb-ecosystem,2026-10-23,2,2,2,2
@@ -4343,7 +4449,7 @@ database-gaussdb-ecosystem,2026-11-14,7,7,14,3
 database-gaussdb-ecosystem,2026-11-15,1,1,0,0
 database-gaussdb-ecosystem,2026-11-16,22,14,0,0
 database-gaussdb-ecosystem,2026-11-17,18,15,3,3
-database-gaussdb-efcore,2026-10-20,0,0,2,2
+database-gaussdb-ecosystem,2026-11-18,15,12,7,5
 database-gaussdb-efcore,2026-10-21,0,0,1,1
 database-gaussdb-efcore,2026-10-22,0,0,1,1
 database-gaussdb-efcore,2026-10-23,0,0,0,0
@@ -4372,7 +4478,7 @@ database-gaussdb-efcore,2026-11-14,3,1,1,1
 database-gaussdb-efcore,2026-11-15,0,0,0,0
 database-gaussdb-efcore,2026-11-16,0,0,0,0
 database-gaussdb-efcore,2026-11-17,0,0,0,0
-database-gaussdb-examples,2026-10-20,0,0,0,0
+database-gaussdb-efcore,2026-11-18,7,4,2,1
 database-gaussdb-examples,2026-10-21,0,0,6,6
 database-gaussdb-examples,2026-10-22,0,0,1,1
 database-gaussdb-examples,2026-10-23,1,1,1,1
@@ -4401,7 +4507,7 @@ database-gaussdb-examples,2026-11-14,0,0,23,13
 database-gaussdb-examples,2026-11-15,1,1,3,3
 database-gaussdb-examples,2026-11-16,1,1,6,6
 database-gaussdb-examples,2026-11-17,0,0,31,30
-database-gaussdb-examples-rust,2026-10-20,0,0,1,1
+database-gaussdb-examples,2026-11-18,0,0,15,12
 database-gaussdb-examples-rust,2026-10-21,0,0,0,0
 database-gaussdb-examples-rust,2026-10-22,0,0,0,0
 database-gaussdb-examples-rust,2026-10-23,0,0,0,0
@@ -4430,7 +4536,7 @@ database-gaussdb-examples-rust,2026-11-14,0,0,2,1
 database-gaussdb-examples-rust,2026-11-15,0,0,1,1
 database-gaussdb-examples-rust,2026-11-16,0,0,0,0
 database-gaussdb-examples-rust,2026-11-17,0,0,0,0
-database-gaussdb-flink-connector-jdbc,2026-10-20,1,1,2,2
+database-gaussdb-examples-rust,2026-11-18,0,0,3,2
 database-gaussdb-flink-connector-jdbc,2026-10-21,2,2,1,1
 database-gaussdb-flink-connector-jdbc,2026-10-22,0,0,0,0
 database-gaussdb-flink-connector-jdbc,2026-10-23,1,1,0,0
@@ -4459,7 +4565,7 @@ database-gaussdb-flink-connector-jdbc,2026-11-14,0,0,6,3
 database-gaussdb-flink-connector-jdbc,2026-11-15,3,1,7,6
 database-gaussdb-flink-connector-jdbc,2026-11-16,6,5,0,0
 database-gaussdb-flink-connector-jdbc,2026-11-17,8,5,6,5
-database-gaussdb-go,2026-10-20,1,1,1,1
+database-gaussdb-flink-connector-jdbc,2026-11-18,4,1,13,12
 database-gaussdb-go,2026-10-21,0,0,5,4
 database-gaussdb-go,2026-10-22,0,0,1,1
 database-gaussdb-go,2026-10-23,1,1,17,11
@@ -4488,7 +4594,7 @@ database-gaussdb-go,2026-11-14,4,2,1,1
 database-gaussdb-go,2026-11-15,0,0,0,0
 database-gaussdb-go,2026-11-16,5,4,1,1
 database-gaussdb-go,2026-11-17,17,6,6,6
-database-gaussdb-hibernate-orm,2026-10-20,0,0,1,1
+database-gaussdb-go,2026-11-18,3,1,4,4
 database-gaussdb-hibernate-orm,2026-10-21,0,0,2,2
 database-gaussdb-hibernate-orm,2026-10-22,0,0,1,1
 database-gaussdb-hibernate-orm,2026-10-23,0,0,0,0
@@ -4517,7 +4623,6 @@ database-gaussdb-hibernate-orm,2026-11-14,0,0,3,1
 database-gaussdb-hibernate-orm,2026-11-15,0,0,1,1
 database-gaussdb-hibernate-orm,2026-11-16,1,1,0,0
 database-gaussdb-hibernate-orm,2026-11-17,0,0,1,1
-database-gaussdb-node,2026-10-20,7,4,76,15
 database-gaussdb-node,2026-10-21,0,0,7,5
 database-gaussdb-node,2026-10-22,0,0,3,3
 database-gaussdb-node,2026-10-23,1,1,0,0
@@ -4546,7 +4651,7 @@ database-gaussdb-node,2026-11-14,0,0,7,3
 database-gaussdb-node,2026-11-15,0,0,3,2
 database-gaussdb-node,2026-11-16,0,0,2,1
 database-gaussdb-node,2026-11-17,3,3,2,1
-database-gaussdb-php,2026-10-20,0,0,0,0
+database-gaussdb-node,2026-11-18,3,1,3,2
 database-gaussdb-php,2026-10-21,0,0,0,0
 database-gaussdb-php,2026-10-22,0,0,0,0
 database-gaussdb-php,2026-10-23,0,0,0,0
@@ -4575,7 +4680,7 @@ database-gaussdb-php,2026-11-14,0,0,0,0
 database-gaussdb-php,2026-11-15,0,0,0,0
 database-gaussdb-php,2026-11-16,0,0,0,0
 database-gaussdb-php,2026-11-17,0,0,0,0
-database-gaussdb-php-driver,2026-10-20,1,1,1,1
+database-gaussdb-php,2026-11-18,0,0,0,0
 database-gaussdb-php-driver,2026-10-21,1,1,0,0
 database-gaussdb-php-driver,2026-10-22,1,1,0,0
 database-gaussdb-php-driver,2026-10-23,0,0,0,0
@@ -4604,7 +4709,7 @@ database-gaussdb-php-driver,2026-11-14,0,0,3,1
 database-gaussdb-php-driver,2026-11-15,0,0,0,0
 database-gaussdb-php-driver,2026-11-16,0,0,0,0
 database-gaussdb-php-driver,2026-11-17,1,1,0,0
-database-gaussdb-python,2026-10-20,1,1,1,1
+database-gaussdb-php-driver,2026-11-18,2,1,2,1
 database-gaussdb-python,2026-10-21,1,1,1,1
 database-gaussdb-python,2026-10-22,1,1,1,1
 database-gaussdb-python,2026-10-23,2,1,1,1
@@ -4633,7 +4738,7 @@ database-gaussdb-python,2026-11-14,0,0,1,1
 database-gaussdb-python,2026-11-15,0,0,0,0
 database-gaussdb-python,2026-11-16,2,2,1,1
 database-gaussdb-python,2026-11-17,30,4,0,0
-database-gaussdb-python-async,2026-10-20,0,0,1,1
+database-gaussdb-python,2026-11-18,4,4,0,0
 database-gaussdb-python-async,2026-10-21,0,0,1,1
 database-gaussdb-python-async,2026-10-22,0,0,1,1
 database-gaussdb-python-async,2026-10-23,1,1,0,0
@@ -4662,7 +4767,7 @@ database-gaussdb-python-async,2026-11-14,0,0,0,0
 database-gaussdb-python-async,2026-11-15,0,0,0,0
 database-gaussdb-python-async,2026-11-16,1,1,0,0
 database-gaussdb-python-async,2026-11-17,1,1,1,1
-database-gaussdb-quartz,2026-10-20,0,0,1,1
+database-gaussdb-python-async,2026-11-18,13,5,0,0
 database-gaussdb-quartz,2026-10-21,0,0,0,0
 database-gaussdb-quartz,2026-10-22,0,0,0,0
 database-gaussdb-quartz,2026-10-23,0,0,0,0
@@ -4691,7 +4796,7 @@ database-gaussdb-quartz,2026-11-14,0,0,3,1
 database-gaussdb-quartz,2026-11-15,0,0,0,0
 database-gaussdb-quartz,2026-11-16,0,0,0,0
 database-gaussdb-quartz,2026-11-17,0,0,0,0
-database-gaussdb-r2dbc,2026-10-20,2,2,1,1
+database-gaussdb-quartz,2026-11-18,0,0,2,2
 database-gaussdb-r2dbc,2026-10-21,1,1,2,2
 database-gaussdb-r2dbc,2026-10-22,0,0,0,0
 database-gaussdb-r2dbc,2026-10-23,1,1,1,1
@@ -4720,7 +4825,7 @@ database-gaussdb-r2dbc,2026-11-14,0,0,1,1
 database-gaussdb-r2dbc,2026-11-15,0,0,4,1
 database-gaussdb-r2dbc,2026-11-16,0,0,0,0
 database-gaussdb-r2dbc,2026-11-17,1,1,0,0
-database-gaussdb-r2dbc-examples,2026-10-20,2,1,1,1
+database-gaussdb-r2dbc,2026-11-18,1,1,0,0
 database-gaussdb-r2dbc-examples,2026-10-21,1,1,0,0
 database-gaussdb-r2dbc-examples,2026-10-22,0,0,0,0
 database-gaussdb-r2dbc-examples,2026-10-23,0,0,0,0
@@ -4749,7 +4854,6 @@ database-gaussdb-r2dbc-examples,2026-11-14,0,0,3,1
 database-gaussdb-r2dbc-examples,2026-11-15,0,0,1,1
 database-gaussdb-r2dbc-examples,2026-11-16,1,1,0,0
 database-gaussdb-r2dbc-examples,2026-11-17,1,1,0,0
-database-gaussdb-rust,2026-10-20,1,1,0,0
 database-gaussdb-rust,2026-10-21,0,0,4,4
 database-gaussdb-rust,2026-10-22,0,0,1,1
 database-gaussdb-rust,2026-10-23,0,0,3,2
@@ -4778,7 +4882,7 @@ database-gaussdb-rust,2026-11-14,2,2,0,0
 database-gaussdb-rust,2026-11-15,1,1,1,1
 database-gaussdb-rust,2026-11-16,0,0,2,1
 database-gaussdb-rust,2026-11-17,0,0,0,0
-database-gaussdb-seata,2026-10-20,0,0,2,2
+database-gaussdb-rust,2026-11-18,0,0,0,0
 database-gaussdb-seata,2026-10-21,0,0,0,0
 database-gaussdb-seata,2026-10-22,0,0,0,0
 database-gaussdb-seata,2026-10-23,0,0,0,0
@@ -4806,7 +4910,8 @@ database-gaussdb-seata,2026-11-13,0,0,1,1
 database-gaussdb-seata,2026-11-14,0,0,18,1
 database-gaussdb-seata,2026-11-15,0,0,10,1
 database-gaussdb-seata,2026-11-16,0,0,7,1
-database-gaussdb-spring-data-relational,2026-10-20,0,0,0,0
+database-gaussdb-seata,2026-11-17,0,0,8,1
+database-gaussdb-seata,2026-11-18,0,0,1,1
 database-gaussdb-spring-data-relational,2026-10-21,0,0,1,1
 database-gaussdb-spring-data-relational,2026-10-22,0,0,0,0
 database-gaussdb-spring-data-relational,2026-10-23,0,0,1,1
@@ -4835,7 +4940,7 @@ database-gaussdb-spring-data-relational,2026-11-14,0,0,3,1
 database-gaussdb-spring-data-relational,2026-11-15,0,0,0,0
 database-gaussdb-spring-data-relational,2026-11-16,0,0,0,0
 database-gaussdb-spring-data-relational,2026-11-17,6,3,0,0
-database-gaussdb-sqlalchemy-python-driver,2026-10-20,0,0,0,0
+database-gaussdb-spring-data-relational,2026-11-18,1,1,3,2
 database-gaussdb-sqlalchemy-python-driver,2026-10-21,0,0,1,1
 database-gaussdb-sqlalchemy-python-driver,2026-10-22,0,0,0,0
 database-gaussdb-sqlalchemy-python-driver,2026-10-23,0,0,0,0
@@ -4863,7 +4968,8 @@ database-gaussdb-sqlalchemy-python-driver,2026-11-13,1,1,2,1
 database-gaussdb-sqlalchemy-python-driver,2026-11-14,0,0,5,1
 database-gaussdb-sqlalchemy-python-driver,2026-11-15,0,0,1,1
 database-gaussdb-sqlalchemy-python-driver,2026-11-16,0,0,0,0
-database-gaussdb-testcontainers-java,2026-10-20,0,0,1,1
+database-gaussdb-sqlalchemy-python-driver,2026-11-17,3,1,0,0
+database-gaussdb-sqlalchemy-python-driver,2026-11-18,1,1,1,1
 database-gaussdb-testcontainers-java,2026-10-21,0,0,0,0
 database-gaussdb-testcontainers-java,2026-10-22,0,0,0,0
 database-gaussdb-testcontainers-java,2026-10-23,0,0,0,0
@@ -4892,7 +4998,7 @@ database-gaussdb-testcontainers-java,2026-11-14,0,0,2,1
 database-gaussdb-testcontainers-java,2026-11-15,0,0,2,1
 database-gaussdb-testcontainers-java,2026-11-16,0,0,0,0
 database-gaussdb-testcontainers-java,2026-11-17,0,0,0,0
-database-gaussdb_prometheus-exporter,2026-10-20,0,0,0,0
+database-gaussdb-testcontainers-java,2026-11-18,0,0,5,3
 database-gaussdb_prometheus-exporter,2026-10-21,0,0,2,2
 database-gaussdb_prometheus-exporter,2026-10-22,0,0,0,0
 database-gaussdb_prometheus-exporter,2026-10-23,1,1,4,4
@@ -4921,7 +5027,7 @@ database-gaussdb_prometheus-exporter,2026-11-14,2,1,0,0
 database-gaussdb_prometheus-exporter,2026-11-15,4,2,0,0
 database-gaussdb_prometheus-exporter,2026-11-16,1,1,0,0
 database-gaussdb_prometheus-exporter,2026-11-17,2,2,0,0
-database-greenplum-image,2026-10-20,0,0,0,0
+database-gaussdb_prometheus-exporter,2026-11-18,2,1,0,0
 database-greenplum-image,2026-10-21,0,0,0,0
 database-greenplum-image,2026-10-22,0,0,1,1
 database-greenplum-image,2026-10-23,0,0,0,0
@@ -4950,7 +5056,7 @@ database-greenplum-image,2026-11-14,0,0,4,1
 database-greenplum-image,2026-11-15,0,0,0,0
 database-greenplum-image,2026-11-16,1,1,0,0
 database-greenplum-image,2026-11-17,0,0,0,0
-database-hbase-image,2026-10-20,0,0,0,0
+database-greenplum-image,2026-11-18,0,0,1,1
 database-hbase-image,2026-10-21,0,0,1,1
 database-hbase-image,2026-10-22,0,0,0,0
 database-hbase-image,2026-10-23,0,0,1,1
@@ -4979,7 +5085,6 @@ database-hbase-image,2026-11-14,0,0,4,1
 database-hbase-image,2026-11-15,0,0,0,0
 database-hbase-image,2026-11-16,0,0,0,0
 database-hbase-image,2026-11-17,0,0,1,1
-database-hibernate-orm,2026-10-20,0,0,3,3
 database-hibernate-orm,2026-10-21,0,0,4,4
 database-hibernate-orm,2026-10-22,0,0,0,0
 database-hibernate-orm,2026-10-23,0,0,0,0
@@ -5008,7 +5113,7 @@ database-hibernate-orm,2026-11-14,0,0,5,1
 database-hibernate-orm,2026-11-15,0,0,1,1
 database-hibernate-orm,2026-11-16,0,0,2,2
 database-hibernate-orm,2026-11-17,0,0,0,0
-database-hive-image,2026-10-20,0,0,0,0
+database-hibernate-orm,2026-11-18,4,4,3,3
 database-hive-image,2026-10-21,0,0,1,1
 database-hive-image,2026-10-22,0,0,0,0
 database-hive-image,2026-10-23,0,0,0,0
@@ -5037,7 +5142,7 @@ database-hive-image,2026-11-14,0,0,4,1
 database-hive-image,2026-11-15,0,0,0,0
 database-hive-image,2026-11-16,0,0,0,0
 database-hive-image,2026-11-17,0,0,0,0
-database-hudi-image,2026-10-20,0,0,0,0
+database-hive-image,2026-11-18,0,0,3,2
 database-hudi-image,2026-10-21,1,1,0,0
 database-hudi-image,2026-10-22,0,0,0,0
 database-hudi-image,2026-10-23,0,0,0,0
@@ -5066,7 +5171,6 @@ database-hudi-image,2026-11-14,0,0,3,1
 database-hudi-image,2026-11-15,0,0,1,1
 database-hudi-image,2026-11-16,0,0,0,0
 database-hudi-image,2026-11-17,0,0,0,0
-database-ibis-image,2026-10-20,0,0,1,1
 database-ibis-image,2026-10-21,0,0,1,1
 database-ibis-image,2026-10-22,0,0,0,0
 database-ibis-image,2026-10-23,0,0,1,1
@@ -5095,7 +5199,7 @@ database-ibis-image,2026-11-14,0,0,3,1
 database-ibis-image,2026-11-15,0,0,0,0
 database-ibis-image,2026-11-16,0,0,0,0
 database-ibis-image,2026-11-17,0,0,0,0
-database-iceberg-image,2026-10-20,0,0,0,0
+database-ibis-image,2026-11-18,0,0,1,1
 database-iceberg-image,2026-10-21,0,0,0,0
 database-iceberg-image,2026-10-22,0,0,0,0
 database-iceberg-image,2026-10-23,1,1,0,0
@@ -5124,7 +5228,6 @@ database-iceberg-image,2026-11-14,1,1,3,1
 database-iceberg-image,2026-11-15,0,0,1,1
 database-iceberg-image,2026-11-16,0,0,0,0
 database-iceberg-image,2026-11-17,0,0,1,1
-database-influxdb-image,2026-10-20,0,0,0,0
 database-influxdb-image,2026-10-21,0,0,0,0
 database-influxdb-image,2026-10-22,0,0,0,0
 database-influxdb-image,2026-10-23,0,0,0,0
@@ -5153,7 +5256,7 @@ database-influxdb-image,2026-11-14,0,0,4,1
 database-influxdb-image,2026-11-15,0,0,0,0
 database-influxdb-image,2026-11-16,0,0,0,0
 database-influxdb-image,2026-11-17,0,0,0,0
-database-langchain-gaussdb,2026-10-20,0,0,1,1
+database-influxdb-image,2026-11-18,0,0,2,2
 database-langchain-gaussdb,2026-10-21,0,0,2,2
 database-langchain-gaussdb,2026-10-22,0,0,2,2
 database-langchain-gaussdb,2026-10-23,0,0,0,0
@@ -5182,7 +5285,7 @@ database-langchain-gaussdb,2026-11-14,0,0,4,1
 database-langchain-gaussdb,2026-11-15,0,0,2,2
 database-langchain-gaussdb,2026-11-16,0,0,0,0
 database-langchain-gaussdb,2026-11-17,0,0,1,1
-database-langchain-gaussdb-sync,2026-10-20,0,0,0,0
+database-langchain-gaussdb,2026-11-18,0,0,2,2
 database-langchain-gaussdb-sync,2026-10-21,0,0,1,1
 database-langchain-gaussdb-sync,2026-10-22,0,0,3,2
 database-langchain-gaussdb-sync,2026-10-23,0,0,2,1
@@ -5211,7 +5314,7 @@ database-langchain-gaussdb-sync,2026-11-14,0,0,4,1
 database-langchain-gaussdb-sync,2026-11-15,0,0,1,1
 database-langchain-gaussdb-sync,2026-11-16,0,0,0,0
 database-langchain-gaussdb-sync,2026-11-17,0,0,1,1
-database-langgraph-gaussdb,2026-10-20,0,0,1,1
+database-langchain-gaussdb-sync,2026-11-18,0,0,0,0
 database-langgraph-gaussdb,2026-10-21,0,0,0,0
 database-langgraph-gaussdb,2026-10-22,0,0,2,2
 database-langgraph-gaussdb,2026-10-23,0,0,0,0
@@ -5240,7 +5343,7 @@ database-langgraph-gaussdb,2026-11-14,0,0,5,1
 database-langgraph-gaussdb,2026-11-15,0,0,0,0
 database-langgraph-gaussdb,2026-11-16,3,2,2,1
 database-langgraph-gaussdb,2026-11-17,0,0,0,0
-database-lightrag-gaussdb,2026-10-20,0,0,1,1
+database-langgraph-gaussdb,2026-11-18,5,1,2,1
 database-lightrag-gaussdb,2026-10-21,0,0,0,0
 database-lightrag-gaussdb,2026-10-22,0,0,2,2
 database-lightrag-gaussdb,2026-10-23,0,0,0,0
@@ -5269,7 +5372,7 @@ database-lightrag-gaussdb,2026-11-14,0,0,10,1
 database-lightrag-gaussdb,2026-11-15,0,0,1,1
 database-lightrag-gaussdb,2026-11-16,0,0,0,0
 database-lightrag-gaussdb,2026-11-17,0,0,0,0
-database-llama-index-vector-stores-gaussdb,2026-10-20,0,0,1,1
+database-lightrag-gaussdb,2026-11-18,0,0,1,1
 database-llama-index-vector-stores-gaussdb,2026-10-21,0,0,2,2
 database-llama-index-vector-stores-gaussdb,2026-10-22,0,0,2,2
 database-llama-index-vector-stores-gaussdb,2026-10-23,0,0,1,1
@@ -5298,7 +5401,7 @@ database-llama-index-vector-stores-gaussdb,2026-11-14,0,0,4,1
 database-llama-index-vector-stores-gaussdb,2026-11-15,0,0,1,1
 database-llama-index-vector-stores-gaussdb,2026-11-16,0,0,0,0
 database-llama-index-vector-stores-gaussdb,2026-11-17,0,0,0,0
-database-mariadb-image,2026-10-20,0,0,0,0
+database-llama-index-vector-stores-gaussdb,2026-11-18,0,0,3,2
 database-mariadb-image,2026-10-21,0,0,0,0
 database-mariadb-image,2026-10-22,0,0,0,0
 database-mariadb-image,2026-10-23,0,0,3,2
@@ -5327,7 +5430,7 @@ database-mariadb-image,2026-11-14,0,0,3,1
 database-mariadb-image,2026-11-15,0,0,0,0
 database-mariadb-image,2026-11-16,0,0,0,0
 database-mariadb-image,2026-11-17,0,0,0,0
-database-mem0-gaussdb,2026-10-20,0,0,1,1
+database-mariadb-image,2026-11-18,0,0,1,1
 database-mem0-gaussdb,2026-10-21,0,0,0,0
 database-mem0-gaussdb,2026-10-22,1,1,0,0
 database-mem0-gaussdb,2026-10-23,0,0,1,1
@@ -5356,7 +5459,7 @@ database-mem0-gaussdb,2026-11-14,0,0,1,1
 database-mem0-gaussdb,2026-11-15,0,0,1,1
 database-mem0-gaussdb,2026-11-16,0,0,0,0
 database-mem0-gaussdb,2026-11-17,0,0,0,0
-database-memcached-image,2026-10-20,0,0,0,0
+database-mem0-gaussdb,2026-11-18,0,0,0,0
 database-memcached-image,2026-10-21,0,0,2,2
 database-memcached-image,2026-10-22,0,0,0,0
 database-memcached-image,2026-10-23,0,0,0,0
@@ -5385,7 +5488,7 @@ database-memcached-image,2026-11-14,0,0,3,1
 database-memcached-image,2026-11-15,0,0,0,0
 database-memcached-image,2026-11-16,0,0,0,0
 database-memcached-image,2026-11-17,0,0,0,0
-database-mongodb-image,2026-10-20,0,0,0,0
+database-memcached-image,2026-11-18,0,0,3,2
 database-mongodb-image,2026-10-21,0,0,0,0
 database-mongodb-image,2026-10-22,0,0,0,0
 database-mongodb-image,2026-10-23,0,0,3,3
@@ -5414,7 +5517,7 @@ database-mongodb-image,2026-11-14,0,0,3,1
 database-mongodb-image,2026-11-15,0,0,0,0
 database-mongodb-image,2026-11-16,0,0,0,0
 database-mongodb-image,2026-11-17,0,0,0,0
-database-mysql-image,2026-10-20,0,0,0,0
+database-mongodb-image,2026-11-18,0,0,1,1
 database-mysql-image,2026-10-21,0,0,0,0
 database-mysql-image,2026-10-22,0,0,2,1
 database-mysql-image,2026-10-23,0,0,0,0
@@ -5443,7 +5546,7 @@ database-mysql-image,2026-11-14,0,0,3,1
 database-mysql-image,2026-11-15,0,0,0,0
 database-mysql-image,2026-11-16,0,0,0,0
 database-mysql-image,2026-11-17,0,0,0,0
-database-n8n-gaussdb,2026-10-20,0,0,0,0
+database-mysql-image,2026-11-18,0,0,2,2
 database-n8n-gaussdb,2026-10-21,0,0,0,0
 database-n8n-gaussdb,2026-10-22,0,0,3,3
 database-n8n-gaussdb,2026-10-23,0,0,2,1
@@ -5472,7 +5575,7 @@ database-n8n-gaussdb,2026-11-14,0,0,9,1
 database-n8n-gaussdb,2026-11-15,0,0,0,0
 database-n8n-gaussdb,2026-11-16,0,0,0,0
 database-n8n-gaussdb,2026-11-17,0,0,0,0
-database-nebulaGraph-image,2026-10-20,0,0,0,0
+database-n8n-gaussdb,2026-11-18,0,0,1,1
 database-nebulaGraph-image,2026-10-21,0,0,0,0
 database-nebulaGraph-image,2026-10-22,0,0,1,1
 database-nebulaGraph-image,2026-10-23,0,0,0,0
@@ -5501,7 +5604,7 @@ database-nebulaGraph-image,2026-11-14,0,0,5,2
 database-nebulaGraph-image,2026-11-15,0,0,0,0
 database-nebulaGraph-image,2026-11-16,0,0,0,0
 database-nebulaGraph-image,2026-11-17,0,0,0,0
-database-neo4j-image,2026-10-20,0,0,0,0
+database-nebulaGraph-image,2026-11-18,0,0,1,1
 database-neo4j-image,2026-10-21,0,0,0,0
 database-neo4j-image,2026-10-22,0,0,0,0
 database-neo4j-image,2026-10-23,0,0,0,0
@@ -5530,7 +5633,7 @@ database-neo4j-image,2026-11-14,0,0,2,1
 database-neo4j-image,2026-11-15,0,0,0,0
 database-neo4j-image,2026-11-16,0,0,0,0
 database-neo4j-image,2026-11-17,0,0,1,1
-database-opengauss-image,2026-10-20,0,0,0,0
+database-neo4j-image,2026-11-18,0,0,2,2
 database-opengauss-image,2026-10-21,0,0,0,0
 database-opengauss-image,2026-10-22,0,0,0,0
 database-opengauss-image,2026-10-23,0,0,0,0
@@ -5559,7 +5662,7 @@ database-opengauss-image,2026-11-14,0,0,2,1
 database-opengauss-image,2026-11-15,0,0,0,0
 database-opengauss-image,2026-11-16,0,0,0,0
 database-opengauss-image,2026-11-17,0,0,0,0
-database-openmetadata-image,2026-10-20,0,0,0,0
+database-opengauss-image,2026-11-18,0,0,1,1
 database-openmetadata-image,2026-10-21,0,0,0,0
 database-openmetadata-image,2026-10-22,0,0,0,0
 database-openmetadata-image,2026-10-23,0,0,0,0
@@ -5588,7 +5691,7 @@ database-openmetadata-image,2026-11-14,0,0,2,1
 database-openmetadata-image,2026-11-15,0,0,1,1
 database-openmetadata-image,2026-11-16,0,0,0,0
 database-openmetadata-image,2026-11-17,0,0,0,0
-database-pdo_gaussdb,2026-10-20,0,0,0,0
+database-openmetadata-image,2026-11-18,1,1,2,2
 database-pdo_gaussdb,2026-10-21,0,0,0,0
 database-pdo_gaussdb,2026-10-22,0,0,0,0
 database-pdo_gaussdb,2026-10-23,0,0,0,0
@@ -5616,7 +5719,8 @@ database-pdo_gaussdb,2026-11-13,0,0,3,1
 database-pdo_gaussdb,2026-11-14,0,0,1,1
 database-pdo_gaussdb,2026-11-15,0,0,1,1
 database-pdo_gaussdb,2026-11-16,0,0,0,0
-database-pecl-gaussdb,2026-10-20,0,0,0,0
+database-pdo_gaussdb,2026-11-17,0,0,0,0
+database-pdo_gaussdb,2026-11-18,0,0,4,2
 database-pecl-gaussdb,2026-10-21,0,0,0,0
 database-pecl-gaussdb,2026-10-22,0,0,1,1
 database-pecl-gaussdb,2026-10-23,0,0,0,0
@@ -5645,7 +5749,7 @@ database-pecl-gaussdb,2026-11-14,0,0,1,1
 database-pecl-gaussdb,2026-11-15,0,0,1,1
 database-pecl-gaussdb,2026-11-16,0,0,0,0
 database-pecl-gaussdb,2026-11-17,0,0,0,0
-database-pony-image,2026-10-20,0,0,0,0
+database-pecl-gaussdb,2026-11-18,0,0,4,2
 database-pony-image,2026-10-21,0,0,0,0
 database-pony-image,2026-10-22,0,0,0,0
 database-pony-image,2026-10-23,0,0,2,2
@@ -5674,7 +5778,7 @@ database-pony-image,2026-11-14,0,0,2,1
 database-pony-image,2026-11-15,0,0,0,0
 database-pony-image,2026-11-16,0,0,0,0
 database-pony-image,2026-11-17,0,0,0,0
-database-postgresql-image,2026-10-20,0,0,0,0
+database-pony-image,2026-11-18,0,0,1,1
 database-postgresql-image,2026-10-21,0,0,0,0
 database-postgresql-image,2026-10-22,0,0,0,0
 database-postgresql-image,2026-10-23,0,0,2,2
@@ -5703,7 +5807,7 @@ database-postgresql-image,2026-11-14,0,0,2,1
 database-postgresql-image,2026-11-15,0,0,0,0
 database-postgresql-image,2026-11-16,0,0,0,0
 database-postgresql-image,2026-11-17,0,0,0,0
-database-presto-image,2026-10-20,0,0,0,0
+database-postgresql-image,2026-11-18,0,0,1,1
 database-presto-image,2026-10-21,0,0,0,0
 database-presto-image,2026-10-22,2,1,0,0
 database-presto-image,2026-10-23,1,1,0,0
@@ -5732,7 +5836,7 @@ database-presto-image,2026-11-14,0,0,5,2
 database-presto-image,2026-11-15,0,0,0,0
 database-presto-image,2026-11-16,1,1,0,0
 database-presto-image,2026-11-17,0,0,0,0
-database-prisma-orm-gaussdb,2026-10-20,0,0,0,0
+database-presto-image,2026-11-18,1,1,2,2
 database-prisma-orm-gaussdb,2026-10-21,0,0,2,2
 database-prisma-orm-gaussdb,2026-10-22,0,0,1,1
 database-prisma-orm-gaussdb,2026-10-23,0,0,1,1
@@ -5761,7 +5865,7 @@ database-prisma-orm-gaussdb,2026-11-14,0,0,6,2
 database-prisma-orm-gaussdb,2026-11-15,0,0,0,0
 database-prisma-orm-gaussdb,2026-11-16,0,0,0,0
 database-prisma-orm-gaussdb,2026-11-17,0,0,0,0
-database-pygsvector,2026-10-20,0,0,0,0
+database-prisma-orm-gaussdb,2026-11-18,0,0,1,1
 database-pygsvector,2026-10-21,0,0,2,2
 database-pygsvector,2026-10-22,0,0,2,2
 database-pygsvector,2026-10-23,0,0,0,0
@@ -5790,7 +5894,7 @@ database-pygsvector,2026-11-14,0,0,4,1
 database-pygsvector,2026-11-15,0,0,1,1
 database-pygsvector,2026-11-16,0,0,0,0
 database-pygsvector,2026-11-17,0,0,1,1
-database-qdrant-image,2026-10-20,0,0,0,0
+database-pygsvector,2026-11-18,0,0,1,1
 database-qdrant-image,2026-10-21,0,0,0,0
 database-qdrant-image,2026-10-22,0,0,1,1
 database-qdrant-image,2026-10-23,0,0,2,1
@@ -5819,7 +5923,7 @@ database-qdrant-image,2026-11-14,0,0,4,1
 database-qdrant-image,2026-11-15,0,0,0,0
 database-qdrant-image,2026-11-16,0,0,0,0
 database-qdrant-image,2026-11-17,0,0,0,0
-database-ragflow,2026-10-20,0,0,0,0
+database-qdrant-image,2026-11-18,0,0,2,2
 database-ragflow,2026-10-21,0,0,0,0
 database-ragflow,2026-10-22,0,0,3,2
 database-ragflow,2026-10-23,0,0,0,0
@@ -5848,7 +5952,7 @@ database-ragflow,2026-11-14,1,1,6,1
 database-ragflow,2026-11-15,0,0,0,0
 database-ragflow,2026-11-16,0,0,2,2
 database-ragflow,2026-11-17,0,0,3,1
-database-redash-image,2026-10-20,0,0,0,0
+database-ragflow,2026-11-18,0,0,17,2
 database-redash-image,2026-10-21,0,0,1,1
 database-redash-image,2026-10-22,0,0,0,0
 database-redash-image,2026-10-23,0,0,0,0
@@ -5877,7 +5981,7 @@ database-redash-image,2026-11-14,0,0,4,1
 database-redash-image,2026-11-15,0,0,1,1
 database-redash-image,2026-11-16,0,0,0,0
 database-redash-image,2026-11-17,0,0,0,0
-database-redis-image,2026-10-20,0,0,0,0
+database-redash-image,2026-11-18,0,0,2,2
 database-redis-image,2026-10-21,0,0,1,1
 database-redis-image,2026-10-22,0,0,0,0
 database-redis-image,2026-10-23,0,0,0,0
@@ -5906,7 +6010,7 @@ database-redis-image,2026-11-14,0,0,3,1
 database-redis-image,2026-11-15,0,0,0,0
 database-redis-image,2026-11-16,0,0,0,0
 database-redis-image,2026-11-17,0,0,0,0
-database-sea-orm-gaussdb,2026-10-20,0,0,0,0
+database-redis-image,2026-11-18,0,0,3,2
 database-sea-orm-gaussdb,2026-10-21,0,0,22,15
 database-sea-orm-gaussdb,2026-10-22,0,0,2,2
 database-sea-orm-gaussdb,2026-10-23,0,0,0,0
@@ -5935,7 +6039,7 @@ database-sea-orm-gaussdb,2026-11-14,0,0,6,2
 database-sea-orm-gaussdb,2026-11-15,0,0,0,0
 database-sea-orm-gaussdb,2026-11-16,0,0,0,0
 database-sea-orm-gaussdb,2026-11-17,0,0,0,0
-database-shardingproxy-image,2026-10-20,0,0,1,1
+database-sea-orm-gaussdb,2026-11-18,0,0,1,1
 database-shardingproxy-image,2026-10-21,0,0,0,0
 database-shardingproxy-image,2026-10-22,0,0,0,0
 database-shardingproxy-image,2026-10-23,0,0,0,0
@@ -5964,7 +6068,7 @@ database-shardingproxy-image,2026-11-14,0,0,4,1
 database-shardingproxy-image,2026-11-15,0,0,0,0
 database-shardingproxy-image,2026-11-16,0,0,0,0
 database-shardingproxy-image,2026-11-17,0,0,0,0
-database-solution-deploy-a-highly-available-mha-mysql-cluster,2026-10-20,0,0,0,0
+database-shardingproxy-image,2026-11-18,0,0,2,2
 database-solution-deploy-a-highly-available-mha-mysql-cluster,2026-10-21,0,0,0,0
 database-solution-deploy-a-highly-available-mha-mysql-cluster,2026-10-22,0,0,0,0
 database-solution-deploy-a-highly-available-mha-mysql-cluster,2026-10-23,0,0,0,0
@@ -5993,7 +6097,7 @@ database-solution-deploy-a-highly-available-mha-mysql-cluster,2026-11-14,0,0,4,1
 database-solution-deploy-a-highly-available-mha-mysql-cluster,2026-11-15,0,0,0,0
 database-solution-deploy-a-highly-available-mha-mysql-cluster,2026-11-16,0,0,0,0
 database-solution-deploy-a-highly-available-mha-mysql-cluster,2026-11-17,0,0,0,0
-database-solution-deploy-a-highly-available-mongodb,2026-10-20,0,0,0,0
+database-solution-deploy-a-highly-available-mha-mysql-cluster,2026-11-18,0,0,7,6
 database-solution-deploy-a-highly-available-mongodb,2026-10-21,0,0,1,1
 database-solution-deploy-a-highly-available-mongodb,2026-10-22,0,0,0,0
 database-solution-deploy-a-highly-available-mongodb,2026-10-23,0,0,0,0
@@ -6022,7 +6126,7 @@ database-solution-deploy-a-highly-available-mongodb,2026-11-14,0,0,4,1
 database-solution-deploy-a-highly-available-mongodb,2026-11-15,0,0,0,0
 database-solution-deploy-a-highly-available-mongodb,2026-11-16,0,0,0,0
 database-solution-deploy-a-highly-available-mongodb,2026-11-17,0,0,1,1
-database-solution-oracle-rac-in-cloud,2026-10-20,0,0,0,0
+database-solution-deploy-a-highly-available-mongodb,2026-11-18,0,0,6,5
 database-solution-oracle-rac-in-cloud,2026-10-21,0,0,0,0
 database-solution-oracle-rac-in-cloud,2026-10-22,0,0,0,0
 database-solution-oracle-rac-in-cloud,2026-10-23,0,0,0,0
@@ -6051,7 +6155,7 @@ database-solution-oracle-rac-in-cloud,2026-11-14,0,0,4,1
 database-solution-oracle-rac-in-cloud,2026-11-15,0,0,0,0
 database-solution-oracle-rac-in-cloud,2026-11-16,0,0,0,0
 database-solution-oracle-rac-in-cloud,2026-11-17,0,0,0,0
-database-solution-search-acceleration-based-css,2026-10-20,0,0,0,0
+database-solution-oracle-rac-in-cloud,2026-11-18,0,0,8,7
 database-solution-search-acceleration-based-css,2026-10-21,0,0,0,0
 database-solution-search-acceleration-based-css,2026-10-22,0,0,0,0
 database-solution-search-acceleration-based-css,2026-10-23,0,0,0,0
@@ -6080,7 +6184,7 @@ database-solution-search-acceleration-based-css,2026-11-14,0,0,4,1
 database-solution-search-acceleration-based-css,2026-11-15,0,0,0,0
 database-solution-search-acceleration-based-css,2026-11-16,0,0,0,0
 database-solution-search-acceleration-based-css,2026-11-17,0,0,0,0
-database-superagi-gaussdb,2026-10-20,0,0,2,1
+database-solution-search-acceleration-based-css,2026-11-18,0,0,8,7
 database-superagi-gaussdb,2026-10-21,3,3,0,0
 database-superagi-gaussdb,2026-10-22,0,0,1,1
 database-superagi-gaussdb,2026-10-23,0,0,0,0
@@ -6109,7 +6213,7 @@ database-superagi-gaussdb,2026-11-14,0,0,8,1
 database-superagi-gaussdb,2026-11-15,0,0,0,0
 database-superagi-gaussdb,2026-11-16,0,0,0,0
 database-superagi-gaussdb,2026-11-17,0,0,2,1
-database-superset-image,2026-10-20,0,0,0,0
+database-superagi-gaussdb,2026-11-18,0,0,1,1
 database-superset-image,2026-10-21,0,0,1,1
 database-superset-image,2026-10-22,0,0,0,0
 database-superset-image,2026-10-23,0,0,0,0
@@ -6138,7 +6242,7 @@ database-superset-image,2026-11-14,0,0,4,1
 database-superset-image,2026-11-15,0,0,0,0
 database-superset-image,2026-11-16,0,0,0,0
 database-superset-image,2026-11-17,0,0,0,0
-database-tdengine-image,2026-10-20,0,0,1,1
+database-superset-image,2026-11-18,0,0,3,3
 database-tdengine-image,2026-10-21,0,0,1,1
 database-tdengine-image,2026-10-22,0,0,0,0
 database-tdengine-image,2026-10-23,0,0,0,0
@@ -6167,7 +6271,7 @@ database-tdengine-image,2026-11-14,0,0,3,1
 database-tdengine-image,2026-11-15,0,0,0,0
 database-tdengine-image,2026-11-16,0,0,0,0
 database-tdengine-image,2026-11-17,0,0,0,0
-database-testcontainers-doc,2026-10-20,0,0,0,0
+database-tdengine-image,2026-11-18,0,0,1,1
 database-testcontainers-doc,2026-10-21,0,0,1,1
 database-testcontainers-doc,2026-10-22,0,0,0,0
 database-testcontainers-doc,2026-10-23,0,0,0,0
@@ -6196,7 +6300,7 @@ database-testcontainers-doc,2026-11-14,0,0,3,1
 database-testcontainers-doc,2026-11-15,3,3,0,0
 database-testcontainers-doc,2026-11-16,0,0,0,0
 database-testcontainers-doc,2026-11-17,0,0,0,0
-database-tidb-image,2026-10-20,0,0,0,0
+database-testcontainers-doc,2026-11-18,2,1,5,3
 database-tidb-image,2026-10-21,0,0,0,0
 database-tidb-image,2026-10-22,0,0,0,0
 database-tidb-image,2026-10-23,0,0,0,0
@@ -6225,7 +6329,7 @@ database-tidb-image,2026-11-14,1,1,5,2
 database-tidb-image,2026-11-15,1,1,0,0
 database-tidb-image,2026-11-16,0,0,0,0
 database-tidb-image,2026-11-17,0,0,0,0
-database-trino-image,2026-10-20,0,0,0,0
+database-tidb-image,2026-11-18,0,0,3,3
 database-trino-image,2026-10-21,0,0,1,1
 database-trino-image,2026-10-22,0,0,0,0
 database-trino-image,2026-10-23,0,0,0,0
@@ -6254,7 +6358,7 @@ database-trino-image,2026-11-14,0,0,3,1
 database-trino-image,2026-11-15,0,0,0,0
 database-trino-image,2026-11-16,0,0,0,0
 database-trino-image,2026-11-17,0,0,0,0
-database-zeppelin-image,2026-10-20,0,0,0,0
+database-trino-image,2026-11-18,0,0,2,2
 database-zeppelin-image,2026-10-21,0,0,1,1
 database-zeppelin-image,2026-10-22,0,0,0,0
 database-zeppelin-image,2026-10-23,0,0,4,4
@@ -6283,7 +6387,7 @@ database-zeppelin-image,2026-11-14,0,0,3,1
 database-zeppelin-image,2026-11-15,0,0,0,0
 database-zeppelin-image,2026-11-16,0,0,0,0
 database-zeppelin-image,2026-11-17,0,0,0,0
-dbswitch-image,2026-10-20,0,0,0,0
+database-zeppelin-image,2026-11-18,0,0,5,4
 dbswitch-image,2026-10-21,0,0,1,1
 dbswitch-image,2026-10-22,0,0,0,0
 dbswitch-image,2026-10-23,0,0,0,0
@@ -6312,6 +6416,7 @@ dbswitch-image,2026-11-14,0,0,2,1
 dbswitch-image,2026-11-15,0,0,2,1
 dbswitch-image,2026-11-16,0,0,0,0
 dbswitch-image,2026-11-17,0,0,0,0
+dbswitch-image,2026-11-18,0,0,4,2
 deterministic-operations-api-canary-deployment,2026-11-04,0,0,0,0
 deterministic-operations-api-canary-deployment,2026-11-05,0,0,0,0
 deterministic-operations-api-canary-deployment,2026-11-06,0,0,0,0
@@ -6339,7 +6444,7 @@ deterministic-operations-cce-cross-region-dr,2026-11-14,0,0,0,0
 deterministic-operations-cce-cross-region-dr,2026-11-15,0,0,0,0
 deterministic-operations-cce-cross-region-dr,2026-11-16,0,0,0,0
 deterministic-operations-cce-cross-region-dr,2026-11-17,0,0,0,0
-deterministic-operations-cce-cross-region-dr,2026-11-18,0,0,0,0
+deterministic-operations-cce-cross-region-dr,2026-11-18,15,3,31,21
 deterministic-operations-cce-devops-pipeline,2026-11-05,0,0,0,0
 deterministic-operations-cce-devops-pipeline,2026-11-06,0,0,0,0
 deterministic-operations-cce-devops-pipeline,2026-11-07,0,0,0,0
@@ -6353,7 +6458,7 @@ deterministic-operations-cce-devops-pipeline,2026-11-14,0,0,0,0
 deterministic-operations-cce-devops-pipeline,2026-11-15,0,0,0,0
 deterministic-operations-cce-devops-pipeline,2026-11-16,0,0,0,0
 deterministic-operations-cce-devops-pipeline,2026-11-17,0,0,0,0
-deterministic-operations-cce-devops-pipeline,2026-11-18,0,0,0,0
+deterministic-operations-cce-devops-pipeline,2026-11-18,13,3,54,33
 deterministic-operations-cce-gitops-upgrade,2026-11-04,0,0,0,0
 deterministic-operations-cce-gitops-upgrade,2026-11-05,0,0,0,0
 deterministic-operations-cce-gitops-upgrade,2026-11-06,0,0,0,0
@@ -6368,7 +6473,6 @@ deterministic-operations-cce-gitops-upgrade,2026-11-14,0,0,0,0
 deterministic-operations-cce-gitops-upgrade,2026-11-15,0,0,0,0
 deterministic-operations-cce-gitops-upgrade,2026-11-16,0,0,0,0
 deterministic-operations-cce-gitops-upgrade,2026-11-17,13,3,31,21
-deterministic-operations-cce-log-pipelin,2026-10-20,0,0,17,12
 deterministic-operations-cce-log-pipelin,2026-10-21,0,0,1,1
 deterministic-operations-cce-log-pipelin,2026-10-22,0,0,2,2
 deterministic-operations-cce-log-pipelin,2026-10-23,0,0,0,0
@@ -6397,6 +6501,7 @@ deterministic-operations-cce-log-pipelin,2026-11-14,0,0,4,1
 deterministic-operations-cce-log-pipelin,2026-11-15,0,0,1,1
 deterministic-operations-cce-log-pipelin,2026-11-16,0,0,0,0
 deterministic-operations-cce-log-pipelin,2026-11-17,0,0,0,0
+deterministic-operations-cce-log-pipelin,2026-11-18,0,0,3,2
 deterministic-operations-centralized-logging,2026-11-05,0,0,0,0
 deterministic-operations-centralized-logging,2026-11-06,0,0,0,0
 deterministic-operations-centralized-logging,2026-11-07,0,0,0,0
@@ -6410,8 +6515,7 @@ deterministic-operations-centralized-logging,2026-11-14,0,0,0,0
 deterministic-operations-centralized-logging,2026-11-15,0,0,0,0
 deterministic-operations-centralized-logging,2026-11-16,0,0,0,0
 deterministic-operations-centralized-logging,2026-11-17,0,0,0,0
-deterministic-operations-centralized-logging,2026-11-18,0,0,0,0
-deterministic-operations-css-ces-alarm-checker,2026-10-20,0,0,18,13
+deterministic-operations-centralized-logging,2026-11-18,0,0,27,19
 deterministic-operations-css-ces-alarm-checker,2026-10-21,0,0,1,1
 deterministic-operations-css-ces-alarm-checker,2026-10-22,0,0,2,2
 deterministic-operations-css-ces-alarm-checker,2026-10-23,11,1,14,6
@@ -6440,6 +6544,7 @@ deterministic-operations-css-ces-alarm-checker,2026-11-14,0,0,5,2
 deterministic-operations-css-ces-alarm-checker,2026-11-15,1,1,1,1
 deterministic-operations-css-ces-alarm-checker,2026-11-16,5,1,9,5
 deterministic-operations-css-ces-alarm-checker,2026-11-17,0,0,1,1
+deterministic-operations-css-ces-alarm-checker,2026-11-18,0,0,2,1
 deterministic-operations-ecs-memory-metric,2026-11-04,0,0,0,0
 deterministic-operations-ecs-memory-metric,2026-11-05,0,0,0,0
 deterministic-operations-ecs-memory-metric,2026-11-06,0,0,0,0
@@ -6454,6 +6559,7 @@ deterministic-operations-ecs-memory-metric,2026-11-14,0,0,0,0
 deterministic-operations-ecs-memory-metric,2026-11-15,0,0,0,0
 deterministic-operations-ecs-memory-metric,2026-11-16,0,0,0,0
 deterministic-operations-ecs-memory-metric,2026-11-17,7,2,37,26
+deterministic-operations-ecs-memory-metric,2026-11-18,14,2,4,3
 deterministic-operations-event-audit,2026-11-04,0,0,0,0
 deterministic-operations-event-audit,2026-11-05,0,0,0,0
 deterministic-operations-event-audit,2026-11-06,0,0,0,0
@@ -6468,6 +6574,20 @@ deterministic-operations-event-audit,2026-11-14,0,0,0,0
 deterministic-operations-event-audit,2026-11-15,0,0,0,0
 deterministic-operations-event-audit,2026-11-16,0,0,0,0
 deterministic-operations-event-audit,2026-11-17,8,2,38,26
+deterministic-operations-serverless-concurrency,2026-11-06,0,0,0,0
+deterministic-operations-serverless-concurrency,2026-11-07,0,0,0,0
+deterministic-operations-serverless-concurrency,2026-11-08,0,0,0,0
+deterministic-operations-serverless-concurrency,2026-11-09,0,0,0,0
+deterministic-operations-serverless-concurrency,2026-11-10,0,0,0,0
+deterministic-operations-serverless-concurrency,2026-11-11,0,0,0,0
+deterministic-operations-serverless-concurrency,2026-11-12,0,0,0,0
+deterministic-operations-serverless-concurrency,2026-11-13,0,0,0,0
+deterministic-operations-serverless-concurrency,2026-11-14,0,0,0,0
+deterministic-operations-serverless-concurrency,2026-11-15,0,0,0,0
+deterministic-operations-serverless-concurrency,2026-11-16,0,0,0,0
+deterministic-operations-serverless-concurrency,2026-11-17,0,0,0,0
+deterministic-operations-serverless-concurrency,2026-11-18,0,0,0,0
+deterministic-operations-serverless-concurrency,2026-11-19,0,0,0,0
 deterministic-operations-terraform-pipeline,2026-11-05,0,0,0,0
 deterministic-operations-terraform-pipeline,2026-11-06,0,0,0,0
 deterministic-operations-terraform-pipeline,2026-11-07,0,0,0,0
@@ -6481,7 +6601,7 @@ deterministic-operations-terraform-pipeline,2026-11-14,0,0,0,0
 deterministic-operations-terraform-pipeline,2026-11-15,0,0,0,0
 deterministic-operations-terraform-pipeline,2026-11-16,0,0,0,0
 deterministic-operations-terraform-pipeline,2026-11-17,0,0,0,0
-deterministic-operations-terraform-pipeline,2026-11-18,0,0,0,0
+deterministic-operations-terraform-pipeline,2026-11-18,0,0,29,21
 distributed-x-infrastructure-cce-addons,2026-11-05,0,0,0,0
 distributed-x-infrastructure-cce-addons,2026-11-06,0,0,0,0
 distributed-x-infrastructure-cce-addons,2026-11-07,0,0,0,0
@@ -6495,7 +6615,7 @@ distributed-x-infrastructure-cce-addons,2026-11-14,0,0,0,0
 distributed-x-infrastructure-cce-addons,2026-11-15,0,0,0,0
 distributed-x-infrastructure-cce-addons,2026-11-16,0,0,0,0
 distributed-x-infrastructure-cce-addons,2026-11-17,0,0,0,0
-distributed-x-infrastructure-cce-addons,2026-11-18,0,0,0,0
+distributed-x-infrastructure-cce-addons,2026-11-18,14,3,46,26
 distributed-x-infrastructure-cce-hybrid-edge,2026-11-05,0,0,0,0
 distributed-x-infrastructure-cce-hybrid-edge,2026-11-06,0,0,0,0
 distributed-x-infrastructure-cce-hybrid-edge,2026-11-07,0,0,0,0
@@ -6509,7 +6629,7 @@ distributed-x-infrastructure-cce-hybrid-edge,2026-11-14,0,0,0,0
 distributed-x-infrastructure-cce-hybrid-edge,2026-11-15,0,0,0,0
 distributed-x-infrastructure-cce-hybrid-edge,2026-11-16,0,0,0,0
 distributed-x-infrastructure-cce-hybrid-edge,2026-11-17,0,0,0,0
-distributed-x-infrastructure-cce-hybrid-edge,2026-11-18,0,0,0,0
+distributed-x-infrastructure-cce-hybrid-edge,2026-11-18,13,3,32,22
 distributed-x-infrastructure-cce-kubernetes-workshop,2026-11-05,0,0,0,0
 distributed-x-infrastructure-cce-kubernetes-workshop,2026-11-06,0,0,0,0
 distributed-x-infrastructure-cce-kubernetes-workshop,2026-11-07,0,0,0,0
@@ -6523,7 +6643,7 @@ distributed-x-infrastructure-cce-kubernetes-workshop,2026-11-14,0,0,0,0
 distributed-x-infrastructure-cce-kubernetes-workshop,2026-11-15,0,0,0,0
 distributed-x-infrastructure-cce-kubernetes-workshop,2026-11-16,0,0,0,0
 distributed-x-infrastructure-cce-kubernetes-workshop,2026-11-17,0,0,0,0
-distributed-x-infrastructure-cce-kubernetes-workshop,2026-11-18,0,0,0,0
+distributed-x-infrastructure-cce-kubernetes-workshop,2026-11-18,15,3,43,27
 distributed-x-infrastructure-cce-self-managed-node-group,2026-11-05,0,0,0,0
 distributed-x-infrastructure-cce-self-managed-node-group,2026-11-06,0,0,0,0
 distributed-x-infrastructure-cce-self-managed-node-group,2026-11-07,0,0,0,0
@@ -6537,8 +6657,7 @@ distributed-x-infrastructure-cce-self-managed-node-group,2026-11-14,0,0,0,0
 distributed-x-infrastructure-cce-self-managed-node-group,2026-11-15,0,0,0,0
 distributed-x-infrastructure-cce-self-managed-node-group,2026-11-16,0,0,0,0
 distributed-x-infrastructure-cce-self-managed-node-group,2026-11-17,0,0,0,0
-distributed-x-infrastructure-cce-self-managed-node-group,2026-11-18,0,0,0,0
-distributed-x-infrastructure-functiongraph-layers,2026-10-20,0,0,1,1
+distributed-x-infrastructure-cce-self-managed-node-group,2026-11-18,2,1,26,20
 distributed-x-infrastructure-functiongraph-layers,2026-10-21,0,0,0,0
 distributed-x-infrastructure-functiongraph-layers,2026-10-22,0,0,3,2
 distributed-x-infrastructure-functiongraph-layers,2026-10-23,0,0,0,0
@@ -6567,6 +6686,7 @@ distributed-x-infrastructure-functiongraph-layers,2026-11-14,0,0,4,1
 distributed-x-infrastructure-functiongraph-layers,2026-11-15,0,0,1,1
 distributed-x-infrastructure-functiongraph-layers,2026-11-16,0,0,0,0
 distributed-x-infrastructure-functiongraph-layers,2026-11-17,0,0,0,0
+distributed-x-infrastructure-functiongraph-layers,2026-11-18,0,0,1,1
 distributed-x-infrastructure-hub-spoke-vpc,2026-11-05,0,0,0,0
 distributed-x-infrastructure-hub-spoke-vpc,2026-11-06,0,0,0,0
 distributed-x-infrastructure-hub-spoke-vpc,2026-11-07,0,0,0,0
@@ -6580,7 +6700,21 @@ distributed-x-infrastructure-hub-spoke-vpc,2026-11-14,0,0,0,0
 distributed-x-infrastructure-hub-spoke-vpc,2026-11-15,0,0,0,0
 distributed-x-infrastructure-hub-spoke-vpc,2026-11-16,0,0,0,0
 distributed-x-infrastructure-hub-spoke-vpc,2026-11-17,0,0,0,0
-distributed-x-infrastructure-hub-spoke-vpc,2026-11-18,0,0,0,0
+distributed-x-infrastructure-hub-spoke-vpc,2026-11-18,0,0,28,20
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-06,0,0,0,0
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-07,0,0,0,0
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-08,0,0,0,0
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-09,0,0,0,0
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-10,0,0,0,0
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-11,0,0,0,0
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-12,0,0,0,0
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-13,0,0,0,0
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-14,0,0,0,0
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-15,0,0,0,0
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-16,0,0,0,0
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-17,0,0,0,0
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-18,0,0,0,0
+distributed-x-infrastructure-hybrid-cache-proxy,2026-11-19,0,0,0,0
 distributed-x-infrastructure-php-serverless-examples,2026-10-29,0,0,0,0
 distributed-x-infrastructure-php-serverless-examples,2026-10-30,0,0,0,0
 distributed-x-infrastructure-php-serverless-examples,2026-10-31,0,0,0,0
@@ -6601,6 +6735,7 @@ distributed-x-infrastructure-php-serverless-examples,2026-11-14,0,0,5,2
 distributed-x-infrastructure-php-serverless-examples,2026-11-15,0,0,4,3
 distributed-x-infrastructure-php-serverless-examples,2026-11-16,10,2,14,8
 distributed-x-infrastructure-php-serverless-examples,2026-11-17,0,0,1,1
+distributed-x-infrastructure-php-serverless-examples,2026-11-18,0,0,2,1
 distributed-x-infrastructure-sample-multichannel-messaging-api-with-template,2026-10-23,0,0,0,0
 distributed-x-infrastructure-sample-multichannel-messaging-api-with-template,2026-10-24,0,0,0,0
 distributed-x-infrastructure-sample-multichannel-messaging-api-with-template,2026-10-25,0,0,0,0
@@ -6627,6 +6762,7 @@ distributed-x-infrastructure-sample-multichannel-messaging-api-with-template,202
 distributed-x-infrastructure-sample-multichannel-messaging-api-with-template,2026-11-15,0,0,1,1
 distributed-x-infrastructure-sample-multichannel-messaging-api-with-template,2026-11-16,5,1,6,4
 distributed-x-infrastructure-sample-multichannel-messaging-api-with-template,2026-11-17,0,0,0,0
+distributed-x-infrastructure-sample-multichannel-messaging-api-with-template,2026-11-18,1,1,3,2
 distributed-x-infrastructure-scheduled-web-scraper-layer,2026-10-27,0,0,0,0
 distributed-x-infrastructure-scheduled-web-scraper-layer,2026-10-28,0,0,0,0
 distributed-x-infrastructure-scheduled-web-scraper-layer,2026-10-29,0,0,0,0
@@ -6649,7 +6785,7 @@ distributed-x-infrastructure-scheduled-web-scraper-layer,2026-11-14,0,0,5,2
 distributed-x-infrastructure-scheduled-web-scraper-layer,2026-11-15,0,0,2,2
 distributed-x-infrastructure-scheduled-web-scraper-layer,2026-11-16,0,0,0,0
 distributed-x-infrastructure-scheduled-web-scraper-layer,2026-11-17,0,0,0,0
-distributed-x-infrastructure-serverless-activity-crud,2026-10-20,0,0,24,17
+distributed-x-infrastructure-scheduled-web-scraper-layer,2026-11-18,0,0,1,1
 distributed-x-infrastructure-serverless-activity-crud,2026-10-21,0,0,2,2
 distributed-x-infrastructure-serverless-activity-crud,2026-10-22,0,0,2,2
 distributed-x-infrastructure-serverless-activity-crud,2026-10-23,0,0,0,0
@@ -6678,6 +6814,21 @@ distributed-x-infrastructure-serverless-activity-crud,2026-11-14,0,0,4,1
 distributed-x-infrastructure-serverless-activity-crud,2026-11-15,0,0,1,1
 distributed-x-infrastructure-serverless-activity-crud,2026-11-16,0,0,0,0
 distributed-x-infrastructure-serverless-activity-crud,2026-11-17,0,0,0,0
+distributed-x-infrastructure-serverless-activity-crud,2026-11-18,0,0,3,2
+distributed-x-infrastructure-serverless-books-api,2026-11-06,0,0,0,0
+distributed-x-infrastructure-serverless-books-api,2026-11-07,0,0,0,0
+distributed-x-infrastructure-serverless-books-api,2026-11-08,0,0,0,0
+distributed-x-infrastructure-serverless-books-api,2026-11-09,0,0,0,0
+distributed-x-infrastructure-serverless-books-api,2026-11-10,0,0,0,0
+distributed-x-infrastructure-serverless-books-api,2026-11-11,0,0,0,0
+distributed-x-infrastructure-serverless-books-api,2026-11-12,0,0,0,0
+distributed-x-infrastructure-serverless-books-api,2026-11-13,0,0,0,0
+distributed-x-infrastructure-serverless-books-api,2026-11-14,0,0,0,0
+distributed-x-infrastructure-serverless-books-api,2026-11-15,0,0,0,0
+distributed-x-infrastructure-serverless-books-api,2026-11-16,0,0,0,0
+distributed-x-infrastructure-serverless-books-api,2026-11-17,0,0,0,0
+distributed-x-infrastructure-serverless-books-api,2026-11-18,0,0,0,0
+distributed-x-infrastructure-serverless-books-api,2026-11-19,0,0,0,0
 distributed-x-infrastructure-serverless-crud-api,2026-10-27,0,0,0,0
 distributed-x-infrastructure-serverless-crud-api,2026-10-28,0,0,0,0
 distributed-x-infrastructure-serverless-crud-api,2026-10-29,0,0,0,0
@@ -6700,7 +6851,7 @@ distributed-x-infrastructure-serverless-crud-api,2026-11-14,0,0,5,2
 distributed-x-infrastructure-serverless-crud-api,2026-11-15,0,0,3,3
 distributed-x-infrastructure-serverless-crud-api,2026-11-16,0,0,0,0
 distributed-x-infrastructure-serverless-crud-api,2026-11-17,0,0,0,0
-distributed-x-infrastructure-serverless-hexagonal-api,2026-10-20,0,0,1,1
+distributed-x-infrastructure-serverless-crud-api,2026-11-18,0,0,1,1
 distributed-x-infrastructure-serverless-hexagonal-api,2026-10-21,0,0,0,0
 distributed-x-infrastructure-serverless-hexagonal-api,2026-10-22,0,0,2,2
 distributed-x-infrastructure-serverless-hexagonal-api,2026-10-23,0,0,0,0
@@ -6729,6 +6880,35 @@ distributed-x-infrastructure-serverless-hexagonal-api,2026-11-14,0,0,4,1
 distributed-x-infrastructure-serverless-hexagonal-api,2026-11-15,0,0,1,1
 distributed-x-infrastructure-serverless-hexagonal-api,2026-11-16,0,0,0,0
 distributed-x-infrastructure-serverless-hexagonal-api,2026-11-17,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-api,2026-11-18,0,0,1,1
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-06,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-07,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-08,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-09,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-10,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-11,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-12,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-13,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-14,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-15,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-16,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-17,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-18,0,0,0,0
+distributed-x-infrastructure-serverless-hexagonal-stocks,2026-11-19,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-06,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-07,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-08,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-09,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-10,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-11,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-12,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-13,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-14,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-15,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-16,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-17,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-18,0,0,0,0
+distributed-x-infrastructure-serverless-rust-api,2026-11-19,0,0,0,0
 distributed-x-infrastructure-serverless-saas,2026-11-04,0,0,0,0
 distributed-x-infrastructure-serverless-saas,2026-11-05,0,0,0,0
 distributed-x-infrastructure-serverless-saas,2026-11-06,0,0,0,0
@@ -6742,8 +6922,8 @@ distributed-x-infrastructure-serverless-saas,2026-11-13,0,0,0,0
 distributed-x-infrastructure-serverless-saas,2026-11-14,0,0,0,0
 distributed-x-infrastructure-serverless-saas,2026-11-15,0,0,0,0
 distributed-x-infrastructure-serverless-saas,2026-11-16,0,0,0,0
-distributed-x-infrastructure-serverless-saas,2026-11-17,0,0,0,0
-distributed-x-infrastructure-serverless-saas,2026-11-18,0,0,0,0
+distributed-x-infrastructure-serverless-saas,2026-11-17,9,2,34,24
+distributed-x-infrastructure-serverless-saas,2026-11-18,0,0,1,1
 distributed-x-infrastructure-serverless-todo-api,2026-11-04,0,0,0,0
 distributed-x-infrastructure-serverless-todo-api,2026-11-05,0,0,0,0
 distributed-x-infrastructure-serverless-todo-api,2026-11-06,0,0,0,0
@@ -6758,6 +6938,7 @@ distributed-x-infrastructure-serverless-todo-api,2026-11-14,0,0,0,0
 distributed-x-infrastructure-serverless-todo-api,2026-11-15,0,0,0,0
 distributed-x-infrastructure-serverless-todo-api,2026-11-16,0,0,0,0
 distributed-x-infrastructure-serverless-todo-api,2026-11-17,7,2,34,24
+distributed-x-infrastructure-serverless-todo-api,2026-11-18,0,0,2,1
 distributed-x-infrastructure-url-shortener,2026-11-04,0,0,0,0
 distributed-x-infrastructure-url-shortener,2026-11-05,0,0,0,0
 distributed-x-infrastructure-url-shortener,2026-11-06,0,0,0,0
@@ -6772,6 +6953,7 @@ distributed-x-infrastructure-url-shortener,2026-11-14,0,0,0,0
 distributed-x-infrastructure-url-shortener,2026-11-15,0,0,0,0
 distributed-x-infrastructure-url-shortener,2026-11-16,0,0,0,0
 distributed-x-infrastructure-url-shortener,2026-11-17,7,2,41,26
+distributed-x-infrastructure-url-shortener,2026-11-18,0,0,2,2
 distributed-x-infrastructure-video-streaming,2026-10-23,0,0,0,0
 distributed-x-infrastructure-video-streaming,2026-10-24,0,0,0,0
 distributed-x-infrastructure-video-streaming,2026-10-25,0,0,0,0
@@ -6798,6 +6980,7 @@ distributed-x-infrastructure-video-streaming,2026-11-14,0,0,4,1
 distributed-x-infrastructure-video-streaming,2026-11-15,0,0,2,1
 distributed-x-infrastructure-video-streaming,2026-11-16,0,0,0,0
 distributed-x-infrastructure-video-streaming,2026-11-17,0,0,0,0
+distributed-x-infrastructure-video-streaming,2026-11-18,0,0,3,1
 distributed-x-infrastructure-vpc-endpoint-sharing,2026-11-05,0,0,0,0
 distributed-x-infrastructure-vpc-endpoint-sharing,2026-11-06,0,0,0,0
 distributed-x-infrastructure-vpc-endpoint-sharing,2026-11-07,0,0,0,0
@@ -6811,7 +6994,7 @@ distributed-x-infrastructure-vpc-endpoint-sharing,2026-11-14,0,0,0,0
 distributed-x-infrastructure-vpc-endpoint-sharing,2026-11-15,0,0,0,0
 distributed-x-infrastructure-vpc-endpoint-sharing,2026-11-16,0,0,0,0
 distributed-x-infrastructure-vpc-endpoint-sharing,2026-11-17,0,0,0,0
-distributed-x-infrastructure-vpc-endpoint-sharing,2026-11-18,0,0,0,0
+distributed-x-infrastructure-vpc-endpoint-sharing,2026-11-18,0,0,25,18
 dotnet-product-api,2026-11-04,0,0,0,0
 dotnet-product-api,2026-11-05,0,0,0,0
 dotnet-product-api,2026-11-06,0,0,0,0
@@ -6826,7 +7009,7 @@ dotnet-product-api,2026-11-14,0,0,0,0
 dotnet-product-api,2026-11-15,0,0,0,0
 dotnet-product-api,2026-11-16,0,0,0,0
 dotnet-product-api,2026-11-17,0,0,21,16
-enterprise-cce-container-workloads,2026-10-20,0,0,0,0
+dotnet-product-api,2026-11-18,0,0,1,1
 enterprise-cce-container-workloads,2026-10-21,0,0,0,0
 enterprise-cce-container-workloads,2026-10-22,0,0,0,0
 enterprise-cce-container-workloads,2026-10-23,1,1,34,20
@@ -6855,7 +7038,7 @@ enterprise-cce-container-workloads,2026-11-14,0,0,4,2
 enterprise-cce-container-workloads,2026-11-15,0,0,2,1
 enterprise-cce-container-workloads,2026-11-16,0,0,0,0
 enterprise-cce-container-workloads,2026-11-17,0,0,0,0
-enterprise-container-patterns,2026-10-20,0,0,0,0
+enterprise-cce-container-workloads,2026-11-18,3,1,2,1
 enterprise-container-patterns,2026-10-21,0,0,0,0
 enterprise-container-patterns,2026-10-22,0,0,0,0
 enterprise-container-patterns,2026-10-23,0,0,37,22
@@ -6884,7 +7067,7 @@ enterprise-container-patterns,2026-11-14,0,0,3,1
 enterprise-container-patterns,2026-11-15,0,0,1,1
 enterprise-container-patterns,2026-11-16,0,0,0,0
 enterprise-container-patterns,2026-11-17,0,0,0,0
-enterprise-ecs-cce-managed-nodes-tco-calculator,2026-10-20,0,0,0,0
+enterprise-container-patterns,2026-11-18,3,1,1,1
 enterprise-ecs-cce-managed-nodes-tco-calculator,2026-10-21,0,0,0,0
 enterprise-ecs-cce-managed-nodes-tco-calculator,2026-10-22,0,0,0,0
 enterprise-ecs-cce-managed-nodes-tco-calculator,2026-10-23,0,0,29,17
@@ -6913,7 +7096,7 @@ enterprise-ecs-cce-managed-nodes-tco-calculator,2026-11-14,0,0,3,1
 enterprise-ecs-cce-managed-nodes-tco-calculator,2026-11-15,0,0,1,1
 enterprise-ecs-cce-managed-nodes-tco-calculator,2026-11-16,0,0,0,0
 enterprise-ecs-cce-managed-nodes-tco-calculator,2026-11-17,0,0,0,0
-enterprise-knowledge-graph-visualization,2026-10-20,0,0,1,1
+enterprise-ecs-cce-managed-nodes-tco-calculator,2026-11-18,3,1,1,1
 enterprise-knowledge-graph-visualization,2026-10-21,0,0,0,0
 enterprise-knowledge-graph-visualization,2026-10-22,0,0,0,0
 enterprise-knowledge-graph-visualization,2026-10-23,0,0,0,0
@@ -6942,7 +7125,7 @@ enterprise-knowledge-graph-visualization,2026-11-14,0,0,3,1
 enterprise-knowledge-graph-visualization,2026-11-15,0,0,2,2
 enterprise-knowledge-graph-visualization,2026-11-16,0,0,0,0
 enterprise-knowledge-graph-visualization,2026-11-17,0,0,0,0
-enterprise-mcp-server-obs,2026-10-20,0,0,0,0
+enterprise-knowledge-graph-visualization,2026-11-18,0,0,0,0
 enterprise-mcp-server-obs,2026-10-21,0,0,0,0
 enterprise-mcp-server-obs,2026-10-22,0,0,0,0
 enterprise-mcp-server-obs,2026-10-23,0,0,32,20
@@ -6971,7 +7154,7 @@ enterprise-mcp-server-obs,2026-11-14,0,0,4,2
 enterprise-mcp-server-obs,2026-11-15,0,0,1,1
 enterprise-mcp-server-obs,2026-11-16,0,0,0,0
 enterprise-mcp-server-obs,2026-11-17,0,0,0,0
-enterprise-obs-resumable-upload,2026-10-20,0,0,0,0
+enterprise-mcp-server-obs,2026-11-18,3,1,2,1
 enterprise-obs-resumable-upload,2026-10-21,0,0,0,0
 enterprise-obs-resumable-upload,2026-10-22,0,0,0,0
 enterprise-obs-resumable-upload,2026-10-23,3,1,32,20
@@ -7000,7 +7183,7 @@ enterprise-obs-resumable-upload,2026-11-14,0,0,3,1
 enterprise-obs-resumable-upload,2026-11-15,0,0,1,1
 enterprise-obs-resumable-upload,2026-11-16,0,0,0,0
 enterprise-obs-resumable-upload,2026-11-17,0,0,1,1
-enterprise-observability,2026-10-20,1,1,1,1
+enterprise-obs-resumable-upload,2026-11-18,3,1,1,1
 enterprise-observability,2026-10-21,0,0,0,0
 enterprise-observability,2026-10-22,0,0,0,0
 enterprise-observability,2026-10-23,0,0,0,0
@@ -7029,7 +7212,7 @@ enterprise-observability,2026-11-14,0,0,3,1
 enterprise-observability,2026-11-15,0,0,2,1
 enterprise-observability,2026-11-16,0,0,1,1
 enterprise-observability,2026-11-17,0,0,0,0
-enterprise-rds-mysql-upgrade-assistant,2026-10-20,0,0,0,0
+enterprise-observability,2026-11-18,0,0,0,0
 enterprise-rds-mysql-upgrade-assistant,2026-10-21,0,0,0,0
 enterprise-rds-mysql-upgrade-assistant,2026-10-22,0,0,0,0
 enterprise-rds-mysql-upgrade-assistant,2026-10-23,0,0,25,18
@@ -7058,7 +7241,7 @@ enterprise-rds-mysql-upgrade-assistant,2026-11-14,0,0,3,1
 enterprise-rds-mysql-upgrade-assistant,2026-11-15,0,0,1,1
 enterprise-rds-mysql-upgrade-assistant,2026-11-16,0,0,0,0
 enterprise-rds-mysql-upgrade-assistant,2026-11-17,0,0,0,0
-enterprise-security-review-tool,2026-10-20,0,0,0,0
+enterprise-rds-mysql-upgrade-assistant,2026-11-18,2,1,2,1
 enterprise-security-review-tool,2026-10-21,0,0,0,0
 enterprise-security-review-tool,2026-10-22,0,0,0,0
 enterprise-security-review-tool,2026-10-23,0,0,25,18
@@ -7087,7 +7270,7 @@ enterprise-security-review-tool,2026-11-14,0,0,6,3
 enterprise-security-review-tool,2026-11-15,0,0,1,1
 enterprise-security-review-tool,2026-11-16,0,0,0,0
 enterprise-security-review-tool,2026-11-17,0,0,2,2
-enterprise-serverless-todo,2026-10-20,0,0,0,0
+enterprise-security-review-tool,2026-11-18,3,1,2,1
 enterprise-serverless-todo,2026-10-21,0,0,0,0
 enterprise-serverless-todo,2026-10-22,0,0,0,0
 enterprise-serverless-todo,2026-10-23,0,0,0,0
@@ -7115,7 +7298,8 @@ enterprise-serverless-todo,2026-11-13,0,0,2,1
 enterprise-serverless-todo,2026-11-14,0,0,5,2
 enterprise-serverless-todo,2026-11-15,0,0,2,2
 enterprise-serverless-todo,2026-11-16,0,0,0,0
-enterprise-synthetic-document-generator,2026-10-20,0,0,0,0
+enterprise-serverless-todo,2026-11-17,0,0,0,0
+enterprise-serverless-todo,2026-11-18,0,0,2,1
 enterprise-synthetic-document-generator,2026-10-21,0,0,1,1
 enterprise-synthetic-document-generator,2026-10-22,0,0,1,1
 enterprise-synthetic-document-generator,2026-10-23,0,0,0,0
@@ -7144,6 +7328,7 @@ enterprise-synthetic-document-generator,2026-11-14,0,0,4,1
 enterprise-synthetic-document-generator,2026-11-15,0,0,1,1
 enterprise-synthetic-document-generator,2026-11-16,0,0,0,0
 enterprise-synthetic-document-generator,2026-11-17,0,0,0,0
+enterprise-synthetic-document-generator,2026-11-18,0,0,1,1
 enterprise-vscode-on-ecs-for-prototyping-main,2026-11-03,0,0,0,0
 enterprise-vscode-on-ecs-for-prototyping-main,2026-11-04,0,0,0,0
 enterprise-vscode-on-ecs-for-prototyping-main,2026-11-05,0,0,0,0
@@ -7159,7 +7344,7 @@ enterprise-vscode-on-ecs-for-prototyping-main,2026-11-14,0,0,0,0
 enterprise-vscode-on-ecs-for-prototyping-main,2026-11-15,0,0,0,0
 enterprise-vscode-on-ecs-for-prototyping-main,2026-11-16,0,0,26,18
 enterprise-vscode-on-ecs-for-prototyping-main,2026-11-17,4,1,14,9
-example-samples,2026-10-20,0,0,2,2
+enterprise-vscode-on-ecs-for-prototyping-main,2026-11-18,13,2,1,1
 example-samples,2026-10-21,0,0,0,0
 example-samples,2026-10-22,0,0,0,0
 example-samples,2026-10-23,0,0,0,0
@@ -7188,7 +7373,7 @@ example-samples,2026-11-14,0,0,4,1
 example-samples,2026-11-15,0,0,3,2
 example-samples,2026-11-16,0,0,0,0
 example-samples,2026-11-17,0,0,0,0
-external-dns-huaweicloud-webhook,2026-10-20,0,0,0,0
+example-samples,2026-11-18,0,0,4,2
 external-dns-huaweicloud-webhook,2026-10-21,0,0,0,0
 external-dns-huaweicloud-webhook,2026-10-22,0,0,0,0
 external-dns-huaweicloud-webhook,2026-10-23,0,0,0,0
@@ -7216,7 +7401,7 @@ external-dns-huaweicloud-webhook,2026-11-15,0,0,0,0
 external-dns-huaweicloud-webhook,2026-11-16,0,0,0,0
 external-dns-huaweicloud-webhook,2026-11-17,0,0,0,0
 external-dns-huaweicloud-webhook,2026-11-18,0,0,0,0
-fastgpt-image,2026-10-20,0,0,0,0
+external-dns-huaweicloud-webhook,2026-11-19,0,0,0,0
 fastgpt-image,2026-10-21,0,0,0,0
 fastgpt-image,2026-10-22,0,0,0,0
 fastgpt-image,2026-10-23,0,0,0,0
@@ -7245,7 +7430,7 @@ fastgpt-image,2026-11-14,0,0,2,1
 fastgpt-image,2026-11-15,0,0,1,1
 fastgpt-image,2026-11-16,0,0,0,0
 fastgpt-image,2026-11-17,0,0,0,0
-finance-real-time-stream-processing,2026-10-20,1,1,0,0
+fastgpt-image,2026-11-18,0,0,4,2
 finance-real-time-stream-processing,2026-10-21,0,0,0,0
 finance-real-time-stream-processing,2026-10-22,0,0,0,0
 finance-real-time-stream-processing,2026-10-23,0,0,0,0
@@ -7274,7 +7459,7 @@ finance-real-time-stream-processing,2026-11-14,0,0,4,1
 finance-real-time-stream-processing,2026-11-15,0,0,3,2
 finance-real-time-stream-processing,2026-11-16,0,0,0,0
 finance-real-time-stream-processing,2026-11-17,0,0,0,0
-government-rekognition-virtual-proctor,2026-10-20,0,0,0,0
+finance-real-time-stream-processing,2026-11-18,4,1,1,1
 government-rekognition-virtual-proctor,2026-10-21,0,0,0,0
 government-rekognition-virtual-proctor,2026-10-22,0,0,0,0
 government-rekognition-virtual-proctor,2026-10-23,0,0,62,45
@@ -7303,7 +7488,7 @@ government-rekognition-virtual-proctor,2026-11-14,0,0,7,4
 government-rekognition-virtual-proctor,2026-11-15,0,0,1,1
 government-rekognition-virtual-proctor,2026-11-16,0,0,0,0
 government-rekognition-virtual-proctor,2026-11-17,0,0,0,0
-government-tak-server,2026-10-20,1,1,0,0
+government-rekognition-virtual-proctor,2026-11-18,0,0,1,1
 government-tak-server,2026-10-21,0,0,0,0
 government-tak-server,2026-10-22,0,0,0,0
 government-tak-server,2026-10-23,0,0,0,0
@@ -7332,7 +7517,7 @@ government-tak-server,2026-11-14,0,0,5,2
 government-tak-server,2026-11-15,0,0,4,2
 government-tak-server,2026-11-16,0,0,1,1
 government-tak-server,2026-11-17,0,0,1,1
-huaweicloud-app-orchestration-hcl,2026-10-20,0,0,0,0
+government-tak-server,2026-11-18,0,0,2,1
 huaweicloud-app-orchestration-hcl,2026-10-21,0,0,0,0
 huaweicloud-app-orchestration-hcl,2026-10-22,0,0,1,1
 huaweicloud-app-orchestration-hcl,2026-10-23,0,0,0,0
@@ -7361,6 +7546,7 @@ huaweicloud-app-orchestration-hcl,2026-11-14,0,0,4,2
 huaweicloud-app-orchestration-hcl,2026-11-15,0,0,2,1
 huaweicloud-app-orchestration-hcl,2026-11-16,0,0,0,0
 huaweicloud-app-orchestration-hcl,2026-11-17,0,0,0,0
+huaweicloud-app-orchestration-hcl,2026-11-18,0,0,7,5
 hw-kms-xksproxy-api-spec,2026-10-30,0,0,0,0
 hw-kms-xksproxy-api-spec,2026-10-31,0,0,0,0
 hw-kms-xksproxy-api-spec,2026-11-01,0,0,0,0
@@ -7379,6 +7565,8 @@ hw-kms-xksproxy-api-spec,2026-11-13,0,0,0,0
 hw-kms-xksproxy-api-spec,2026-11-14,0,0,0,0
 hw-kms-xksproxy-api-spec,2026-11-15,0,0,0,0
 hw-kms-xksproxy-api-spec,2026-11-16,0,0,0,0
+hw-kms-xksproxy-api-spec,2026-11-17,52,2,0,0
+hw-kms-xksproxy-api-spec,2026-11-18,4,1,0,0
 hw-kms-xksproxy-sample,2026-11-04,0,0,0,0
 hw-kms-xksproxy-sample,2026-11-05,0,0,0,0
 hw-kms-xksproxy-sample,2026-11-06,0,0,0,0
@@ -7393,7 +7581,7 @@ hw-kms-xksproxy-sample,2026-11-14,0,0,0,0
 hw-kms-xksproxy-sample,2026-11-15,0,0,0,0
 hw-kms-xksproxy-sample,2026-11-16,0,0,0,0
 hw-kms-xksproxy-sample,2026-11-17,28,2,0,0
-iaas-airflow-image,2026-10-20,0,0,0,0
+hw-kms-xksproxy-sample,2026-11-18,109,2,2,2
 iaas-airflow-image,2026-10-21,0,0,1,1
 iaas-airflow-image,2026-10-22,0,0,0,0
 iaas-airflow-image,2026-10-23,0,0,0,0
@@ -7422,7 +7610,7 @@ iaas-airflow-image,2026-11-14,0,0,2,1
 iaas-airflow-image,2026-11-15,0,0,2,2
 iaas-airflow-image,2026-11-16,0,0,0,0
 iaas-airflow-image,2026-11-17,0,0,0,0
-iaas-cloud-aercurity-assessment,2026-10-20,0,0,2,2
+iaas-airflow-image,2026-11-18,0,0,2,2
 iaas-cloud-aercurity-assessment,2026-10-21,1,1,0,0
 iaas-cloud-aercurity-assessment,2026-10-22,0,0,1,1
 iaas-cloud-aercurity-assessment,2026-10-23,0,0,0,0
@@ -7451,7 +7639,7 @@ iaas-cloud-aercurity-assessment,2026-11-14,0,0,3,1
 iaas-cloud-aercurity-assessment,2026-11-15,0,0,1,1
 iaas-cloud-aercurity-assessment,2026-11-16,0,0,0,0
 iaas-cloud-aercurity-assessment,2026-11-17,0,0,0,0
-iaas-dolphinscheduler-image,2026-10-20,0,0,1,1
+iaas-cloud-aercurity-assessment,2026-11-18,0,0,1,1
 iaas-dolphinscheduler-image,2026-10-21,0,0,1,1
 iaas-dolphinscheduler-image,2026-10-22,0,0,0,0
 iaas-dolphinscheduler-image,2026-10-23,0,0,0,0
@@ -7480,7 +7668,6 @@ iaas-dolphinscheduler-image,2026-11-14,1,1,3,2
 iaas-dolphinscheduler-image,2026-11-15,0,0,1,1
 iaas-dolphinscheduler-image,2026-11-16,0,0,0,0
 iaas-dolphinscheduler-image,2026-11-17,0,0,1,1
-iaas-file-processing-example,2026-10-20,0,0,1,1
 iaas-file-processing-example,2026-10-21,0,0,0,0
 iaas-file-processing-example,2026-10-22,0,0,2,2
 iaas-file-processing-example,2026-10-23,0,0,0,0
@@ -7509,7 +7696,7 @@ iaas-file-processing-example,2026-11-14,0,0,6,2
 iaas-file-processing-example,2026-11-15,0,0,2,1
 iaas-file-processing-example,2026-11-16,0,0,0,0
 iaas-file-processing-example,2026-11-17,0,0,0,0
-iaas-flink-image,2026-10-20,0,0,1,1
+iaas-file-processing-example,2026-11-18,0,0,3,2
 iaas-flink-image,2026-10-21,0,0,2,2
 iaas-flink-image,2026-10-22,0,0,0,0
 iaas-flink-image,2026-10-23,0,0,2,1
@@ -7538,7 +7725,7 @@ iaas-flink-image,2026-11-14,0,0,3,1
 iaas-flink-image,2026-11-15,0,0,1,1
 iaas-flink-image,2026-11-16,0,0,0,0
 iaas-flink-image,2026-11-17,0,0,0,0
-iaas-hadoop-image,2026-10-20,1,1,0,0
+iaas-flink-image,2026-11-18,0,0,6,5
 iaas-hadoop-image,2026-10-21,0,0,1,1
 iaas-hadoop-image,2026-10-22,0,0,1,1
 iaas-hadoop-image,2026-10-23,0,0,1,1
@@ -7567,7 +7754,7 @@ iaas-hadoop-image,2026-11-14,0,0,3,1
 iaas-hadoop-image,2026-11-15,0,0,1,1
 iaas-hadoop-image,2026-11-16,0,0,0,0
 iaas-hadoop-image,2026-11-17,0,0,0,0
-iaas-karpenter-provider-huawei,2026-10-20,3,3,3,3
+iaas-hadoop-image,2026-11-18,0,0,3,2
 iaas-karpenter-provider-huawei,2026-10-21,0,0,1,1
 iaas-karpenter-provider-huawei,2026-10-22,0,0,0,0
 iaas-karpenter-provider-huawei,2026-10-23,1,1,1,1
@@ -7596,7 +7783,7 @@ iaas-karpenter-provider-huawei,2026-11-14,3,3,18,2
 iaas-karpenter-provider-huawei,2026-11-15,5,2,3,3
 iaas-karpenter-provider-huawei,2026-11-16,1,1,33,5
 iaas-karpenter-provider-huawei,2026-11-17,9,3,4,3
-iaas-katib-image,2026-10-20,0,0,0,0
+iaas-karpenter-provider-huawei,2026-11-18,15,3,6,5
 iaas-katib-image,2026-10-21,0,0,0,0
 iaas-katib-image,2026-10-22,0,0,2,2
 iaas-katib-image,2026-10-23,0,0,2,1
@@ -7624,7 +7811,8 @@ iaas-katib-image,2026-11-13,0,0,2,1
 iaas-katib-image,2026-11-14,0,0,4,1
 iaas-katib-image,2026-11-15,0,0,1,1
 iaas-katib-image,2026-11-16,0,0,0,0
-iaas-kunpeng-getting-started,2026-10-20,0,0,0,0
+iaas-katib-image,2026-11-17,0,0,0,0
+iaas-katib-image,2026-11-18,0,0,1,1
 iaas-kunpeng-getting-started,2026-10-21,0,0,0,0
 iaas-kunpeng-getting-started,2026-10-22,0,0,0,0
 iaas-kunpeng-getting-started,2026-10-23,0,0,0,0
@@ -7653,7 +7841,7 @@ iaas-kunpeng-getting-started,2026-11-14,0,0,2,1
 iaas-kunpeng-getting-started,2026-11-15,0,0,1,1
 iaas-kunpeng-getting-started,2026-11-16,0,0,0,0
 iaas-kunpeng-getting-started,2026-11-17,0,0,0,0
-iaas-mcp-server,2026-10-20,19,7,10,7
+iaas-kunpeng-getting-started,2026-11-18,0,0,3,1
 iaas-mcp-server,2026-10-21,6,6,15,7
 iaas-mcp-server,2026-10-22,17,8,19,8
 iaas-mcp-server,2026-10-23,4,4,5,5
@@ -7682,7 +7870,7 @@ iaas-mcp-server,2026-11-14,0,0,22,2
 iaas-mcp-server,2026-11-15,3,3,6,6
 iaas-mcp-server,2026-11-16,44,16,3,3
 iaas-mcp-server,2026-11-17,42,15,7,5
-iaas-minio-image,2026-10-20,0,0,0,0
+iaas-mcp-server,2026-11-18,25,8,13,8
 iaas-minio-image,2026-10-21,0,0,0,0
 iaas-minio-image,2026-10-22,0,0,0,0
 iaas-minio-image,2026-10-23,0,0,0,0
@@ -7711,7 +7899,7 @@ iaas-minio-image,2026-11-14,0,0,4,1
 iaas-minio-image,2026-11-15,0,0,2,2
 iaas-minio-image,2026-11-16,0,0,0,0
 iaas-minio-image,2026-11-17,0,0,0,0
-iaas-obs-code-samples-go,2026-10-20,0,0,0,0
+iaas-minio-image,2026-11-18,0,0,2,2
 iaas-obs-code-samples-go,2026-10-21,0,0,0,0
 iaas-obs-code-samples-go,2026-10-22,0,0,0,0
 iaas-obs-code-samples-go,2026-10-23,0,0,0,0
@@ -7740,7 +7928,7 @@ iaas-obs-code-samples-go,2026-11-14,0,0,4,2
 iaas-obs-code-samples-go,2026-11-15,0,0,2,1
 iaas-obs-code-samples-go,2026-11-16,0,0,0,0
 iaas-obs-code-samples-go,2026-11-17,0,0,0,0
-iaas-obs-code-samples-java,2026-10-20,0,0,1,1
+iaas-obs-code-samples-go,2026-11-18,0,0,7,5
 iaas-obs-code-samples-java,2026-10-21,0,0,0,0
 iaas-obs-code-samples-java,2026-10-22,0,0,1,1
 iaas-obs-code-samples-java,2026-10-23,0,0,0,0
@@ -7769,7 +7957,7 @@ iaas-obs-code-samples-java,2026-11-14,0,0,2,1
 iaas-obs-code-samples-java,2026-11-15,0,0,2,1
 iaas-obs-code-samples-java,2026-11-16,0,0,0,0
 iaas-obs-code-samples-java,2026-11-17,0,0,0,0
-iaas-obs-code-samples-python,2026-10-20,0,0,1,1
+iaas-obs-code-samples-java,2026-11-18,0,0,7,5
 iaas-obs-code-samples-python,2026-10-21,0,0,0,0
 iaas-obs-code-samples-python,2026-10-22,0,0,0,0
 iaas-obs-code-samples-python,2026-10-23,0,0,0,0
@@ -7798,7 +7986,7 @@ iaas-obs-code-samples-python,2026-11-14,0,0,2,1
 iaas-obs-code-samples-python,2026-11-15,0,0,2,1
 iaas-obs-code-samples-python,2026-11-16,0,0,0,0
 iaas-obs-code-samples-python,2026-11-17,0,0,0,0
-iaas-pythonocc-image,2026-10-20,0,0,0,0
+iaas-obs-code-samples-python,2026-11-18,0,0,7,5
 iaas-pythonocc-image,2026-10-21,0,0,0,0
 iaas-pythonocc-image,2026-10-22,0,0,0,0
 iaas-pythonocc-image,2026-10-23,0,0,0,0
@@ -7827,7 +8015,7 @@ iaas-pythonocc-image,2026-11-14,0,0,3,2
 iaas-pythonocc-image,2026-11-15,0,0,2,1
 iaas-pythonocc-image,2026-11-16,0,0,0,0
 iaas-pythonocc-image,2026-11-17,0,0,0,0
-iaas-smcpp-image,2026-10-20,0,0,0,0
+iaas-pythonocc-image,2026-11-18,0,0,2,1
 iaas-smcpp-image,2026-10-21,1,1,1,1
 iaas-smcpp-image,2026-10-22,0,0,0,0
 iaas-smcpp-image,2026-10-23,0,0,0,0
@@ -7856,7 +8044,7 @@ iaas-smcpp-image,2026-11-14,0,0,6,2
 iaas-smcpp-image,2026-11-15,1,1,1,1
 iaas-smcpp-image,2026-11-16,0,0,0,0
 iaas-smcpp-image,2026-11-17,0,0,0,0
-iaas-spark-image,2026-10-20,0,0,0,0
+iaas-smcpp-image,2026-11-18,0,0,1,1
 iaas-spark-image,2026-10-21,0,0,1,1
 iaas-spark-image,2026-10-22,0,0,1,1
 iaas-spark-image,2026-10-23,0,0,0,0
@@ -7885,7 +8073,7 @@ iaas-spark-image,2026-11-14,0,0,3,1
 iaas-spark-image,2026-11-15,0,0,1,1
 iaas-spark-image,2026-11-16,0,0,0,0
 iaas-spark-image,2026-11-17,0,0,0,0
-iaas-storm-image,2026-10-20,0,0,0,0
+iaas-spark-image,2026-11-18,0,0,4,3
 iaas-storm-image,2026-10-21,0,0,0,0
 iaas-storm-image,2026-10-22,0,0,0,0
 iaas-storm-image,2026-10-23,0,0,0,0
@@ -7914,7 +8102,7 @@ iaas-storm-image,2026-11-14,0,0,2,1
 iaas-storm-image,2026-11-15,0,0,1,1
 iaas-storm-image,2026-11-16,0,0,0,0
 iaas-storm-image,2026-11-17,0,0,1,1
-iaas-trf-image,2026-10-20,0,0,0,0
+iaas-storm-image,2026-11-18,0,0,1,1
 iaas-trf-image,2026-10-21,0,0,0,0
 iaas-trf-image,2026-10-22,0,0,0,0
 iaas-trf-image,2026-10-23,0,0,0,0
@@ -7943,7 +8131,7 @@ iaas-trf-image,2026-11-14,0,0,2,1
 iaas-trf-image,2026-11-15,0,0,1,1
 iaas-trf-image,2026-11-16,0,0,0,0
 iaas-trf-image,2026-11-17,1,1,0,0
-iaas-yambo-image,2026-10-20,0,0,0,0
+iaas-trf-image,2026-11-18,0,0,1,1
 iaas-yambo-image,2026-10-21,0,0,0,0
 iaas-yambo-image,2026-10-22,0,0,0,0
 iaas-yambo-image,2026-10-23,0,0,0,0
@@ -7972,6 +8160,7 @@ iaas-yambo-image,2026-11-14,0,0,5,2
 iaas-yambo-image,2026-11-15,0,0,1,1
 iaas-yambo-image,2026-11-16,0,0,0,0
 iaas-yambo-image,2026-11-17,0,0,0,0
+iaas-yambo-image,2026-11-18,0,0,1,1
 infra-obs-fast-list,2026-11-03,0,0,0,0
 infra-obs-fast-list,2026-11-04,0,0,0,0
 infra-obs-fast-list,2026-11-05,0,0,0,0
@@ -7987,7 +8176,7 @@ infra-obs-fast-list,2026-11-14,0,0,0,0
 infra-obs-fast-list,2026-11-15,0,0,0,0
 infra-obs-fast-list,2026-11-16,0,0,26,18
 infra-obs-fast-list,2026-11-17,4,1,10,7
-internet-agent-trace-exporter,2026-10-20,0,0,0,0
+infra-obs-fast-list,2026-11-18,10,2,8,1
 internet-agent-trace-exporter,2026-10-21,0,0,0,0
 internet-agent-trace-exporter,2026-10-22,0,0,0,0
 internet-agent-trace-exporter,2026-10-23,0,0,24,17
@@ -8016,7 +8205,7 @@ internet-agent-trace-exporter,2026-11-14,0,0,4,2
 internet-agent-trace-exporter,2026-11-15,0,0,1,1
 internet-agent-trace-exporter,2026-11-16,0,0,0,0
 internet-agent-trace-exporter,2026-11-17,0,0,0,0
-internet-cce-fluxv2-gitops-example,2026-10-20,0,0,0,0
+internet-agent-trace-exporter,2026-11-18,2,1,1,1
 internet-cce-fluxv2-gitops-example,2026-10-21,0,0,0,0
 internet-cce-fluxv2-gitops-example,2026-10-22,0,0,0,0
 internet-cce-fluxv2-gitops-example,2026-10-23,0,0,20,15
@@ -8045,6 +8234,7 @@ internet-cce-fluxv2-gitops-example,2026-11-14,0,0,4,1
 internet-cce-fluxv2-gitops-example,2026-11-15,0,0,2,1
 internet-cce-fluxv2-gitops-example,2026-11-16,0,0,0,0
 internet-cce-fluxv2-gitops-example,2026-11-17,0,0,0,0
+internet-cce-fluxv2-gitops-example,2026-11-18,3,1,1,1
 internet-content-aggregator,2026-10-28,0,0,0,0
 internet-content-aggregator,2026-10-29,0,0,0,0
 internet-content-aggregator,2026-10-30,0,0,0,0
@@ -8066,6 +8256,7 @@ internet-content-aggregator,2026-11-14,0,0,4,1
 internet-content-aggregator,2026-11-15,0,0,3,1
 internet-content-aggregator,2026-11-16,8,2,10,6
 internet-content-aggregator,2026-11-17,0,0,0,0
+internet-content-aggregator,2026-11-18,0,0,2,1
 internet-devcontainer-factory,2026-11-03,0,0,0,0
 internet-devcontainer-factory,2026-11-04,0,0,0,0
 internet-devcontainer-factory,2026-11-05,0,0,0,0
@@ -8081,6 +8272,7 @@ internet-devcontainer-factory,2026-11-14,0,0,0,0
 internet-devcontainer-factory,2026-11-15,0,0,0,0
 internet-devcontainer-factory,2026-11-16,0,0,29,22
 internet-devcontainer-factory,2026-11-17,5,2,5,3
+internet-devcontainer-factory,2026-11-18,10,2,2,1
 internet-dify-on-huaweicloud,2026-11-03,0,0,0,0
 internet-dify-on-huaweicloud,2026-11-04,0,0,0,0
 internet-dify-on-huaweicloud,2026-11-05,0,0,0,0
@@ -8096,6 +8288,7 @@ internet-dify-on-huaweicloud,2026-11-14,0,0,0,0
 internet-dify-on-huaweicloud,2026-11-15,0,0,0,0
 internet-dify-on-huaweicloud,2026-11-16,1,1,25,18
 internet-dify-on-huaweicloud,2026-11-17,43,1,3,2
+internet-dify-on-huaweicloud,2026-11-18,22,6,14,8
 internet-ecs-hf-diffusers-test-tool,2026-11-03,0,0,0,0
 internet-ecs-hf-diffusers-test-tool,2026-11-04,0,0,0,0
 internet-ecs-hf-diffusers-test-tool,2026-11-05,0,0,0,0
@@ -8110,7 +8303,8 @@ internet-ecs-hf-diffusers-test-tool,2026-11-13,0,0,0,0
 internet-ecs-hf-diffusers-test-tool,2026-11-14,0,0,0,0
 internet-ecs-hf-diffusers-test-tool,2026-11-15,0,0,0,0
 internet-ecs-hf-diffusers-test-tool,2026-11-16,0,0,27,20
-internet-elastic-beanstalk-express-js,2026-10-20,0,0,0,0
+internet-ecs-hf-diffusers-test-tool,2026-11-17,48,1,33,18
+internet-ecs-hf-diffusers-test-tool,2026-11-18,11,2,1,1
 internet-elastic-beanstalk-express-js,2026-10-21,0,0,0,0
 internet-elastic-beanstalk-express-js,2026-10-22,0,0,0,0
 internet-elastic-beanstalk-express-js,2026-10-23,0,0,25,18
@@ -8138,7 +8332,8 @@ internet-elastic-beanstalk-express-js,2026-11-13,0,0,3,2
 internet-elastic-beanstalk-express-js,2026-11-14,0,0,5,2
 internet-elastic-beanstalk-express-js,2026-11-15,0,0,2,1
 internet-elastic-beanstalk-express-js,2026-11-16,0,0,0,0
-internet-obs-image-processing,2026-10-20,0,0,0,0
+internet-elastic-beanstalk-express-js,2026-11-17,0,0,0,0
+internet-elastic-beanstalk-express-js,2026-11-18,2,1,9,1
 internet-obs-image-processing,2026-10-21,0,0,0,0
 internet-obs-image-processing,2026-10-22,0,0,0,0
 internet-obs-image-processing,2026-10-23,1,1,0,0
@@ -8166,6 +8361,8 @@ internet-obs-image-processing,2026-11-13,0,0,3,1
 internet-obs-image-processing,2026-11-14,0,0,6,3
 internet-obs-image-processing,2026-11-15,0,0,2,1
 internet-obs-image-processing,2026-11-16,0,0,0,0
+internet-obs-image-processing,2026-11-17,0,0,0,0
+internet-obs-image-processing,2026-11-18,0,0,1,1
 internet-obs-signed-url-upload,2026-10-27,0,0,0,0
 internet-obs-signed-url-upload,2026-10-28,0,0,0,0
 internet-obs-signed-url-upload,2026-10-29,0,0,0,0
@@ -8188,7 +8385,7 @@ internet-obs-signed-url-upload,2026-11-14,0,0,5,2
 internet-obs-signed-url-upload,2026-11-15,0,0,3,2
 internet-obs-signed-url-upload,2026-11-16,0,0,0,0
 internet-obs-signed-url-upload,2026-11-17,0,0,0,0
-internet-react-cors-spa,2026-10-20,0,0,0,0
+internet-obs-signed-url-upload,2026-11-18,0,0,2,1
 internet-react-cors-spa,2026-10-21,0,0,0,0
 internet-react-cors-spa,2026-10-22,0,0,0,0
 internet-react-cors-spa,2026-10-23,0,0,20,15
@@ -8217,6 +8414,7 @@ internet-react-cors-spa,2026-11-14,0,0,4,1
 internet-react-cors-spa,2026-11-15,0,0,1,1
 internet-react-cors-spa,2026-11-16,0,0,0,0
 internet-react-cors-spa,2026-11-17,0,0,0,0
+internet-react-cors-spa,2026-11-18,3,1,1,1
 internet-rss-content-aggregator,2026-10-28,0,0,0,0
 internet-rss-content-aggregator,2026-10-29,0,0,0,0
 internet-rss-content-aggregator,2026-10-30,0,0,0,0
@@ -8238,6 +8436,21 @@ internet-rss-content-aggregator,2026-11-14,0,0,4,1
 internet-rss-content-aggregator,2026-11-15,0,0,3,1
 internet-rss-content-aggregator,2026-11-16,10,2,10,6
 internet-rss-content-aggregator,2026-11-17,0,0,0,0
+internet-rss-content-aggregator,2026-11-18,0,0,2,1
+internet-serverless-ecommerce-platform,2026-11-06,0,0,0,0
+internet-serverless-ecommerce-platform,2026-11-07,0,0,0,0
+internet-serverless-ecommerce-platform,2026-11-08,0,0,0,0
+internet-serverless-ecommerce-platform,2026-11-09,0,0,0,0
+internet-serverless-ecommerce-platform,2026-11-10,0,0,0,0
+internet-serverless-ecommerce-platform,2026-11-11,0,0,0,0
+internet-serverless-ecommerce-platform,2026-11-12,0,0,0,0
+internet-serverless-ecommerce-platform,2026-11-13,0,0,0,0
+internet-serverless-ecommerce-platform,2026-11-14,0,0,0,0
+internet-serverless-ecommerce-platform,2026-11-15,0,0,0,0
+internet-serverless-ecommerce-platform,2026-11-16,0,0,0,0
+internet-serverless-ecommerce-platform,2026-11-17,0,0,0,0
+internet-serverless-ecommerce-platform,2026-11-18,0,0,0,0
+internet-serverless-ecommerce-platform,2026-11-19,0,0,0,0
 internet-serverless-form-submission-notification,2026-10-27,0,0,0,0
 internet-serverless-form-submission-notification,2026-10-28,0,0,0,0
 internet-serverless-form-submission-notification,2026-10-29,0,0,0,0
@@ -8260,6 +8473,21 @@ internet-serverless-form-submission-notification,2026-11-14,0,0,3,2
 internet-serverless-form-submission-notification,2026-11-15,0,0,4,2
 internet-serverless-form-submission-notification,2026-11-16,0,0,0,0
 internet-serverless-form-submission-notification,2026-11-17,0,0,0,0
+internet-serverless-form-submission-notification,2026-11-18,0,0,2,1
+internet-serverless-shopping-cart,2026-11-06,0,0,0,0
+internet-serverless-shopping-cart,2026-11-07,0,0,0,0
+internet-serverless-shopping-cart,2026-11-08,0,0,0,0
+internet-serverless-shopping-cart,2026-11-09,0,0,0,0
+internet-serverless-shopping-cart,2026-11-10,0,0,0,0
+internet-serverless-shopping-cart,2026-11-11,0,0,0,0
+internet-serverless-shopping-cart,2026-11-12,0,0,0,0
+internet-serverless-shopping-cart,2026-11-13,0,0,0,0
+internet-serverless-shopping-cart,2026-11-14,0,0,0,0
+internet-serverless-shopping-cart,2026-11-15,0,0,0,0
+internet-serverless-shopping-cart,2026-11-16,0,0,0,0
+internet-serverless-shopping-cart,2026-11-17,0,0,0,0
+internet-serverless-shopping-cart,2026-11-18,0,0,0,0
+internet-serverless-shopping-cart,2026-11-19,0,0,0,0
 internet-serverlesspresso-coffee-ordering,2026-11-04,0,0,0,0
 internet-serverlesspresso-coffee-ordering,2026-11-05,0,0,0,0
 internet-serverlesspresso-coffee-ordering,2026-11-06,0,0,0,0
@@ -8274,6 +8502,7 @@ internet-serverlesspresso-coffee-ordering,2026-11-14,0,0,0,0
 internet-serverlesspresso-coffee-ordering,2026-11-15,0,0,0,0
 internet-serverlesspresso-coffee-ordering,2026-11-16,0,0,0,0
 internet-serverlesspresso-coffee-ordering,2026-11-17,10,2,32,22
+internet-serverlesspresso-coffee-ordering,2026-11-18,0,0,6,4
 internet-spring-boot-game-record,2026-11-05,0,0,0,0
 internet-spring-boot-game-record,2026-11-06,0,0,0,0
 internet-spring-boot-game-record,2026-11-07,0,0,0,0
@@ -8287,7 +8516,7 @@ internet-spring-boot-game-record,2026-11-14,0,0,0,0
 internet-spring-boot-game-record,2026-11-15,0,0,0,0
 internet-spring-boot-game-record,2026-11-16,0,0,0,0
 internet-spring-boot-game-record,2026-11-17,0,0,0,0
-internet-spring-boot-game-record,2026-11-18,0,0,0,0
+internet-spring-boot-game-record,2026-11-18,0,0,28,20
 java-order-rest-api,2026-11-04,0,0,0,0
 java-order-rest-api,2026-11-05,0,0,0,0
 java-order-rest-api,2026-11-06,0,0,0,0
@@ -8302,6 +8531,7 @@ java-order-rest-api,2026-11-14,0,0,0,0
 java-order-rest-api,2026-11-15,0,0,0,0
 java-order-rest-api,2026-11-16,0,0,0,0
 java-order-rest-api,2026-11-17,0,0,24,17
+java-order-rest-api,2026-11-18,0,0,4,2
 lean-governance-cce-resource-optimization,2026-11-05,0,0,0,0
 lean-governance-cce-resource-optimization,2026-11-06,0,0,0,0
 lean-governance-cce-resource-optimization,2026-11-07,0,0,0,0
@@ -8316,6 +8546,7 @@ lean-governance-cce-resource-optimization,2026-11-15,0,0,0,0
 lean-governance-cce-resource-optimization,2026-11-16,0,0,0,0
 lean-governance-cce-resource-optimization,2026-11-17,0,0,0,0
 lean-governance-cce-resource-optimization,2026-11-18,0,0,0,0
+lean-governance-cce-resource-optimization,2026-11-19,0,0,0,0
 lean-governance-cost-optimize-minecraft-server-on-ecs,2026-11-04,0,0,0,0
 lean-governance-cost-optimize-minecraft-server-on-ecs,2026-11-05,0,0,0,0
 lean-governance-cost-optimize-minecraft-server-on-ecs,2026-11-06,0,0,0,0
@@ -8329,8 +8560,8 @@ lean-governance-cost-optimize-minecraft-server-on-ecs,2026-11-13,0,0,0,0
 lean-governance-cost-optimize-minecraft-server-on-ecs,2026-11-14,0,0,0,0
 lean-governance-cost-optimize-minecraft-server-on-ecs,2026-11-15,0,0,0,0
 lean-governance-cost-optimize-minecraft-server-on-ecs,2026-11-16,0,0,0,0
-lean-governance-cost-optimize-minecraft-server-on-ecs,2026-11-17,0,0,0,0
-lean-governance-cost-optimize-minecraft-server-on-ecs,2026-11-18,0,0,0,0
+lean-governance-cost-optimize-minecraft-server-on-ecs,2026-11-17,10,2,28,21
+lean-governance-cost-optimize-minecraft-server-on-ecs,2026-11-18,19,3,11,6
 lean-governance-custom-lens-wa,2026-10-28,0,0,0,0
 lean-governance-custom-lens-wa,2026-10-29,0,0,0,0
 lean-governance-custom-lens-wa,2026-10-30,0,0,0,0
@@ -8352,6 +8583,7 @@ lean-governance-custom-lens-wa,2026-11-14,0,0,3,1
 lean-governance-custom-lens-wa,2026-11-15,0,0,3,1
 lean-governance-custom-lens-wa,2026-11-16,13,3,13,7
 lean-governance-custom-lens-wa,2026-11-17,0,0,0,0
+lean-governance-custom-lens-wa,2026-11-18,0,0,2,1
 lean-governance-custom-scheduler-cce,2026-11-04,0,0,0,0
 lean-governance-custom-scheduler-cce,2026-11-05,0,0,0,0
 lean-governance-custom-scheduler-cce,2026-11-06,0,0,0,0
@@ -8365,9 +8597,8 @@ lean-governance-custom-scheduler-cce,2026-11-13,0,0,0,0
 lean-governance-custom-scheduler-cce,2026-11-14,0,0,0,0
 lean-governance-custom-scheduler-cce,2026-11-15,0,0,0,0
 lean-governance-custom-scheduler-cce,2026-11-16,0,0,0,0
-lean-governance-custom-scheduler-cce,2026-11-17,0,0,0,0
+lean-governance-custom-scheduler-cce,2026-11-17,0,0,23,18
 lean-governance-custom-scheduler-cce,2026-11-18,0,0,0,0
-lean-governance-multi-account-budget-management,2026-10-20,0,0,25,17
 lean-governance-multi-account-budget-management,2026-10-21,0,0,4,3
 lean-governance-multi-account-budget-management,2026-10-22,0,0,2,2
 lean-governance-multi-account-budget-management,2026-10-23,0,0,1,1
@@ -8396,6 +8627,7 @@ lean-governance-multi-account-budget-management,2026-11-14,0,0,3,1
 lean-governance-multi-account-budget-management,2026-11-15,0,0,2,1
 lean-governance-multi-account-budget-management,2026-11-16,0,0,0,0
 lean-governance-multi-account-budget-management,2026-11-17,0,0,0,0
+lean-governance-multi-account-budget-management,2026-11-18,0,0,10,1
 lean-governance-multi-account-stack-instances,2026-11-05,0,0,0,0
 lean-governance-multi-account-stack-instances,2026-11-06,0,0,0,0
 lean-governance-multi-account-stack-instances,2026-11-07,0,0,0,0
@@ -8409,8 +8641,21 @@ lean-governance-multi-account-stack-instances,2026-11-14,0,0,0,0
 lean-governance-multi-account-stack-instances,2026-11-15,0,0,0,0
 lean-governance-multi-account-stack-instances,2026-11-16,0,0,0,0
 lean-governance-multi-account-stack-instances,2026-11-17,0,0,0,0
-lean-governance-multi-account-stack-instances,2026-11-18,0,0,0,0
-machine-api-provider-huawei,2026-10-20,0,0,0,0
+lean-governance-multi-account-stack-instances,2026-11-18,0,0,24,17
+lean-governance-small-files-archiving,2026-11-06,0,0,0,0
+lean-governance-small-files-archiving,2026-11-07,0,0,0,0
+lean-governance-small-files-archiving,2026-11-08,0,0,0,0
+lean-governance-small-files-archiving,2026-11-09,0,0,0,0
+lean-governance-small-files-archiving,2026-11-10,0,0,0,0
+lean-governance-small-files-archiving,2026-11-11,0,0,0,0
+lean-governance-small-files-archiving,2026-11-12,0,0,0,0
+lean-governance-small-files-archiving,2026-11-13,0,0,0,0
+lean-governance-small-files-archiving,2026-11-14,0,0,0,0
+lean-governance-small-files-archiving,2026-11-15,0,0,0,0
+lean-governance-small-files-archiving,2026-11-16,0,0,0,0
+lean-governance-small-files-archiving,2026-11-17,0,0,0,0
+lean-governance-small-files-archiving,2026-11-18,0,0,0,0
+lean-governance-small-files-archiving,2026-11-19,0,0,0,0
 machine-api-provider-huawei,2026-10-21,0,0,0,0
 machine-api-provider-huawei,2026-10-22,0,0,0,0
 machine-api-provider-huawei,2026-10-23,0,0,0,0
@@ -8440,7 +8685,7 @@ machine-api-provider-huawei,2026-11-15,0,0,0,0
 machine-api-provider-huawei,2026-11-16,0,0,0,0
 machine-api-provider-huawei,2026-11-17,0,0,0,0
 machine-api-provider-huawei,2026-11-18,0,0,0,0
-maxkb-image,2026-10-20,0,0,0,0
+machine-api-provider-huawei,2026-11-19,0,0,0,0
 maxkb-image,2026-10-21,0,0,0,0
 maxkb-image,2026-10-22,0,0,1,1
 maxkb-image,2026-10-23,0,0,0,0
@@ -8469,7 +8714,7 @@ maxkb-image,2026-11-14,0,0,1,1
 maxkb-image,2026-11-15,0,0,1,1
 maxkb-image,2026-11-16,0,0,0,0
 maxkb-image,2026-11-17,0,0,0,0
-media-cloud-serverless-architecture,2026-10-20,0,0,0,0
+maxkb-image,2026-11-18,0,0,5,3
 media-cloud-serverless-architecture,2026-10-21,0,0,0,0
 media-cloud-serverless-architecture,2026-10-22,1,1,0,0
 media-cloud-serverless-architecture,2026-10-23,0,0,0,0
@@ -8498,7 +8743,7 @@ media-cloud-serverless-architecture,2026-11-14,0,0,3,1
 media-cloud-serverless-architecture,2026-11-15,0,0,2,1
 media-cloud-serverless-architecture,2026-11-16,0,0,0,0
 media-cloud-serverless-architecture,2026-11-17,0,0,0,0
-migration-datax-image,2026-10-20,0,0,0,0
+media-cloud-serverless-architecture,2026-11-18,0,0,3,1
 migration-datax-image,2026-10-21,0,0,0,0
 migration-datax-image,2026-10-22,0,0,0,0
 migration-datax-image,2026-10-23,0,0,0,0
@@ -8527,7 +8772,7 @@ migration-datax-image,2026-11-14,0,0,3,1
 migration-datax-image,2026-11-15,0,0,1,1
 migration-datax-image,2026-11-16,1,1,0,0
 migration-datax-image,2026-11-17,0,0,0,0
-migration-debezium-image,2026-10-20,0,0,0,0
+migration-datax-image,2026-11-18,0,0,2,2
 migration-debezium-image,2026-10-21,0,0,0,0
 migration-debezium-image,2026-10-22,0,0,0,0
 migration-debezium-image,2026-10-23,0,0,0,0
@@ -8556,7 +8801,7 @@ migration-debezium-image,2026-11-14,0,0,3,2
 migration-debezium-image,2026-11-15,0,0,1,1
 migration-debezium-image,2026-11-16,0,0,0,0
 migration-debezium-image,2026-11-17,0,0,0,0
-migration-flink-cdc,2026-10-20,1,1,0,0
+migration-debezium-image,2026-11-18,0,0,1,1
 migration-flink-cdc,2026-10-21,1,1,1,1
 migration-flink-cdc,2026-10-22,0,0,0,0
 migration-flink-cdc,2026-10-23,0,0,0,0
@@ -8585,7 +8830,7 @@ migration-flink-cdc,2026-11-14,2,2,0,0
 migration-flink-cdc,2026-11-15,0,0,1,1
 migration-flink-cdc,2026-11-16,0,0,0,0
 migration-flink-cdc,2026-11-17,0,0,0,0
-migration-nifi-image,2026-10-20,0,0,0,0
+migration-flink-cdc,2026-11-18,1,1,0,0
 migration-nifi-image,2026-10-21,0,0,1,1
 migration-nifi-image,2026-10-22,0,0,0,0
 migration-nifi-image,2026-10-23,0,0,0,0
@@ -8614,7 +8859,7 @@ migration-nifi-image,2026-11-14,0,0,2,1
 migration-nifi-image,2026-11-15,0,0,1,1
 migration-nifi-image,2026-11-16,0,0,0,0
 migration-nifi-image,2026-11-17,0,0,0,0
-migration-rvtoolsvmware,2026-10-20,0,0,2,2
+migration-nifi-image,2026-11-18,0,0,3,2
 migration-rvtoolsvmware,2026-10-21,0,0,2,2
 migration-rvtoolsvmware,2026-10-22,0,0,0,0
 migration-rvtoolsvmware,2026-10-23,1,1,0,0
@@ -8643,7 +8888,7 @@ migration-rvtoolsvmware,2026-11-14,0,0,2,1
 migration-rvtoolsvmware,2026-11-15,0,0,1,1
 migration-rvtoolsvmware,2026-11-16,0,0,0,0
 migration-rvtoolsvmware,2026-11-17,0,0,0,0
-migration-seatunnel-image,2026-10-20,0,0,0,0
+migration-rvtoolsvmware,2026-11-18,0,0,2,2
 migration-seatunnel-image,2026-10-21,0,0,0,0
 migration-seatunnel-image,2026-10-22,0,0,0,0
 migration-seatunnel-image,2026-10-23,0,0,0,0
@@ -8672,7 +8917,7 @@ migration-seatunnel-image,2026-11-14,0,0,2,1
 migration-seatunnel-image,2026-11-15,1,1,1,1
 migration-seatunnel-image,2026-11-16,0,0,1,1
 migration-seatunnel-image,2026-11-17,1,1,0,0
-migration-to-huawei-cloud,2026-10-20,0,0,1,1
+migration-seatunnel-image,2026-11-18,0,0,2,2
 migration-to-huawei-cloud,2026-10-21,0,0,1,1
 migration-to-huawei-cloud,2026-10-22,0,0,11,2
 migration-to-huawei-cloud,2026-10-23,1,1,0,0
@@ -8700,7 +8945,7 @@ migration-to-huawei-cloud,2026-11-13,0,0,3,1
 migration-to-huawei-cloud,2026-11-14,0,0,3,1
 migration-to-huawei-cloud,2026-11-15,0,0,1,1
 migration-to-huawei-cloud,2026-11-16,0,0,0,0
-milvus-image,2026-10-20,0,0,0,0
+migration-to-huawei-cloud,2026-11-17,0,0,0,0
 milvus-image,2026-10-21,0,0,0,0
 milvus-image,2026-10-22,0,0,0,0
 milvus-image,2026-10-23,0,0,1,1
@@ -8729,7 +8974,7 @@ milvus-image,2026-11-14,0,0,1,1
 milvus-image,2026-11-15,0,0,1,1
 milvus-image,2026-11-16,0,0,0,0
 milvus-image,2026-11-17,0,0,0,0
-modelarts-vllm-ascend-deploy-skill,2026-10-20,0,0,0,0
+milvus-image,2026-11-18,0,0,5,3
 modelarts-vllm-ascend-deploy-skill,2026-10-21,0,0,0,0
 modelarts-vllm-ascend-deploy-skill,2026-10-22,3,2,3,3
 modelarts-vllm-ascend-deploy-skill,2026-10-23,0,0,1,1
@@ -8758,6 +9003,7 @@ modelarts-vllm-ascend-deploy-skill,2026-11-14,0,0,3,1
 modelarts-vllm-ascend-deploy-skill,2026-11-15,1,1,1,1
 modelarts-vllm-ascend-deploy-skill,2026-11-16,1,1,0,0
 modelarts-vllm-ascend-deploy-skill,2026-11-17,1,1,0,0
+modelarts-vllm-ascend-deploy-skill,2026-11-18,0,0,1,1
 multitenant-serverless-saas,2026-11-04,0,0,0,0
 multitenant-serverless-saas,2026-11-05,0,0,0,0
 multitenant-serverless-saas,2026-11-06,0,0,0,0
@@ -8772,7 +9018,7 @@ multitenant-serverless-saas,2026-11-14,0,0,0,0
 multitenant-serverless-saas,2026-11-15,0,0,0,0
 multitenant-serverless-saas,2026-11-16,0,0,0,0
 multitenant-serverless-saas,2026-11-17,0,0,30,23
-n8n-image,2026-10-20,0,0,1,1
+multitenant-serverless-saas,2026-11-18,0,0,47,37
 n8n-image,2026-10-21,0,0,0,0
 n8n-image,2026-10-22,0,0,0,0
 n8n-image,2026-10-23,0,0,0,0
@@ -8801,6 +9047,7 @@ n8n-image,2026-11-14,0,0,1,1
 n8n-image,2026-11-15,0,0,3,2
 n8n-image,2026-11-16,0,0,0,0
 n8n-image,2026-11-17,0,0,0,0
+n8n-image,2026-11-18,0,0,4,2
 obs-multipart-upload,2026-11-04,0,0,0,0
 obs-multipart-upload,2026-11-05,0,0,0,0
 obs-multipart-upload,2026-11-06,0,0,0,0
@@ -8815,6 +9062,7 @@ obs-multipart-upload,2026-11-14,0,0,0,0
 obs-multipart-upload,2026-11-15,0,0,0,0
 obs-multipart-upload,2026-11-16,0,0,0,0
 obs-multipart-upload,2026-11-17,1,1,30,23
+obs-multipart-upload,2026-11-18,0,0,1,1
 order-saga-transactions,2026-11-04,0,0,0,0
 order-saga-transactions,2026-11-05,0,0,0,0
 order-saga-transactions,2026-11-06,0,0,0,0
@@ -8829,7 +9077,7 @@ order-saga-transactions,2026-11-14,0,0,0,0
 order-saga-transactions,2026-11-15,0,0,0,0
 order-saga-transactions,2026-11-16,0,0,0,0
 order-saga-transactions,2026-11-17,0,0,22,17
-paas-cce-resource-manager,2026-10-20,1,1,1,1
+order-saga-transactions,2026-11-18,0,0,4,2
 paas-cce-resource-manager,2026-10-21,0,0,0,0
 paas-cce-resource-manager,2026-10-22,0,0,0,0
 paas-cce-resource-manager,2026-10-23,1,1,0,0
@@ -8857,7 +9105,8 @@ paas-cce-resource-manager,2026-11-13,1,1,1,1
 paas-cce-resource-manager,2026-11-14,3,1,4,1
 paas-cce-resource-manager,2026-11-15,1,1,1,1
 paas-cce-resource-manager,2026-11-16,1,1,0,0
-paas-modern-app-poc,2026-10-20,0,0,1,1
+paas-cce-resource-manager,2026-11-17,0,0,1,1
+paas-cce-resource-manager,2026-11-18,0,0,3,2
 paas-modern-app-poc,2026-10-21,0,0,1,1
 paas-modern-app-poc,2026-10-22,0,0,0,0
 paas-modern-app-poc,2026-10-23,0,0,0,0
@@ -8886,7 +9135,7 @@ paas-modern-app-poc,2026-11-14,0,0,4,2
 paas-modern-app-poc,2026-11-15,0,0,1,1
 paas-modern-app-poc,2026-11-16,0,0,0,0
 paas-modern-app-poc,2026-11-17,0,0,0,0
-pdf-math-translate-image,2026-10-20,0,0,0,0
+paas-modern-app-poc,2026-11-18,0,0,1,1
 pdf-math-translate-image,2026-10-21,0,0,0,0
 pdf-math-translate-image,2026-10-22,0,0,0,0
 pdf-math-translate-image,2026-10-23,0,0,0,0
@@ -8915,7 +9164,7 @@ pdf-math-translate-image,2026-11-14,0,0,4,2
 pdf-math-translate-image,2026-11-15,0,0,1,1
 pdf-math-translate-image,2026-11-16,0,0,0,0
 pdf-math-translate-image,2026-11-17,0,0,0,0
-powerjob-image,2026-10-20,0,0,0,0
+pdf-math-translate-image,2026-11-18,0,0,5,3
 powerjob-image,2026-10-21,0,0,0,0
 powerjob-image,2026-10-22,0,0,0,0
 powerjob-image,2026-10-23,0,0,0,0
@@ -8944,7 +9193,7 @@ powerjob-image,2026-11-14,0,0,2,1
 powerjob-image,2026-11-15,0,0,1,1
 powerjob-image,2026-11-16,0,0,0,0
 powerjob-image,2026-11-17,0,0,0,0
-rag-samples,2026-10-20,0,0,0,0
+powerjob-image,2026-11-18,0,0,4,2
 rag-samples,2026-10-21,0,0,2,2
 rag-samples,2026-10-22,0,0,1,1
 rag-samples,2026-10-23,0,0,0,0
@@ -8973,7 +9222,7 @@ rag-samples,2026-11-14,0,0,4,1
 rag-samples,2026-11-15,0,0,1,1
 rag-samples,2026-11-16,0,0,0,0
 rag-samples,2026-11-17,0,0,0,0
-ragflow-image,2026-10-20,0,0,0,0
+rag-samples,2026-11-18,0,0,3,2
 ragflow-image,2026-10-21,0,0,0,0
 ragflow-image,2026-10-22,0,0,0,0
 ragflow-image,2026-10-23,0,0,0,0
@@ -9002,6 +9251,7 @@ ragflow-image,2026-11-14,0,0,2,1
 ragflow-image,2026-11-15,0,0,1,1
 ragflow-image,2026-11-16,0,0,0,0
 ragflow-image,2026-11-17,0,0,0,0
+ragflow-image,2026-11-18,0,0,5,3
 react-ssr-webapp,2026-11-04,0,0,0,0
 react-ssr-webapp,2026-11-05,0,0,0,0
 react-ssr-webapp,2026-11-06,0,0,0,0
@@ -9016,6 +9266,7 @@ react-ssr-webapp,2026-11-14,0,0,0,0
 react-ssr-webapp,2026-11-15,0,0,0,0
 react-ssr-webapp,2026-11-16,0,0,0,0
 react-ssr-webapp,2026-11-17,0,0,29,21
+react-ssr-webapp,2026-11-18,0,0,2,2
 retail-bookstore,2026-11-04,0,0,0,0
 retail-bookstore,2026-11-05,0,0,0,0
 retail-bookstore,2026-11-06,0,0,0,0
@@ -9029,8 +9280,8 @@ retail-bookstore,2026-11-13,0,0,0,0
 retail-bookstore,2026-11-14,0,0,0,0
 retail-bookstore,2026-11-15,0,0,0,0
 retail-bookstore,2026-11-16,0,0,0,0
-retail-bookstore,2026-11-17,0,0,0,0
-retail-bookstore,2026-11-18,0,0,0,0
+retail-bookstore,2026-11-17,0,0,29,22
+retail-bookstore,2026-11-18,0,0,6,4
 retail-ecommerce-platform,2026-11-04,0,0,0,0
 retail-ecommerce-platform,2026-11-05,0,0,0,0
 retail-ecommerce-platform,2026-11-06,0,0,0,0
@@ -9045,7 +9296,7 @@ retail-ecommerce-platform,2026-11-14,0,0,0,0
 retail-ecommerce-platform,2026-11-15,0,0,0,0
 retail-ecommerce-platform,2026-11-16,0,0,0,0
 retail-ecommerce-platform,2026-11-17,4,1,31,25
-retail-solution-E-commerce-shop-based-magento,2026-10-20,0,0,0,0
+retail-ecommerce-platform,2026-11-18,0,0,1,1
 retail-solution-E-commerce-shop-based-magento,2026-10-21,0,0,0,0
 retail-solution-E-commerce-shop-based-magento,2026-10-22,0,0,0,0
 retail-solution-E-commerce-shop-based-magento,2026-10-23,0,0,0,0
@@ -9074,7 +9325,7 @@ retail-solution-E-commerce-shop-based-magento,2026-11-14,0,0,4,1
 retail-solution-E-commerce-shop-based-magento,2026-11-15,0,0,1,1
 retail-solution-E-commerce-shop-based-magento,2026-11-16,0,0,0,0
 retail-solution-E-commerce-shop-based-magento,2026-11-17,0,0,1,1
-sac-automation,2026-10-20,0,0,0,0
+retail-solution-E-commerce-shop-based-magento,2026-11-18,0,0,7,6
 sac-automation,2026-10-21,0,0,0,0
 sac-automation,2026-10-22,0,0,0,0
 sac-automation,2026-10-23,0,0,0,0
@@ -9104,7 +9355,7 @@ sac-automation,2026-11-15,0,0,0,0
 sac-automation,2026-11-16,0,0,0,0
 sac-automation,2026-11-17,0,0,0,0
 sac-automation,2026-11-18,0,0,0,0
-sac-cicd,2026-10-20,0,0,0,0
+sac-automation,2026-11-19,0,0,0,0
 sac-cicd,2026-10-21,0,0,0,0
 sac-cicd,2026-10-22,0,0,0,0
 sac-cicd,2026-10-23,0,0,0,0
@@ -9132,7 +9383,92 @@ sac-cicd,2026-11-13,0,0,0,0
 sac-cicd,2026-11-14,0,0,0,0
 sac-cicd,2026-11-15,0,0,0,0
 sac-cicd,2026-11-16,0,0,0,0
-security-encryption-sdk-java,2026-10-20,0,0,0,0
+sac-cicd,2026-11-17,0,0,0,0
+sac-cicd,2026-11-18,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-06,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-07,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-08,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-09,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-10,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-11,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-12,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-13,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-14,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-15,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-16,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-17,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-18,0,0,0,0
+sample-automated-vpc-cidr-expansion,2026-11-19,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-06,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-07,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-08,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-09,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-10,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-11,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-12,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-13,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-14,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-15,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-16,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-17,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-18,0,0,0,0
+sample-distributed-cross-cloud-data-migration-s3-rclone,2026-11-19,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-06,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-07,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-08,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-09,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-10,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-11,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-12,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-13,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-14,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-15,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-16,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-17,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-18,0,0,0,0
+sample-rds-sql-server-proactive-monitoring,2026-11-19,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-06,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-07,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-08,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-09,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-10,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-11,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-12,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-13,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-14,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-15,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-16,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-17,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-18,0,0,0,0
+sample-serverless-batch-orchestration-for-mainframe-modernization,2026-11-19,0,0,0,0
+sample-terraform-drift-detection,2026-11-06,0,0,0,0
+sample-terraform-drift-detection,2026-11-07,0,0,0,0
+sample-terraform-drift-detection,2026-11-08,0,0,0,0
+sample-terraform-drift-detection,2026-11-09,0,0,0,0
+sample-terraform-drift-detection,2026-11-10,0,0,0,0
+sample-terraform-drift-detection,2026-11-11,0,0,0,0
+sample-terraform-drift-detection,2026-11-12,0,0,0,0
+sample-terraform-drift-detection,2026-11-13,0,0,0,0
+sample-terraform-drift-detection,2026-11-14,0,0,0,0
+sample-terraform-drift-detection,2026-11-15,0,0,0,0
+sample-terraform-drift-detection,2026-11-16,0,0,0,0
+sample-terraform-drift-detection,2026-11-17,0,0,0,0
+sample-terraform-drift-detection,2026-11-18,0,0,0,0
+sample-terraform-drift-detection,2026-11-19,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-06,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-07,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-08,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-09,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-10,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-11,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-12,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-13,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-14,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-15,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-16,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-17,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-18,0,0,0,0
+sample-vllm-on-aws-ec2-with-terraform,2026-11-19,0,0,0,0
 security-encryption-sdk-java,2026-10-21,0,0,1,1
 security-encryption-sdk-java,2026-10-22,1,1,1,1
 security-encryption-sdk-java,2026-10-23,0,0,0,0
@@ -9161,7 +9497,7 @@ security-encryption-sdk-java,2026-11-14,1,1,5,1
 security-encryption-sdk-java,2026-11-15,0,0,2,1
 security-encryption-sdk-java,2026-11-16,0,0,2,2
 security-encryption-sdk-java,2026-11-17,0,0,1,1
-security-secretsmanager-jdbc-sdk-java,2026-10-20,0,0,0,0
+security-encryption-sdk-java,2026-11-18,0,0,8,6
 security-secretsmanager-jdbc-sdk-java,2026-10-21,0,0,0,0
 security-secretsmanager-jdbc-sdk-java,2026-10-22,0,0,0,0
 security-secretsmanager-jdbc-sdk-java,2026-10-23,0,0,0,0
@@ -9190,7 +9526,7 @@ security-secretsmanager-jdbc-sdk-java,2026-11-14,0,0,4,1
 security-secretsmanager-jdbc-sdk-java,2026-11-15,0,0,1,1
 security-secretsmanager-jdbc-sdk-java,2026-11-16,0,0,0,0
 security-secretsmanager-jdbc-sdk-java,2026-11-17,0,0,1,1
-security-solution-build-a-WAF-based-on-modsecurity,2026-10-20,0,0,1,1
+security-secretsmanager-jdbc-sdk-java,2026-11-18,0,0,7,5
 security-solution-build-a-WAF-based-on-modsecurity,2026-10-21,0,0,0,0
 security-solution-build-a-WAF-based-on-modsecurity,2026-10-22,0,0,0,0
 security-solution-build-a-WAF-based-on-modsecurity,2026-10-23,1,1,0,0
@@ -9219,7 +9555,7 @@ security-solution-build-a-WAF-based-on-modsecurity,2026-11-14,0,0,4,1
 security-solution-build-a-WAF-based-on-modsecurity,2026-11-15,0,0,1,1
 security-solution-build-a-WAF-based-on-modsecurity,2026-11-16,0,0,0,0
 security-solution-build-a-WAF-based-on-modsecurity,2026-11-17,0,0,1,1
-security-solution-harden-for-ssh-login-to-linux-ecs,2026-10-20,0,0,0,0
+security-solution-build-a-WAF-based-on-modsecurity,2026-11-18,0,0,7,6
 security-solution-harden-for-ssh-login-to-linux-ecs,2026-10-21,0,0,0,0
 security-solution-harden-for-ssh-login-to-linux-ecs,2026-10-22,0,0,0,0
 security-solution-harden-for-ssh-login-to-linux-ecs,2026-10-23,0,0,0,0
@@ -9248,7 +9584,7 @@ security-solution-harden-for-ssh-login-to-linux-ecs,2026-11-14,0,0,4,1
 security-solution-harden-for-ssh-login-to-linux-ecs,2026-11-15,0,0,1,1
 security-solution-harden-for-ssh-login-to-linux-ecs,2026-11-16,0,0,0,0
 security-solution-harden-for-ssh-login-to-linux-ecs,2026-11-17,0,0,0,0
-sentinel-image,2026-10-20,0,0,0,0
+security-solution-harden-for-ssh-login-to-linux-ecs,2026-11-18,0,0,7,6
 sentinel-image,2026-10-21,0,0,0,0
 sentinel-image,2026-10-22,0,0,0,0
 sentinel-image,2026-10-23,0,0,0,0
@@ -9278,7 +9614,7 @@ sentinel-image,2026-11-15,0,0,0,0
 sentinel-image,2026-11-16,0,0,0,0
 sentinel-image,2026-11-17,0,0,0,0
 sentinel-image,2026-11-18,0,0,0,0
-skywalking-image,2026-10-20,0,0,0,0
+sentinel-image,2026-11-19,0,0,0,0
 skywalking-image,2026-10-21,0,0,0,0
 skywalking-image,2026-10-22,0,0,0,0
 skywalking-image,2026-10-23,0,0,0,0
@@ -9308,7 +9644,7 @@ skywalking-image,2026-11-15,0,0,0,0
 skywalking-image,2026-11-16,0,0,0,0
 skywalking-image,2026-11-17,0,0,0,0
 skywalking-image,2026-11-18,0,0,0,0
-solution-as-code-internal,2026-10-20,3,1,4,1
+skywalking-image,2026-11-19,0,0,0,0
 solution-as-code-internal,2026-10-21,0,0,0,0
 solution-as-code-internal,2026-10-22,0,0,6,1
 solution-as-code-internal,2026-10-23,0,0,4,1
@@ -9337,7 +9673,7 @@ solution-as-code-internal,2026-11-14,0,0,0,0
 solution-as-code-internal,2026-11-15,0,0,0,0
 solution-as-code-internal,2026-11-16,0,0,0,0
 solution-as-code-internal,2026-11-17,0,0,0,0
-sync-config,2026-10-20,0,0,1,1
+solution-as-code-internal,2026-11-18,0,0,0,0
 sync-config,2026-10-21,0,0,0,0
 sync-config,2026-10-22,0,0,0,0
 sync-config,2026-10-23,0,0,0,0
@@ -9366,7 +9702,7 @@ sync-config,2026-11-14,0,0,5,2
 sync-config,2026-11-15,0,0,2,1
 sync-config,2026-11-16,0,0,0,0
 sync-config,2026-11-17,0,0,0,0
-telecom-nlp-pipeline-modelarts,2026-10-20,0,0,0,0
+sync-config,2026-11-18,0,0,3,2
 telecom-nlp-pipeline-modelarts,2026-10-21,0,0,0,0
 telecom-nlp-pipeline-modelarts,2026-10-22,0,0,0,0
 telecom-nlp-pipeline-modelarts,2026-10-23,0,0,22,15
@@ -9395,7 +9731,21 @@ telecom-nlp-pipeline-modelarts,2026-11-14,0,0,4,1
 telecom-nlp-pipeline-modelarts,2026-11-15,0,0,2,1
 telecom-nlp-pipeline-modelarts,2026-11-16,4,1,6,4
 telecom-nlp-pipeline-modelarts,2026-11-17,0,0,1,1
-velero-plugin-for-huaweicloud,2026-10-20,0,0,0,0
+telecom-nlp-pipeline-modelarts,2026-11-18,0,0,2,1
+terraform-cicd-pipeline,2026-11-06,0,0,0,0
+terraform-cicd-pipeline,2026-11-07,0,0,0,0
+terraform-cicd-pipeline,2026-11-08,0,0,0,0
+terraform-cicd-pipeline,2026-11-09,0,0,0,0
+terraform-cicd-pipeline,2026-11-10,0,0,0,0
+terraform-cicd-pipeline,2026-11-11,0,0,0,0
+terraform-cicd-pipeline,2026-11-12,0,0,0,0
+terraform-cicd-pipeline,2026-11-13,0,0,0,0
+terraform-cicd-pipeline,2026-11-14,0,0,0,0
+terraform-cicd-pipeline,2026-11-15,0,0,0,0
+terraform-cicd-pipeline,2026-11-16,0,0,0,0
+terraform-cicd-pipeline,2026-11-17,0,0,0,0
+terraform-cicd-pipeline,2026-11-18,0,0,0,0
+terraform-cicd-pipeline,2026-11-19,0,0,0,0
 velero-plugin-for-huaweicloud,2026-10-21,0,0,0,0
 velero-plugin-for-huaweicloud,2026-10-22,0,0,0,0
 velero-plugin-for-huaweicloud,2026-10-23,0,0,0,0
@@ -9425,7 +9775,7 @@ velero-plugin-for-huaweicloud,2026-11-15,0,0,0,0
 velero-plugin-for-huaweicloud,2026-11-16,0,0,0,0
 velero-plugin-for-huaweicloud,2026-11-17,0,0,0,0
 velero-plugin-for-huaweicloud,2026-11-18,0,0,0,0
-zookeeper-image,2026-10-20,0,0,0,0
+velero-plugin-for-huaweicloud,2026-11-19,0,0,0,0
 zookeeper-image,2026-10-21,0,0,0,0
 zookeeper-image,2026-10-22,0,0,0,0
 zookeeper-image,2026-10-23,0,0,0,0
@@ -9455,3 +9805,4 @@ zookeeper-image,2026-11-15,0,0,0,0
 zookeeper-image,2026-11-16,0,0,0,0
 zookeeper-image,2026-11-17,0,0,0,0
 zookeeper-image,2026-11-18,0,0,0,0
+zookeeper-image,2026-11-19,0,0,0,0
