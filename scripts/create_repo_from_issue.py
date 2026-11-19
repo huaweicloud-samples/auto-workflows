@@ -11,9 +11,11 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -25,6 +27,7 @@ TEAM_MARKDOWN_LINK_RE = re.compile(r"^\[[^\]]+\]\((https?://[^)]+)\)$", re.IGNOR
 NO_RESPONSE_RE = re.compile(r"^_?No\s*response_?$", re.IGNORECASE)
 AUTO_SECTION_START = "<!-- AUTO-WORKFLOWS:START -->"
 AUTO_SECTION_END = "<!-- AUTO-WORKFLOWS:END -->"
+INDEX_PUSH_MAX_ATTEMPTS = 5
 
 # GitHub rejects a repository description longer than this with
 # "GraphQL: Description cannot be more than 350 characters (createRepository)".
@@ -555,7 +558,40 @@ def awesome_index_row(request: RepoRequest, org: str) -> str:
     )
 
 
-def update_awesome_index(request: RepoRequest, org: str, token: str, index_repo: str) -> str:
+def render_awesome_index(content: str, request: RepoRequest, org: str) -> str:
+    """Insert or update the repository row inside the auto-managed index table."""
+    row = awesome_index_row(request, org)
+    section_header = f"## {request.awesome_category}\n\n"
+    table_header = "| Repository | Description | Team | Status |\n|------------|-------------|------|--------|\n"
+
+    if AUTO_SECTION_START in content and AUTO_SECTION_END in content:
+        before, rest = content.split(AUTO_SECTION_START, 1)
+        current, after = rest.split(AUTO_SECTION_END, 1)
+        rows = [
+            line
+            for line in current.splitlines()
+            if line.startswith("| [") and f"/{request.repo_name})" not in line
+        ]
+        rows.append(row.rstrip())
+        block = AUTO_SECTION_START + "\n" + table_header + "\n".join(sorted(rows)) + "\n" + AUTO_SECTION_END
+        return before + block + after
+
+    if not content.endswith("\n"):
+        content += "\n"
+    return content + "\n" + section_header + AUTO_SECTION_START + "\n" + table_header + row + AUTO_SECTION_END + "\n"
+
+
+def update_awesome_index(
+    request: RepoRequest,
+    org: str,
+    token: str,
+    index_repo: str,
+    max_attempts: int = INDEX_PUSH_MAX_ATTEMPTS,
+    sleep: Callable[[float], None] = time.sleep,
+) -> str:
+    if max_attempts < 1:
+        raise ValueError("max_attempts must be at least 1")
+
     temp_dir = Path(tempfile.mkdtemp(prefix="awesome-index-"))
     run(["git", "clone", authenticated_repo_url(token, org, index_repo), str(temp_dir)])
 
@@ -564,35 +600,40 @@ def update_awesome_index(request: RepoRequest, org: str, token: str, index_repo:
     except subprocess.CalledProcessError:
         run(["git", "checkout", "-b", "main"], cwd=temp_dir)
 
-    readme_path = temp_dir / "README.md"
-    if readme_path.exists():
-        content = readme_path.read_text(encoding="utf-8")
-    else:
-        content = "# Awesome HuaweiCloud\n\n"
-
-    row = awesome_index_row(request, org)
-    section_header = f"## {request.awesome_category}\n\n"
-    table_header = "| Repository | Description | Team | Status |\n|------------|-------------|------|--------|\n"
-
-    if AUTO_SECTION_START in content and AUTO_SECTION_END in content:
-        before, rest = content.split(AUTO_SECTION_START, 1)
-        current, after = rest.split(AUTO_SECTION_END, 1)
-        rows = [line for line in current.splitlines() if line.startswith("| [") and f"/{request.repo_name})" not in line]
-        rows.append(row.rstrip())
-        block = AUTO_SECTION_START + "\n" + table_header + "\n".join(sorted(rows)) + "\n" + AUTO_SECTION_END
-        content = before + block + after
-    else:
-        if not content.endswith("\n"):
-            content += "\n"
-        content += "\n" + section_header + AUTO_SECTION_START + "\n" + table_header + row + AUTO_SECTION_END + "\n"
-
-    readme_path.write_text(content, encoding="utf-8")
     run(["git", "config", "user.name", "github-actions[bot]"], cwd=temp_dir)
     run(["git", "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com"], cwd=temp_dir)
-    run(["git", "add", "README.md"], cwd=temp_dir)
-    if capture(["git", "status", "--short"], cwd=temp_dir):
+
+    readme_path = temp_dir / "README.md"
+    for attempt in range(1, max_attempts + 1):
+        if attempt > 1:
+            run(["git", "fetch", "origin", "main"], cwd=temp_dir)
+            run(["git", "checkout", "-B", "main", "origin/main"], cwd=temp_dir)
+
+        if readme_path.exists():
+            content = readme_path.read_text(encoding="utf-8")
+        else:
+            content = "# Awesome HuaweiCloud\n\n"
+
+        readme_path.write_text(render_awesome_index(content, request, org), encoding="utf-8")
+        run(["git", "add", "README.md"], cwd=temp_dir)
+        if not capture(["git", "status", "--short"], cwd=temp_dir):
+            return f"https://github.com/{org}/{index_repo}"
+
         run(["git", "commit", "-m", f"docs: add {request.repo_name} to index"], cwd=temp_dir)
-        run(["git", "push", "origin", "HEAD:main"], cwd=temp_dir)
+        try:
+            run(["git", "push", "origin", "HEAD:main"], cwd=temp_dir)
+            return f"https://github.com/{org}/{index_repo}"
+        except subprocess.CalledProcessError:
+            if attempt >= max_attempts:
+                raise
+            delay = float(attempt)
+            print(
+                f"Push to {org}/{index_repo} was rejected (concurrent update); "
+                f"fetching latest main and retrying in {delay:g}s ({attempt}/{max_attempts}).",
+                file=sys.stderr,
+            )
+            sleep(delay)
+
     return f"https://github.com/{org}/{index_repo}"
 
 

@@ -33,6 +33,9 @@ jobs:
     needs: authorize_approval
     if: needs.authorize_approval.outputs.authorized == 'true'
     runs-on: ubuntu-latest
+    concurrency:
+      group: auto-create-repo-issue-${{ github.event.issue.number }}
+      cancel-in-progress: false
     env:
       GH_TOKEN: ${{ secrets.ORG_ADMIN_TOKEN }}
       ISSUE_TOKEN: ${{ github.token }}

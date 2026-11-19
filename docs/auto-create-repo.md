@@ -53,6 +53,8 @@ Long descriptions are never rejected. `shorten_description()` in `scripts/create
 
 Because an index entry is a Markdown table row, `awesome_index_row()` writes the description through `markdown_cell()`: newlines collapse to spaces and `|` is escaped as `\|`, so a multi-line description can never split the row or add a column.
 
+When multiple repository requests are approved at the same time, concurrent runs may race while pushing to `awesome-huaweicloud`. If `git push origin HEAD:main` is rejected because another workflow updated `main` first, `update_awesome_index()` automatically fetches the latest `origin/main`, resets to it, re-renders the index table (preserving the concurrent rows), and retries the push up to `INDEX_PUSH_MAX_ATTEMPTS` (5) times.
+
 ## Required secret
 
 Add `ORG_ADMIN_TOKEN` to this repository's Actions secrets.

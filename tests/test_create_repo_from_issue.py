@@ -1,8 +1,9 @@
 import io
 import re
+import subprocess
 import tempfile
 import unittest
-from contextlib import redirect_stdout
+from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
 
@@ -21,11 +22,13 @@ from scripts.create_repo_from_issue import (
     parse_request,
     readme_template,
     remove_issue_label,
+    render_awesome_index,
     resolve_request_teams,
     resolve_team_slugs,
     shorten_description,
     split_items,
     split_team_items,
+    update_awesome_index,
 )
 
 
@@ -329,6 +332,100 @@ class AwesomeIndexRowTests(unittest.TestCase):
         self.assertIn(INCIDENT_DESCRIPTION, row)
         self.assertNotIn(TRUNCATION_MARK, row)
         self.assertEqual(len(self.cells(row)), 6)
+
+
+class AwesomeIndexPushRetryTests(unittest.TestCase):
+    """Regression tests for concurrent index pushes rejecting `git push origin HEAD:main`."""
+
+    ORG = "huaweicloud-samples"
+    INDEX_REPO = "awesome-huaweicloud"
+
+    def test_retries_rejected_push_after_fetching_and_preserves_concurrent_rows(self) -> None:
+        concurrent_request = parse_request(
+            issue_event("Concurrent sample", repo_name="sample-another-repo"),
+            self.ORG,
+        )
+        request = parse_request(
+            issue_event("VPC CIDR expansion sample", repo_name="sample-automated-vpc-cidr-expansion"),
+            self.ORG,
+        )
+        initial_readme = "# Awesome HuaweiCloud\n"
+        upstream_after_concurrent_push = render_awesome_index(initial_readme, concurrent_request, self.ORG)
+
+        commands: list[list[str]] = []
+        sleeps: list[float] = []
+        push_attempts = 0
+
+        with tempfile.TemporaryDirectory() as workspace:
+            readme_path = Path(workspace) / "README.md"
+
+            def fake_run(cmd: list[str], cwd: str | Path | None = None, env: dict[str, str] | None = None) -> None:
+                nonlocal push_attempts
+                commands.append(list(cmd))
+                if cmd[:2] == ["git", "clone"]:
+                    readme_path.write_text(initial_readme, encoding="utf-8")
+                elif cmd == ["git", "checkout", "-B", "main", "origin/main"]:
+                    readme_path.write_text(upstream_after_concurrent_push, encoding="utf-8")
+                elif cmd == ["git", "push", "origin", "HEAD:main"]:
+                    push_attempts += 1
+                    if push_attempts == 1:
+                        raise subprocess.CalledProcessError(1, cmd)
+
+            with (
+                patch.object(create_repo_from_issue.tempfile, "mkdtemp", return_value=workspace),
+                patch.object(create_repo_from_issue, "run", side_effect=fake_run),
+                patch.object(create_repo_from_issue, "capture", return_value="M README.md"),
+                redirect_stderr(io.StringIO()),
+            ):
+                url = update_awesome_index(
+                    request,
+                    self.ORG,
+                    "token",
+                    self.INDEX_REPO,
+                    max_attempts=3,
+                    sleep=sleeps.append,
+                )
+
+            final_readme = readme_path.read_text(encoding="utf-8")
+
+        self.assertEqual(url, f"https://github.com/{self.ORG}/{self.INDEX_REPO}")
+        self.assertEqual(push_attempts, 2)
+        self.assertEqual(sleeps, [1.0])
+        self.assertIn(["git", "fetch", "origin", "main"], commands)
+        self.assertIn(["git", "checkout", "-B", "main", "origin/main"], commands)
+        self.assertIn("sample-another-repo", final_readme)
+        self.assertIn("sample-automated-vpc-cidr-expansion", final_readme)
+
+    def test_raises_after_all_push_attempts_are_exhausted(self) -> None:
+        request = parse_request(issue_event("Example repository"), self.ORG)
+        sleeps: list[float] = []
+        push_attempts = 0
+
+        with tempfile.TemporaryDirectory() as workspace:
+            def fake_run(cmd: list[str], cwd: str | Path | None = None, env: dict[str, str] | None = None) -> None:
+                nonlocal push_attempts
+                if cmd == ["git", "push", "origin", "HEAD:main"]:
+                    push_attempts += 1
+                    raise subprocess.CalledProcessError(1, cmd)
+
+            with (
+                patch.object(create_repo_from_issue.tempfile, "mkdtemp", return_value=workspace),
+                patch.object(create_repo_from_issue, "run", side_effect=fake_run),
+                patch.object(create_repo_from_issue, "capture", return_value="M README.md"),
+                redirect_stderr(io.StringIO()),
+            ):
+                with self.assertRaises(subprocess.CalledProcessError):
+                    update_awesome_index(
+                        request,
+                        self.ORG,
+                        "token",
+                        self.INDEX_REPO,
+                        max_attempts=3,
+                        sleep=sleeps.append,
+                    )
+
+        self.assertEqual(push_attempts, 3)
+        self.assertEqual(sleeps, [1.0, 2.0])
 
 
 class OrganizationOwnerAuthorizationTests(unittest.TestCase):
