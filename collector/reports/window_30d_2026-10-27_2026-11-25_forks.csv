@@ -1,5 +1,5 @@
 ﻿repo,forks,stars,open_issues
-iaas-mcp-server,26,51,21
+iaas-mcp-server,25,52,21
 database-gaussdb-drivers,16,22,2
 database-gaussdb-ecosystem,16,10,5
 ai-huaweicloud-agent,10,4,0
@@ -222,7 +222,7 @@ iaas-cloud-aercurity-assessment,0,0,0
 paas-cce-resource-manager,0,2,0
 ai-insight-tools,0,2,0
 migration-rvtoolsvmware,0,2,0
-auto-workflows,0,0,0
+auto-workflows,0,0,8
 .github,0,0,1
 database-awesome-huaweicloud,0,0,0
 example-samples,0,0,0
@@ -434,3 +434,4 @@ application-intelligence-model-access-gateway,0,0,0
 application-intelligence-agent-cost-benchmark,0,0,0
 cloud-native-security-obs-malware-scanning,0,0,0
 cloud-native-security-firewall-rule-ordering,0,0,0
+deep-agents-agentarts,0,0,0
