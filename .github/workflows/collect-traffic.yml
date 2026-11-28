@@ -126,9 +126,12 @@ jobs:
         env:
           PYTHONIOENCODING: utf-8
         run: |
-          # 清理旧的滚动报告，只保留当日生成的一份（避免仓库堆积）
-          rm -f reports/window_*d_*.csv || true
+          # 清理所有旧报告（window_* 滚动文件 + 历史遗留的 report_all_*）
+          # 只保留当日生成的一份，避免仓库里堆积过期数据造成误读
+          rm -f reports/window_*d_*.csv reports/report_all_*.csv reports/report_2026-*.csv || true
           python report_window.py --days 30
+          echo "--- 当前报告 ---"
+          ls -1 reports/
 
       # ── 回写数据库（唯一长期存储，traffic 只活 14 天）─────
       # 注意：defaults 的 working-directory 是 collector/，git 操作要回仓库根
